@@ -1,0 +1,4 @@
+A concise description and justification of your proposed data structures.
+
+Our plan is to create a map of the academic buildings of RHIT. We will use a graph to store the nodes and edges which connect
+each classroom.
