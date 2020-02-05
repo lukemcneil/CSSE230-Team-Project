@@ -1,0 +1,4 @@
+1. A user will first start the application and will be asked what room or location they are in.
+2. They will then be shown a map of that floor and asked where they would like to go.
+3. After entering the destination into a text box, the display will show the user on the map the shortest route to get to the destination. This cost can be calculated by distance and stairs walked.
+4. A user can also select a room that they would like to learn more information about. They will be given a picture and schedule of that classroom.
