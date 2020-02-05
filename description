@@ -1,4 +1,6 @@
 A concise description and justification of your proposed data structures.
 
 Our plan is to create a map of the academic buildings of RHIT. We will use a graph to store the nodes and edges which connect
-each classroom.
+each classroom. The graph will have a HashMap of nodes, where the key identify the node, and the node will have an ArrayList of
+edges. This allows us to find any node, and all nodes have their edges. Each edge will hold two nodes (the ones it connects) and
+the distance and stair count of the path.
