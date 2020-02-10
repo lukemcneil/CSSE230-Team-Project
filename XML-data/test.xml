@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="11.0.6" class="java.beans.XMLDecoder">
+ <object class="java.util.Hashtable">
+  <void method="put">
+   <string>n3</string>
+   <object class="Node" id="Node0">
+    <void class="Node" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="Node0"/>
+      <string>node3</string>
+     </void>
+    </void>
+    <void class="Node" method="getField">
+     <string>edges</string>
+     <void method="set">
+      <object idref="Node0"/>
+      <object class="java.util.ArrayList">
+       <void method="add">
+        <object class="Edge" id="Edge0">
+         <void class="Edge" method="getField">
+          <string>end</string>
+          <void method="set">
+           <object idref="Edge0"/>
+           <object class="Node" id="Node1">
+            <void class="Node" method="getField">
+             <string>name</string>
+             <void method="set">
+              <object idref="Node1"/>
+              <string>node1</string>
+             </void>
+            </void>
+            <void class="Node" method="getField">
+             <string>edges</string>
+             <void method="set">
+              <object idref="Node1"/>
+              <object class="java.util.ArrayList">
+               <void method="add">
+                <object class="Edge" id="Edge1">
+                 <void class="Edge" method="getField">
+                  <string>end</string>
+                  <void method="set">
+                   <object idref="Edge1"/>
+                   <object class="Node" id="Node2">
+                    <void class="Node" method="getField">
+                     <string>name</string>
+                     <void method="set">
+                      <object idref="Node2"/>
+                      <string>node2</string>
+                     </void>
+                    </void>
+                    <void class="Node" method="getField">
+                     <string>edges</string>
+                     <void method="set">
+                      <object idref="Node2"/>
+                      <object class="java.util.ArrayList">
+                       <void method="add">
+                        <object class="Edge" id="Edge2">
+                         <void class="Edge" method="getField">
+                          <string>end</string>
+                          <void method="set">
+                           <object idref="Edge2"/>
+                           <object idref="Node1"/>
+                          </void>
+                         </void>
+                         <void class="Edge" method="getField">
+                          <string>cost</string>
+                          <void method="set">
+                           <object idref="Edge2"/>
+                           <int>25</int>
+                          </void>
+                         </void>
+                        </object>
+                       </void>
+                      </object>
+                     </void>
+                    </void>
+                   </object>
+                  </void>
+                 </void>
+                 <void class="Edge" method="getField">
+                  <string>cost</string>
+                  <void method="set">
+                   <object idref="Edge1"/>
+                   <int>15</int>
+                  </void>
+                 </void>
+                </object>
+               </void>
+               <void method="add">
+                <object class="Edge" id="Edge3">
+                 <void class="Edge" method="getField">
+                  <string>end</string>
+                  <void method="set">
+                   <object idref="Edge3"/>
+                   <object idref="Node0"/>
+                  </void>
+                 </void>
+                 <void class="Edge" method="getField">
+                  <string>cost</string>
+                  <void method="set">
+                   <object idref="Edge3"/>
+                   <int>10</int>
+                  </void>
+                 </void>
+                </object>
+               </void>
+              </object>
+             </void>
+            </void>
+           </object>
+          </void>
+         </void>
+         <void class="Edge" method="getField">
+          <string>cost</string>
+          <void method="set">
+           <object idref="Edge0"/>
+           <int>5</int>
+          </void>
+         </void>
+        </object>
+       </void>
+       <void method="add">
+        <object class="Edge" id="Edge4">
+         <void class="Edge" method="getField">
+          <string>end</string>
+          <void method="set">
+           <object idref="Edge4"/>
+           <object idref="Node2"/>
+          </void>
+         </void>
+         <void class="Edge" method="getField">
+          <string>cost</string>
+          <void method="set">
+           <object idref="Edge4"/>
+           <int>7</int>
+          </void>
+         </void>
+        </object>
+       </void>
+      </object>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>n2</string>
+   <object idref="Node2"/>
+  </void>
+  <void method="put">
+   <string>n1</string>
+   <object idref="Node1"/>
+  </void>
+ </object>
+</java>
