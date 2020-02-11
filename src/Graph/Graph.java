@@ -1,4 +1,5 @@
 package Graph;
+import java.awt.Point;
 import java.util.Hashtable;
 
 public class Graph {
@@ -18,6 +19,10 @@ public class Graph {
     
     public void addNode(String name) {
     	nodes.put(name, new Node(name));
+    }
+    
+    public void addNode(String name, Point p) {
+    	nodes.put(name, new Node(name,p));
     }
     
     public void addEdge(String node1, String node2, int cost) {

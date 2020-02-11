@@ -1,4 +1,5 @@
 package Graph;
+import java.awt.Point;
 import java.beans.XMLEncoder;
 import java.io.BufferedOutputStream;
 import java.io.FileOutputStream;
@@ -29,9 +30,11 @@ public class GraphMaker {
 
     private static Graph drawOlin2() {
         Graph Olin2 = new Graph();
+        int m = 1;
         String[] names = {"TopStairsO269", "O269", "O267", "TopStairsOCommons", "O259", "O257", "O225Corner", "O222", "O227", "O229", "O226", "O231", "O233", "OTopHadCommons", "TopStairsO238", "O201", "O203", "O202", "O204", "O203-1", "O205", "O206", "O207Corner", "TopStairsO214"};
-        for (String n : names) {
-            Olin2.addNode(n);
+        Point[] points = {new Point(130*m,300*m),new Point(130*m,270*m),new Point(130*m,240*m),new Point(140*m,220*m),new Point(170*m,210*m),new Point(210*m, 210*m),new Point(290,210*m),new Point(310,210),new Point(330,210),new Point(350,210),new Point(370,210),new Point(390,210),new Point(410,210),new Point(410,280),new Point(420,250),new Point(410,320),new Point(390,320),new Point(370,320),new Point(350,320),new Point(330,320),new Point(320,320),new Point(310,320),new Point(290,320),new Point(290,280) };
+        for (int i =0;i<names.length;i++) {
+            Olin2.addNode(names[i],points[i]);
         }
         Olin2.addEdge("TopStairsO269", "O269", 10);
         Olin2.addEdge("O269", "O267", 10);
@@ -61,6 +64,41 @@ public class GraphMaker {
 
         System.out.println("added olin2.xml");
         return Olin2;
+    }
+    private static Graph drawOlin1() {
+    	Graph Olin1 = new Graph();
+    	String[] names = {"BotStairsO269","O169","O167","BotStairsOCommons","Bot2ndStair","O159","O157","O111Corner","O106","O108","O113","O110","O115","O115Corner","OBotHadCommons","BotStairs238","O101","O103","O105","O107","O102","O102-1","O109Corner","O104","BotStairsO104"};
+    	Point[] points = {new Point()};
+    	for(String n : names) {
+    		Olin1.addNode(n);
+    	}
+    	
+    	Olin1.addEdge("BotStairsO269", "O169", 10);
+    	Olin1.addEdge("O169", "O167", 10);
+    	Olin1.addEdge("O167", "BotStairsOCommons", 30);
+    	Olin1.addEdge("TopStairsOCommons", "O259", 30);
+    	Olin1.addEdge("O259", "O257", 10);
+    	Olin1.addEdge("O257", "O225Corner", 40);
+    	Olin1.addEdge("O225Corner", "O222", 20);
+    	Olin1.addEdge("O225Corner", "TopStairsO214", 30);
+    	Olin1.addEdge("O222", "O227", 10);
+    	Olin1.addEdge("O227", "O229", 10);
+    	Olin1.addEdge("O229", "O226", 10);
+    	Olin1.addEdge("O226", "O231", 30);
+    	Olin1.addEdge("O231", "O233", 20);
+    	Olin1.addEdge("O233", "OTopHadCommons", 20);
+    	Olin1.addEdge("OTopHadCommons", "TopStairsO238", 15);
+    	Olin1.addEdge("OTopHadCommons", "O201", 20);
+    	Olin1.addEdge("O201", "O203", 10);
+    	Olin1.addEdge("O203", "O202", 20);
+    	Olin1.addEdge("O202", "O204", 10);
+    	Olin1.addEdge("O204", "O203-1", 10);
+    	Olin1.addEdge("O203-1", "O205", 10);
+    	Olin1.addEdge("O205", "O206", 10);
+    	Olin1.addEdge("O206", "O207Corner", 10);
+    	Olin1.addEdge("O207Corner", "TopStairsO214", 20);
+
+    	return Olin1;
     }
 
     private static Graph drawTestGraph() {

@@ -2,6 +2,7 @@ package Graph;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Point;
 import java.util.ArrayList;
 import java.util.Hashtable;
 
@@ -20,19 +21,31 @@ public class Node{
     }
 
     public Node(String name) {
-        this.name = name;
-        this.edges = new ArrayList<Edge>();
+    	this.edges = new ArrayList<Edge>();
         pathFinder = new Hashtable<Node, Node>();
         highlighted=false;
+        this.name = name;
+       
     }
     
     public Node(String name, int x, int y) {
+    	this.edges = new ArrayList<Edge>();
+        pathFinder = new Hashtable<Node, Node>();
+        highlighted=false;
     	this.name=name;
-    	this.edges=new ArrayList<Edge>();
-    	pathFinder=new Hashtable<Node, Node>();
     	this.x=x;
     	this.y=y;
-    	highlighted=false;
+
+    }
+    
+    public Node(String name, Point p) {
+    	this.edges = new ArrayList<Edge>();
+        pathFinder = new Hashtable<Node, Node>();
+        highlighted=false;
+    	this.name = name;
+    	this.x = p.x;
+    	this.y = p.y;
+    	
     }
 
     public ArrayList<Edge> getEdges() {

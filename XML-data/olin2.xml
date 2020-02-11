@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="12.0.2" class="java.beans.XMLDecoder">
+<java version="1.8.0_241" class="java.beans.XMLDecoder">
  <object class="java.util.Hashtable">
   <void method="put">
    <string>O203-1</string>
@@ -9,6 +9,20 @@
      <void method="set">
       <object idref="Node0"/>
       <string>O203-1</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node0"/>
+      <int>330</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node0"/>
+      <int>320</int>
      </void>
     </void>
    </object>
@@ -23,6 +37,20 @@
       <string>O207Corner</string>
      </void>
     </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node1"/>
+      <int>290</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node1"/>
+      <int>320</int>
+     </void>
+    </void>
    </object>
   </void>
   <void method="put">
@@ -33,6 +61,20 @@
      <void method="set">
       <object idref="Node2"/>
       <string>O229</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node2"/>
+      <int>350</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node2"/>
+      <int>210</int>
      </void>
     </void>
    </object>
@@ -47,6 +89,20 @@
       <string>O259</string>
      </void>
     </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node3"/>
+      <int>170</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node3"/>
+      <int>210</int>
+     </void>
+    </void>
    </object>
   </void>
   <void method="put">
@@ -57,6 +113,20 @@
      <void method="set">
       <object idref="Node4"/>
       <string>O227</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node4"/>
+      <int>330</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node4"/>
+      <int>210</int>
      </void>
     </void>
    </object>
@@ -71,6 +141,20 @@
       <string>OTopHadCommons</string>
      </void>
     </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node5"/>
+      <int>410</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node5"/>
+      <int>280</int>
+     </void>
+    </void>
    </object>
   </void>
   <void method="put">
@@ -81,6 +165,20 @@
      <void method="set">
       <object idref="Node6"/>
       <string>O226</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node6"/>
+      <int>370</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node6"/>
+      <int>210</int>
      </void>
     </void>
    </object>
@@ -95,6 +193,20 @@
       <string>O257</string>
      </void>
     </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node7"/>
+      <int>210</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node7"/>
+      <int>210</int>
+     </void>
+    </void>
    </object>
   </void>
   <void method="put">
@@ -105,6 +217,20 @@
      <void method="set">
       <object idref="Node8"/>
       <string>TopStairsOCommons</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node8"/>
+      <int>140</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node8"/>
+      <int>220</int>
      </void>
     </void>
    </object>
@@ -119,6 +245,20 @@
       <string>O222</string>
      </void>
     </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node9"/>
+      <int>310</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node9"/>
+      <int>210</int>
+     </void>
+    </void>
    </object>
   </void>
   <void method="put">
@@ -129,6 +269,20 @@
      <void method="set">
       <object idref="Node10"/>
       <string>TopStairsO238</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node10"/>
+      <int>420</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node10"/>
+      <int>250</int>
      </void>
     </void>
    </object>
@@ -143,6 +297,20 @@
       <string>TopStairsO269</string>
      </void>
     </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node11"/>
+      <int>130</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node11"/>
+      <int>300</int>
+     </void>
+    </void>
    </object>
   </void>
   <void method="put">
@@ -153,6 +321,20 @@
      <void method="set">
       <object idref="Node12"/>
       <string>O269</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node12"/>
+      <int>130</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node12"/>
+      <int>270</int>
      </void>
     </void>
    </object>
@@ -167,6 +349,20 @@
       <string>O206</string>
      </void>
     </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node13"/>
+      <int>310</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node13"/>
+      <int>320</int>
+     </void>
+    </void>
    </object>
   </void>
   <void method="put">
@@ -177,6 +373,20 @@
      <void method="set">
       <object idref="Node14"/>
       <string>O205</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node14"/>
+      <int>320</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node14"/>
+      <int>320</int>
      </void>
     </void>
    </object>
@@ -191,6 +401,20 @@
       <string>O267</string>
      </void>
     </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node15"/>
+      <int>130</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node15"/>
+      <int>240</int>
+     </void>
+    </void>
    </object>
   </void>
   <void method="put">
@@ -201,6 +425,20 @@
      <void method="set">
       <object idref="Node16"/>
       <string>O204</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node16"/>
+      <int>350</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node16"/>
+      <int>320</int>
      </void>
     </void>
    </object>
@@ -215,6 +453,20 @@
       <string>O203</string>
      </void>
     </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node17"/>
+      <int>390</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node17"/>
+      <int>320</int>
+     </void>
+    </void>
    </object>
   </void>
   <void method="put">
@@ -225,6 +477,20 @@
      <void method="set">
       <object idref="Node18"/>
       <string>O202</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node18"/>
+      <int>370</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node18"/>
+      <int>320</int>
      </void>
     </void>
    </object>
@@ -239,6 +505,20 @@
       <string>O225Corner</string>
      </void>
     </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node19"/>
+      <int>290</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node19"/>
+      <int>210</int>
+     </void>
+    </void>
    </object>
   </void>
   <void method="put">
@@ -249,6 +529,20 @@
      <void method="set">
       <object idref="Node20"/>
       <string>O233</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node20"/>
+      <int>410</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node20"/>
+      <int>210</int>
      </void>
     </void>
    </object>
@@ -263,6 +557,20 @@
       <string>O201</string>
      </void>
     </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node21"/>
+      <int>410</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node21"/>
+      <int>320</int>
+     </void>
+    </void>
    </object>
   </void>
   <void method="put">
@@ -273,6 +581,20 @@
      <void method="set">
       <object idref="Node22"/>
       <string>O231</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node22"/>
+      <int>390</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node22"/>
+      <int>210</int>
      </void>
     </void>
    </object>
@@ -287,6 +609,20 @@
       <string>TopStairsO214</string>
      </void>
     </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node23"/>
+      <int>290</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node23"/>
+      <int>280</int>
+     </void>
+    </void>
    </object>
   </void>
  </object>
@@ -298,11 +634,11 @@
     <string>cost</string>
     <void method="set">
      <object idref="Edge0"/>
-     <int>20</int>
+     <int>30</int>
     </void>
    </void>
   </object>
-  <object idref="Node9"/>
+  <object idref="Node15"/>
  </void>
 </void>
 <void class="Graph.Edge" method="getField">
@@ -317,7 +653,7 @@
     </void>
    </void>
   </object>
-  <object idref="Node13"/>
+  <object idref="Node18"/>
  </void>
 </void>
 <void class="Graph.Edge" method="getField">
@@ -332,42 +668,45 @@
     </void>
    </void>
   </object>
-  <object idref="Node12"/>
- </void>
-</void>
-<void class="Graph.Edge" method="getField">
- <string>end</string>
- <void method="set">
-  <object class="Graph.Edge" id="Edge3">
-   <void class="Graph.Edge" method="getField">
-    <string>cost</string>
-    <void method="set">
-     <object idref="Edge3"/>
-     <int>40</int>
-    </void>
-   </void>
-  </object>
-  <object idref="Node19"/>
+  <object idref="Node4"/>
  </void>
 </void>
 <void class="Graph.Node" id="Field0" method="getField">
  <string>edges</string>
  <void id="ArrayList0" method="get">
-  <object idref="Node10"/>
+  <object idref="Node3"/>
+  <void method="add">
+   <object class="Graph.Edge" id="Edge3">
+    <void class="Graph.Edge" method="getField">
+     <string>end</string>
+     <void method="set">
+      <object idref="Edge3"/>
+      <object idref="Node7"/>
+     </void>
+    </void>
+    <void class="Graph.Edge" method="getField">
+     <string>cost</string>
+     <void method="set">
+      <object idref="Edge3"/>
+      <int>10</int>
+     </void>
+    </void>
+   </object>
+  </void>
   <void method="add">
    <object class="Graph.Edge" id="Edge4">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
       <object idref="Edge4"/>
-      <object idref="Node5"/>
+      <object idref="Node8"/>
      </void>
     </void>
     <void class="Graph.Edge" method="getField">
      <string>cost</string>
      <void method="set">
       <object idref="Edge4"/>
-      <int>15</int>
+      <int>30</int>
      </void>
     </void>
    </object>
@@ -387,7 +726,7 @@
     </void>
    </void>
   </object>
-  <object idref="Node17"/>
+  <object idref="Node18"/>
  </void>
 </void>
 <void class="Graph.Edge" method="getField">
@@ -402,73 +741,57 @@
     </void>
    </void>
   </object>
-  <object idref="Node11"/>
+  <object idref="Node14"/>
+ </void>
+</void>
+<void class="Graph.Edge" method="getField">
+ <string>end</string>
+ <void method="set">
+  <object class="Graph.Edge" id="Edge7">
+   <void class="Graph.Edge" method="getField">
+    <string>cost</string>
+    <void method="set">
+     <object idref="Edge7"/>
+     <int>10</int>
+    </void>
+   </void>
+  </object>
+  <object idref="Node14"/>
+ </void>
+</void>
+<void class="Graph.Edge" method="getField">
+ <string>end</string>
+ <void method="set">
+  <object class="Graph.Edge" id="Edge8">
+   <void class="Graph.Edge" method="getField">
+    <string>cost</string>
+    <void method="set">
+     <object idref="Edge8"/>
+     <int>40</int>
+    </void>
+   </void>
+  </object>
+  <object idref="Node7"/>
  </void>
 </void>
 <void class="Graph.Node" id="Field1" method="getField">
  <string>edges</string>
  <void id="ArrayList1" method="get">
-  <object idref="Node12"/>
-  <void method="add">
-   <object class="Graph.Edge" id="Edge7">
-    <void class="Graph.Edge" method="getField">
-     <string>end</string>
-     <void method="set">
-      <object idref="Edge7"/>
-      <object idref="Node15"/>
-     </void>
-    </void>
-    <void class="Graph.Edge" method="getField">
-     <string>cost</string>
-     <void method="set">
-      <object idref="Edge7"/>
-      <int>10</int>
-     </void>
-    </void>
-   </object>
-  </void>
-  <void method="add">
-   <object idref="Edge6"/>
-  </void>
- </void>
-</void>
-<void idref="ArrayList1"/>
-<void class="Graph.Node" id="Field2" method="getField">
- <string>edges</string>
- <void id="ArrayList2" method="get">
-  <object idref="Node5"/>
-  <void method="add">
-   <object class="Graph.Edge" id="Edge8">
-    <void class="Graph.Edge" method="getField">
-     <string>end</string>
-     <void method="set">
-      <object idref="Edge8"/>
-      <object idref="Node10"/>
-     </void>
-    </void>
-    <void class="Graph.Edge" method="getField">
-     <string>cost</string>
-     <void method="set">
-      <object idref="Edge8"/>
-      <int>15</int>
-     </void>
-    </void>
-   </object>
-  </void>
+  <object idref="Node14"/>
   <void method="add">
    <object class="Graph.Edge" id="Edge9">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
       <object idref="Edge9"/>
-      <object idref="Node21"/>
+      <object idref="Node13"/>
      </void>
     </void>
     <void class="Graph.Edge" method="getField">
      <string>cost</string>
      <void method="set">
       <object idref="Edge9"/>
-      <int>20</int>
+      <int>10</int>
      </void>
     </void>
    </object>
@@ -479,13 +802,41 @@
      <string>end</string>
      <void method="set">
       <object idref="Edge10"/>
-      <object idref="Node20"/>
+      <object idref="Node0"/>
      </void>
     </void>
     <void class="Graph.Edge" method="getField">
      <string>cost</string>
      <void method="set">
       <object idref="Edge10"/>
+      <int>10</int>
+     </void>
+    </void>
+   </object>
+  </void>
+ </void>
+</void>
+<void idref="ArrayList1"/>
+<void class="Graph.Node" id="Field2" method="getField">
+ <string>edges</string>
+ <void id="ArrayList2" method="get">
+  <object idref="Node9"/>
+  <void method="add">
+   <object idref="Edge2"/>
+  </void>
+  <void method="add">
+   <object class="Graph.Edge" id="Edge11">
+    <void class="Graph.Edge" method="getField">
+     <string>end</string>
+     <void method="set">
+      <object idref="Edge11"/>
+      <object idref="Node19"/>
+     </void>
+    </void>
+    <void class="Graph.Edge" method="getField">
+     <string>cost</string>
+     <void method="set">
+      <object idref="Edge11"/>
       <int>20</int>
      </void>
     </void>
@@ -497,38 +848,68 @@
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
-  <object class="Graph.Edge" id="Edge11">
+  <object class="Graph.Edge" id="Edge12">
    <void class="Graph.Edge" method="getField">
     <string>cost</string>
     <void method="set">
-     <object idref="Edge11"/>
+     <object idref="Edge12"/>
+     <int>10</int>
+    </void>
+   </void>
+  </object>
+  <object idref="Node16"/>
+ </void>
+</void>
+<void class="Graph.Edge" method="getField">
+ <string>end</string>
+ <void method="set">
+  <object class="Graph.Edge" id="Edge13">
+   <void class="Graph.Edge" method="getField">
+    <string>cost</string>
+    <void method="set">
+     <object idref="Edge13"/>
+     <int>20</int>
+    </void>
+   </void>
+  </object>
+  <object idref="Node9"/>
+ </void>
+</void>
+<void class="Graph.Edge" method="getField">
+ <string>end</string>
+ <void method="set">
+  <object class="Graph.Edge" id="Edge14">
+   <void class="Graph.Edge" method="getField">
+    <string>cost</string>
+    <void method="set">
+     <object idref="Edge14"/>
      <int>30</int>
     </void>
    </void>
   </object>
-  <object idref="Node19"/>
+  <object idref="Node8"/>
  </void>
 </void>
 <void class="Graph.Node" id="Field3" method="getField">
  <string>edges</string>
  <void id="ArrayList3" method="get">
-  <object idref="Node7"/>
+  <object idref="Node15"/>
   <void method="add">
-   <object idref="Edge3"/>
+   <object idref="Edge14"/>
   </void>
   <void method="add">
-   <object class="Graph.Edge" id="Edge12">
+   <object class="Graph.Edge" id="Edge15">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
-      <object idref="Edge12"/>
-      <object idref="Node3"/>
+      <object idref="Edge15"/>
+      <object idref="Node12"/>
      </void>
     </void>
     <void class="Graph.Edge" method="getField">
      <string>cost</string>
      <void method="set">
-      <object idref="Edge12"/>
+      <object idref="Edge15"/>
       <int>10</int>
      </void>
     </void>
@@ -537,45 +918,60 @@
  </void>
 </void>
 <void idref="ArrayList3"/>
+<void class="Graph.Edge" method="getField">
+ <string>end</string>
+ <void method="set">
+  <object class="Graph.Edge" id="Edge16">
+   <void class="Graph.Edge" method="getField">
+    <string>cost</string>
+    <void method="set">
+     <object idref="Edge16"/>
+     <int>10</int>
+    </void>
+   </void>
+  </object>
+  <object idref="Node3"/>
+ </void>
+</void>
+<void class="Graph.Edge" method="getField">
+ <string>end</string>
+ <void method="set">
+  <object class="Graph.Edge" id="Edge17">
+   <void class="Graph.Edge" method="getField">
+    <string>cost</string>
+    <void method="set">
+     <object idref="Edge17"/>
+     <int>30</int>
+    </void>
+   </void>
+  </object>
+  <object idref="Node3"/>
+ </void>
+</void>
 <void class="Graph.Node" id="Field4" method="getField">
  <string>edges</string>
  <void id="ArrayList4" method="get">
-  <object idref="Node2"/>
+  <object idref="Node13"/>
   <void method="add">
-   <object class="Graph.Edge" id="Edge13">
+   <object class="Graph.Edge" id="Edge18">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
-      <object idref="Edge13"/>
-      <object idref="Node6"/>
+      <object idref="Edge18"/>
+      <object idref="Node1"/>
      </void>
     </void>
     <void class="Graph.Edge" method="getField">
      <string>cost</string>
      <void method="set">
-      <object idref="Edge13"/>
+      <object idref="Edge18"/>
       <int>10</int>
      </void>
     </void>
    </object>
   </void>
   <void method="add">
-   <object class="Graph.Edge" id="Edge14">
-    <void class="Graph.Edge" method="getField">
-     <string>end</string>
-     <void method="set">
-      <object idref="Edge14"/>
-      <object idref="Node4"/>
-     </void>
-    </void>
-    <void class="Graph.Edge" method="getField">
-     <string>cost</string>
-     <void method="set">
-      <object idref="Edge14"/>
-      <int>10</int>
-     </void>
-    </void>
-   </object>
+   <object idref="Edge6"/>
   </void>
  </void>
 </void>
@@ -585,36 +981,36 @@
  <void id="ArrayList5" method="get">
   <object idref="Node21"/>
   <void method="add">
-   <object class="Graph.Edge" id="Edge15">
+   <object class="Graph.Edge" id="Edge19">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
-      <object idref="Edge15"/>
+      <object idref="Edge19"/>
       <object idref="Node17"/>
      </void>
     </void>
     <void class="Graph.Edge" method="getField">
      <string>cost</string>
      <void method="set">
-      <object idref="Edge15"/>
+      <object idref="Edge19"/>
       <int>10</int>
      </void>
     </void>
    </object>
   </void>
   <void method="add">
-   <object class="Graph.Edge" id="Edge16">
+   <object class="Graph.Edge" id="Edge20">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
-      <object idref="Edge16"/>
+      <object idref="Edge20"/>
       <object idref="Node5"/>
      </void>
     </void>
     <void class="Graph.Edge" method="getField">
      <string>cost</string>
      <void method="set">
-      <object idref="Edge16"/>
+      <object idref="Edge20"/>
       <int>20</int>
      </void>
     </void>
@@ -623,146 +1019,41 @@
  </void>
 </void>
 <void idref="ArrayList5"/>
-<void class="Graph.Edge" method="getField">
- <string>end</string>
- <void method="set">
-  <object class="Graph.Edge" id="Edge17">
-   <void class="Graph.Edge" method="getField">
-    <string>cost</string>
-    <void method="set">
-     <object idref="Edge17"/>
-     <int>20</int>
-    </void>
-   </void>
-  </object>
-  <object idref="Node19"/>
- </void>
-</void>
-<void class="Graph.Edge" method="getField">
- <string>end</string>
- <void method="set">
-  <object class="Graph.Edge" id="Edge18">
-   <void class="Graph.Edge" method="getField">
-    <string>cost</string>
-    <void method="set">
-     <object idref="Edge18"/>
-     <int>10</int>
-    </void>
-   </void>
-  </object>
-  <object idref="Node2"/>
- </void>
-</void>
-<void class="Graph.Edge" method="getField">
- <string>end</string>
- <void method="set">
-  <object class="Graph.Edge" id="Edge19">
-   <void class="Graph.Edge" method="getField">
-    <string>cost</string>
-    <void method="set">
-     <object idref="Edge19"/>
-     <int>10</int>
-    </void>
-   </void>
-  </object>
-  <object idref="Node2"/>
- </void>
-</void>
-<void class="Graph.Edge" method="getField">
- <string>end</string>
- <void method="set">
-  <object class="Graph.Edge" id="Edge20">
-   <void class="Graph.Edge" method="getField">
-    <string>cost</string>
-    <void method="set">
-     <object idref="Edge20"/>
-     <int>10</int>
-    </void>
-   </void>
-  </object>
-  <object idref="Node14"/>
- </void>
-</void>
-<void class="Graph.Edge" method="getField">
- <string>end</string>
- <void method="set">
-  <object class="Graph.Edge" id="Edge21">
-   <void class="Graph.Edge" method="getField">
-    <string>cost</string>
-    <void method="set">
-     <object idref="Edge21"/>
-     <int>10</int>
-    </void>
-   </void>
-  </object>
-  <object idref="Node13"/>
- </void>
-</void>
-<void class="Graph.Edge" method="getField">
- <string>end</string>
- <void method="set">
-  <object class="Graph.Edge" id="Edge22">
-   <void class="Graph.Edge" method="getField">
-    <string>cost</string>
-    <void method="set">
-     <object idref="Edge22"/>
-     <int>30</int>
-    </void>
-   </void>
-  </object>
-  <object idref="Node6"/>
- </void>
-</void>
-<void class="Graph.Edge" method="getField">
- <string>end</string>
- <void method="set">
-  <object class="Graph.Edge" id="Edge23">
-   <void class="Graph.Edge" method="getField">
-    <string>cost</string>
-    <void method="set">
-     <object idref="Edge23"/>
-     <int>30</int>
-    </void>
-   </void>
-  </object>
-  <object idref="Node3"/>
- </void>
-</void>
 <void class="Graph.Node" id="Field6" method="getField">
  <string>edges</string>
  <void id="ArrayList6" method="get">
-  <object idref="Node13"/>
+  <object idref="Node12"/>
   <void method="add">
-   <object class="Graph.Edge" id="Edge24">
+   <object class="Graph.Edge" id="Edge21">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
-      <object idref="Edge24"/>
-      <object idref="Node1"/>
+      <object idref="Edge21"/>
+      <object idref="Node15"/>
      </void>
     </void>
     <void class="Graph.Edge" method="getField">
      <string>cost</string>
      <void method="set">
-      <object idref="Edge24"/>
+      <object idref="Edge21"/>
       <int>10</int>
      </void>
     </void>
    </object>
   </void>
   <void method="add">
-   <object class="Graph.Edge" id="Edge25">
+   <object class="Graph.Edge" id="Edge22">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
-      <object idref="Edge25"/>
-      <object idref="Node14"/>
+      <object idref="Edge22"/>
+      <object idref="Node11"/>
      </void>
     </void>
     <void class="Graph.Edge" method="getField">
      <string>cost</string>
      <void method="set">
-      <object idref="Edge25"/>
+      <object idref="Edge22"/>
       <int>10</int>
      </void>
     </void>
@@ -774,39 +1065,57 @@
 <void class="Graph.Node" id="Field7" method="getField">
  <string>edges</string>
  <void id="ArrayList7" method="get">
-  <object idref="Node16"/>
+  <object idref="Node5"/>
   <void method="add">
-   <object class="Graph.Edge" id="Edge26">
+   <object class="Graph.Edge" id="Edge23">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
-      <object idref="Edge26"/>
-      <object idref="Node0"/>
+      <object idref="Edge23"/>
+      <object idref="Node10"/>
      </void>
     </void>
     <void class="Graph.Edge" method="getField">
      <string>cost</string>
      <void method="set">
-      <object idref="Edge26"/>
-      <int>10</int>
+      <object idref="Edge23"/>
+      <int>15</int>
      </void>
     </void>
    </object>
   </void>
   <void method="add">
-   <object class="Graph.Edge" id="Edge27">
+   <object class="Graph.Edge" id="Edge24">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
-      <object idref="Edge27"/>
-      <object idref="Node18"/>
+      <object idref="Edge24"/>
+      <object idref="Node21"/>
      </void>
     </void>
     <void class="Graph.Edge" method="getField">
      <string>cost</string>
      <void method="set">
-      <object idref="Edge27"/>
-      <int>10</int>
+      <object idref="Edge24"/>
+      <int>20</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Graph.Edge" id="Edge25">
+    <void class="Graph.Edge" method="getField">
+     <string>end</string>
+     <void method="set">
+      <object idref="Edge25"/>
+      <object idref="Node20"/>
+     </void>
+    </void>
+    <void class="Graph.Edge" method="getField">
+     <string>cost</string>
+     <void method="set">
+      <object idref="Edge25"/>
+      <int>20</int>
      </void>
     </void>
    </object>
@@ -814,21 +1123,87 @@
  </void>
 </void>
 <void idref="ArrayList7"/>
-<void class="Graph.Edge" method="getField">
- <string>end</string>
- <void method="set">
-  <object class="Graph.Edge" id="Edge28">
-   <void class="Graph.Edge" method="getField">
-    <string>cost</string>
-    <void method="set">
-     <object idref="Edge28"/>
-     <int>20</int>
+<void class="Graph.Node" id="Field8" method="getField">
+ <string>edges</string>
+ <void id="ArrayList8" method="get">
+  <object idref="Node10"/>
+  <void method="add">
+   <object class="Graph.Edge" id="Edge26">
+    <void class="Graph.Edge" method="getField">
+     <string>end</string>
+     <void method="set">
+      <object idref="Edge26"/>
+      <object idref="Node5"/>
+     </void>
     </void>
-   </void>
-  </object>
-  <object idref="Node1"/>
+    <void class="Graph.Edge" method="getField">
+     <string>cost</string>
+     <void method="set">
+      <object idref="Edge26"/>
+      <int>15</int>
+     </void>
+    </void>
+   </object>
+  </void>
  </void>
 </void>
+<void idref="ArrayList8"/>
+<void class="Graph.Node" id="Field9" method="getField">
+ <string>edges</string>
+ <void id="ArrayList9" method="get">
+  <object idref="Node0"/>
+  <void method="add">
+   <object idref="Edge7"/>
+  </void>
+  <void method="add">
+   <object class="Graph.Edge" id="Edge27">
+    <void class="Graph.Edge" method="getField">
+     <string>end</string>
+     <void method="set">
+      <object idref="Edge27"/>
+      <object idref="Node16"/>
+     </void>
+    </void>
+    <void class="Graph.Edge" method="getField">
+     <string>cost</string>
+     <void method="set">
+      <object idref="Edge27"/>
+      <int>10</int>
+     </void>
+    </void>
+   </object>
+  </void>
+ </void>
+</void>
+<void idref="ArrayList9"/>
+<void class="Graph.Node" id="Field10" method="getField">
+ <string>edges</string>
+ <void id="ArrayList10" method="get">
+  <object idref="Node7"/>
+  <void method="add">
+   <object class="Graph.Edge" id="Edge28">
+    <void class="Graph.Edge" method="getField">
+     <string>end</string>
+     <void method="set">
+      <object idref="Edge28"/>
+      <object idref="Node19"/>
+     </void>
+    </void>
+    <void class="Graph.Edge" method="getField">
+     <string>cost</string>
+     <void method="set">
+      <object idref="Edge28"/>
+      <int>40</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object idref="Edge16"/>
+  </void>
+ </void>
+</void>
+<void idref="ArrayList10"/>
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
@@ -837,11 +1212,11 @@
     <string>cost</string>
     <void method="set">
      <object idref="Edge29"/>
-     <int>10</int>
+     <int>30</int>
     </void>
    </void>
   </object>
-  <object idref="Node16"/>
+  <object idref="Node6"/>
  </void>
 </void>
 <void class="Graph.Edge" method="getField">
@@ -852,21 +1227,6 @@
     <string>cost</string>
     <void method="set">
      <object idref="Edge30"/>
-     <int>30</int>
-    </void>
-   </void>
-  </object>
-  <object idref="Node15"/>
- </void>
-</void>
-<void class="Graph.Edge" method="getField">
- <string>end</string>
- <void method="set">
-  <object class="Graph.Edge" id="Edge31">
-   <void class="Graph.Edge" method="getField">
-    <string>cost</string>
-    <void method="set">
-     <object idref="Edge31"/>
      <int>20</int>
     </void>
    </void>
@@ -874,51 +1234,92 @@
   <object idref="Node22"/>
  </void>
 </void>
-<void class="Graph.Edge" method="getField">
- <string>end</string>
- <void method="set">
-  <object class="Graph.Edge" id="Edge32">
-   <void class="Graph.Edge" method="getField">
-    <string>cost</string>
-    <void method="set">
-     <object idref="Edge32"/>
-     <int>10</int>
+<void class="Graph.Node" id="Field11" method="getField">
+ <string>edges</string>
+ <void id="ArrayList11" method="get">
+  <object idref="Node2"/>
+  <void method="add">
+   <object class="Graph.Edge" id="Edge31">
+    <void class="Graph.Edge" method="getField">
+     <string>end</string>
+     <void method="set">
+      <object idref="Edge31"/>
+      <object idref="Node6"/>
+     </void>
     </void>
-   </void>
-  </object>
-  <object idref="Node16"/>
+    <void class="Graph.Edge" method="getField">
+     <string>cost</string>
+     <void method="set">
+      <object idref="Edge31"/>
+      <int>10</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Graph.Edge" id="Edge32">
+    <void class="Graph.Edge" method="getField">
+     <string>end</string>
+     <void method="set">
+      <object idref="Edge32"/>
+      <object idref="Node4"/>
+     </void>
+    </void>
+    <void class="Graph.Edge" method="getField">
+     <string>cost</string>
+     <void method="set">
+      <object idref="Edge32"/>
+      <int>10</int>
+     </void>
+    </void>
+   </object>
+  </void>
  </void>
 </void>
-<void class="Graph.Edge" method="getField">
- <string>end</string>
- <void method="set">
-  <object class="Graph.Edge" id="Edge33">
-   <void class="Graph.Edge" method="getField">
-    <string>cost</string>
-    <void method="set">
-     <object idref="Edge33"/>
-     <int>20</int>
+<void idref="ArrayList11"/>
+<void class="Graph.Node" id="Field12" method="getField">
+ <string>edges</string>
+ <void id="ArrayList12" method="get">
+  <object idref="Node1"/>
+  <void method="add">
+   <object class="Graph.Edge" id="Edge33">
+    <void class="Graph.Edge" method="getField">
+     <string>end</string>
+     <void method="set">
+      <object idref="Edge33"/>
+      <object idref="Node23"/>
+     </void>
     </void>
-   </void>
-  </object>
-  <object idref="Node23"/>
+    <void class="Graph.Edge" method="getField">
+     <string>cost</string>
+     <void method="set">
+      <object idref="Edge33"/>
+      <int>20</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Graph.Edge" id="Edge34">
+    <void class="Graph.Edge" method="getField">
+     <string>end</string>
+     <void method="set">
+      <object idref="Edge34"/>
+      <object idref="Node13"/>
+     </void>
+    </void>
+    <void class="Graph.Edge" method="getField">
+     <string>cost</string>
+     <void method="set">
+      <object idref="Edge34"/>
+      <int>10</int>
+     </void>
+    </void>
+   </object>
+  </void>
  </void>
 </void>
-<void class="Graph.Edge" method="getField">
- <string>end</string>
- <void method="set">
-  <object class="Graph.Edge" id="Edge34">
-   <void class="Graph.Edge" method="getField">
-    <string>cost</string>
-    <void method="set">
-     <object idref="Edge34"/>
-     <int>30</int>
-    </void>
-   </void>
-  </object>
-  <object idref="Node8"/>
- </void>
-</void>
+<void idref="ArrayList12"/>
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
@@ -927,11 +1328,11 @@
     <string>cost</string>
     <void method="set">
      <object idref="Edge35"/>
-     <int>40</int>
+     <int>10</int>
     </void>
    </void>
   </object>
-  <object idref="Node7"/>
+  <object idref="Node9"/>
  </void>
 </void>
 <void class="Graph.Edge" method="getField">
@@ -942,46 +1343,59 @@
     <string>cost</string>
     <void method="set">
      <object idref="Edge36"/>
-     <int>20</int>
+     <int>10</int>
     </void>
    </void>
   </object>
-  <object idref="Node18"/>
+  <object idref="Node2"/>
  </void>
 </void>
-<void class="Graph.Edge" method="getField">
- <string>end</string>
- <void method="set">
-  <object class="Graph.Edge" id="Edge37">
-   <void class="Graph.Edge" method="getField">
-    <string>cost</string>
-    <void method="set">
-     <object idref="Edge37"/>
-     <int>20</int>
-    </void>
-   </void>
-  </object>
-  <object idref="Node5"/>
- </void>
-</void>
-<void class="Graph.Node" id="Field8" method="getField">
+<void class="Graph.Node" id="Field13" method="getField">
  <string>edges</string>
- <void id="ArrayList8" method="get">
-  <object idref="Node3"/>
+ <void id="ArrayList13" method="get">
+  <object idref="Node18"/>
+  <void method="add">
+   <object idref="Edge12"/>
+  </void>
+  <void method="add">
+   <object class="Graph.Edge" id="Edge37">
+    <void class="Graph.Edge" method="getField">
+     <string>end</string>
+     <void method="set">
+      <object idref="Edge37"/>
+      <object idref="Node17"/>
+     </void>
+    </void>
+    <void class="Graph.Edge" method="getField">
+     <string>cost</string>
+     <void method="set">
+      <object idref="Edge37"/>
+      <int>20</int>
+     </void>
+    </void>
+   </object>
+  </void>
+ </void>
+</void>
+<void idref="ArrayList13"/>
+<void class="Graph.Node" id="Field14" method="getField">
+ <string>edges</string>
+ <void id="ArrayList14" method="get">
+  <object idref="Node23"/>
   <void method="add">
    <object class="Graph.Edge" id="Edge38">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
       <object idref="Edge38"/>
-      <object idref="Node7"/>
+      <object idref="Node1"/>
      </void>
     </void>
     <void class="Graph.Edge" method="getField">
      <string>cost</string>
      <void method="set">
       <object idref="Edge38"/>
-      <int>10</int>
+      <int>20</int>
      </void>
     </void>
    </object>
@@ -992,7 +1406,7 @@
      <string>end</string>
      <void method="set">
       <object idref="Edge39"/>
-      <object idref="Node8"/>
+      <object idref="Node19"/>
      </void>
     </void>
     <void class="Graph.Edge" method="getField">
@@ -1006,20 +1420,10 @@
   </void>
  </void>
 </void>
-<void idref="ArrayList8"/>
-<void class="Graph.Node" id="Field9" method="getField">
+<void idref="ArrayList14"/>
+<void class="Graph.Node" id="Field15" method="getField">
  <string>edges</string>
- <void id="ArrayList9" method="get">
-  <object idref="Node11"/>
-  <void method="add">
-   <object idref="Edge2"/>
-  </void>
- </void>
-</void>
-<void idref="ArrayList9"/>
-<void class="Graph.Node" id="Field10" method="getField">
- <string>edges</string>
- <void id="ArrayList10" method="get">
+ <void id="ArrayList15" method="get">
   <object idref="Node6"/>
   <void method="add">
    <object class="Graph.Edge" id="Edge40">
@@ -1040,82 +1444,92 @@
    </object>
   </void>
   <void method="add">
-   <object idref="Edge18"/>
+   <object idref="Edge36"/>
   </void>
  </void>
 </void>
-<void idref="ArrayList10"/>
-<void class="Graph.Edge" method="getField">
- <string>end</string>
- <void method="set">
-  <object class="Graph.Edge" id="Edge41">
-   <void class="Graph.Edge" method="getField">
-    <string>cost</string>
-    <void method="set">
-     <object idref="Edge41"/>
-     <int>10</int>
-    </void>
-   </void>
-  </object>
-  <object idref="Node9"/>
- </void>
-</void>
-<void class="Graph.Edge" method="getField">
- <string>end</string>
- <void method="set">
-  <object class="Graph.Edge" id="Edge42">
-   <void class="Graph.Edge" method="getField">
-    <string>cost</string>
-    <void method="set">
-     <object idref="Edge42"/>
-     <int>10</int>
-    </void>
-   </void>
-  </object>
-  <object idref="Node21"/>
- </void>
-</void>
-<void class="Graph.Node" id="Field11" method="getField">
+<void idref="ArrayList15"/>
+<void class="Graph.Node" id="Field16" method="getField">
  <string>edges</string>
- <void id="ArrayList11" method="get">
-  <object idref="Node9"/>
+ <void id="ArrayList16" method="get">
+  <object idref="Node11"/>
   <void method="add">
-   <object class="Graph.Edge" id="Edge43">
+   <object class="Graph.Edge" id="Edge41">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
-      <object idref="Edge43"/>
-      <object idref="Node4"/>
+      <object idref="Edge41"/>
+      <object idref="Node12"/>
      </void>
     </void>
     <void class="Graph.Edge" method="getField">
      <string>cost</string>
      <void method="set">
-      <object idref="Edge43"/>
+      <object idref="Edge41"/>
       <int>10</int>
      </void>
     </void>
    </object>
   </void>
+ </void>
+</void>
+<void idref="ArrayList16"/>
+<void class="Graph.Node" id="Field17" method="getField">
+ <string>edges</string>
+ <void id="ArrayList17" method="get">
+  <object idref="Node17"/>
+  <void method="add">
+   <object idref="Edge5"/>
+  </void>
+  <void method="add">
+   <object class="Graph.Edge" id="Edge42">
+    <void class="Graph.Edge" method="getField">
+     <string>end</string>
+     <void method="set">
+      <object idref="Edge42"/>
+      <object idref="Node21"/>
+     </void>
+    </void>
+    <void class="Graph.Edge" method="getField">
+     <string>cost</string>
+     <void method="set">
+      <object idref="Edge42"/>
+      <int>10</int>
+     </void>
+    </void>
+   </object>
+  </void>
+ </void>
+</void>
+<void idref="ArrayList17"/>
+<void class="Graph.Node" id="Field18" method="getField">
+ <string>edges</string>
+ <void id="ArrayList18" method="get">
+  <object idref="Node8"/>
   <void method="add">
    <object idref="Edge17"/>
   </void>
- </void>
-</void>
-<void idref="ArrayList11"/>
-<void class="Graph.Node" id="Field12" method="getField">
- <string>edges</string>
- <void id="ArrayList12" method="get">
-  <object idref="Node1"/>
   <void method="add">
-   <object idref="Edge33"/>
-  </void>
-  <void method="add">
-   <object idref="Edge21"/>
+   <object idref="Edge0"/>
   </void>
  </void>
 </void>
-<void idref="ArrayList12"/>
+<void idref="ArrayList18"/>
+<void class="Graph.Edge" method="getField">
+ <string>end</string>
+ <void method="set">
+  <object class="Graph.Edge" id="Edge43">
+   <void class="Graph.Edge" method="getField">
+    <string>cost</string>
+    <void method="set">
+     <object idref="Edge43"/>
+     <int>30</int>
+    </void>
+   </void>
+  </object>
+  <object idref="Node23"/>
+ </void>
+</void>
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
@@ -1124,26 +1538,13 @@
     <string>cost</string>
     <void method="set">
      <object idref="Edge44"/>
-     <int>20</int>
+     <int>10</int>
     </void>
    </void>
   </object>
-  <object idref="Node20"/>
+  <object idref="Node0"/>
  </void>
 </void>
-<void class="Graph.Node" id="Field13" method="getField">
- <string>edges</string>
- <void id="ArrayList13" method="get">
-  <object idref="Node18"/>
-  <void method="add">
-   <object idref="Edge32"/>
-  </void>
-  <void method="add">
-   <object idref="Edge5"/>
-  </void>
- </void>
-</void>
-<void idref="ArrayList13"/>
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
@@ -1152,39 +1553,39 @@
     <string>cost</string>
     <void method="set">
      <object idref="Edge45"/>
-     <int>10</int>
+     <int>20</int>
     </void>
    </void>
   </object>
-  <object idref="Node0"/>
+  <object idref="Node5"/>
  </void>
 </void>
-<void class="Graph.Node" id="Field14" method="getField">
+<void class="Graph.Node" id="Field19" method="getField">
  <string>edges</string>
- <void id="ArrayList14" method="get">
-  <object idref="Node23"/>
-  <void method="add">
-   <object idref="Edge28"/>
-  </void>
-  <void method="add">
-   <object idref="Edge11"/>
-  </void>
- </void>
-</void>
-<void idref="ArrayList14"/>
-<void class="Graph.Node" id="Field15" method="getField">
- <string>edges</string>
- <void id="ArrayList15" method="get">
+ <void id="ArrayList19" method="get">
   <object idref="Node20"/>
   <void method="add">
-   <object idref="Edge37"/>
+   <object idref="Edge45"/>
   </void>
   <void method="add">
-   <object idref="Edge31"/>
+   <object idref="Edge30"/>
   </void>
  </void>
 </void>
-<void idref="ArrayList15"/>
+<void idref="ArrayList19"/>
+<void class="Graph.Node" id="Field20" method="getField">
+ <string>edges</string>
+ <void id="ArrayList20" method="get">
+  <object idref="Node16"/>
+  <void method="add">
+   <object idref="Edge44"/>
+  </void>
+  <void method="add">
+   <object idref="Edge1"/>
+  </void>
+ </void>
+</void>
+<void idref="ArrayList20"/>
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
@@ -1197,74 +1598,38 @@
     </void>
    </void>
   </object>
-  <object idref="Node12"/>
+  <object idref="Node2"/>
  </void>
 </void>
-<void class="Graph.Node" id="Field16" method="getField">
+<void class="Graph.Node" id="Field21" method="getField">
  <string>edges</string>
- <void id="ArrayList16" method="get">
-  <object idref="Node0"/>
+ <void id="ArrayList21" method="get">
+  <object idref="Node19"/>
   <void method="add">
-   <object idref="Edge20"/>
+   <object idref="Edge13"/>
   </void>
   <void method="add">
-   <object idref="Edge29"/>
-  </void>
- </void>
-</void>
-<void idref="ArrayList16"/>
-<void class="Graph.Node" id="Field17" method="getField">
- <string>edges</string>
- <void id="ArrayList17" method="get">
-  <object idref="Node14"/>
-  <void method="add">
-   <object idref="Edge1"/>
+   <object idref="Edge43"/>
   </void>
   <void method="add">
-   <object idref="Edge45"/>
+   <object idref="Edge8"/>
   </void>
  </void>
 </void>
-<void idref="ArrayList17"/>
-<void class="Graph.Node" id="Field18" method="getField">
+<void idref="ArrayList21"/>
+<void class="Graph.Node" id="Field22" method="getField">
  <string>edges</string>
- <void id="ArrayList18" method="get">
-  <object idref="Node8"/>
-  <void method="add">
-   <object idref="Edge23"/>
-  </void>
-  <void method="add">
-   <object idref="Edge30"/>
-  </void>
- </void>
-</void>
-<void idref="ArrayList18"/>
-<void class="Graph.Node" id="Field19" method="getField">
- <string>edges</string>
- <void id="ArrayList19" method="get">
+ <void id="ArrayList22" method="get">
   <object idref="Node4"/>
   <void method="add">
-   <object idref="Edge19"/>
+   <object idref="Edge46"/>
   </void>
   <void method="add">
-   <object idref="Edge41"/>
+   <object idref="Edge35"/>
   </void>
  </void>
 </void>
-<void idref="ArrayList19"/>
-<void class="Graph.Node" id="Field20" method="getField">
- <string>edges</string>
- <void id="ArrayList20" method="get">
-  <object idref="Node17"/>
-  <void method="add">
-   <object idref="Edge36"/>
-  </void>
-  <void method="add">
-   <object idref="Edge42"/>
-  </void>
- </void>
-</void>
-<void idref="ArrayList20"/>
+<void idref="ArrayList22"/>
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
@@ -1273,51 +1638,22 @@
     <string>cost</string>
     <void method="set">
      <object idref="Edge47"/>
-     <int>30</int>
+     <int>20</int>
     </void>
    </void>
   </object>
-  <object idref="Node23"/>
+  <object idref="Node20"/>
  </void>
 </void>
-<void class="Graph.Node" id="Field21" method="getField">
+<void class="Graph.Node" id="Field23" method="getField">
  <string>edges</string>
- <void id="ArrayList21" method="get">
+ <void id="ArrayList23" method="get">
   <object idref="Node22"/>
-  <void method="add">
-   <object idref="Edge44"/>
-  </void>
-  <void method="add">
-   <object idref="Edge22"/>
-  </void>
- </void>
-</void>
-<void idref="ArrayList21"/>
-<void class="Graph.Node" id="Field22" method="getField">
- <string>edges</string>
- <void id="ArrayList22" method="get">
-  <object idref="Node19"/>
-  <void method="add">
-   <object idref="Edge0"/>
-  </void>
   <void method="add">
    <object idref="Edge47"/>
   </void>
   <void method="add">
-   <object idref="Edge35"/>
-  </void>
- </void>
-</void>
-<void idref="ArrayList22"/>
-<void class="Graph.Node" id="Field23" method="getField">
- <string>edges</string>
- <void id="ArrayList23" method="get">
-  <object idref="Node15"/>
-  <void method="add">
-   <object idref="Edge34"/>
-  </void>
-  <void method="add">
-   <object idref="Edge46"/>
+   <object idref="Edge29"/>
   </void>
  </void>
 </void>
