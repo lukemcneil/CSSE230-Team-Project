@@ -3,6 +3,9 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import buttonListeners.FindPathListener;
+import buttonListeners.FindRoomListener;
+
 public class ButtonPanel extends JPanel {
 	
 	private JButton findPath, findRoom, getInfo;
@@ -23,5 +26,9 @@ public class ButtonPanel extends JPanel {
 		this.add(roomNumber);
 		this.add(findRoom);
 		this.add(getInfo);
+		
+		findPath.addActionListener(new FindPathListener(startingRoom.getText(), destination.getText()));
+		findRoom.addActionListener(new FindRoomListener(roomNumber.getText()));
+		getInfo.addActionListener(new GetInfoListener(roomNumber.getText()));
 	}
 }
