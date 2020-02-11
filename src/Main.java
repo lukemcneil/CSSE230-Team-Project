@@ -1,18 +1,23 @@
-import java.awt.BorderLayout;
-import java.awt.Dimension;
-
-import javax.swing.BoxLayout;
-import javax.swing.JComponent;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
+import javax.swing.*;
+import java.awt.*;
+import java.beans.XMLDecoder;
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+import java.util.Hashtable;
 
 public class Main {
     public static void main(String[] args) {
-        GraphMaker gm = new GraphMaker();
+        Graph g = new Graph();
+        try {
+            g.nodes = read("XML-data/olin2.xml");
+        } catch (Exception e) {
+            System.out.println("could not read specified file");
+            return;
+        }
         JFrame frame = new JFrame();
         frame.setVisible(true);
         frame.setFocusable(true);
-        JComponent mainComponent = new MainComponent(gm.getGraph());
+        JComponent mainComponent = new MainComponent(g);
         JPanel buttonPanel = new ButtonPanel();
         JPanel stupidPanel = new JPanel();
         stupidPanel.add(buttonPanel, BorderLayout.NORTH);
@@ -22,6 +27,16 @@ public class Main {
         frame.setSize(800, 600);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.repaint();
+    }
+
+    public static Hashtable<String, Node> read(String filename) throws Exception {
+        XMLDecoder decoder =
+                new XMLDecoder(
+                        new BufferedInputStream(
+                                new FileInputStream(filename)));
+        Hashtable<String, Node> n = (Hashtable<String, Node>) decoder.readObject();
+        decoder.close();
+        return n;
     }
 }
 
