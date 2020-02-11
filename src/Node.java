@@ -74,7 +74,7 @@ public class Node {
                     }
                 } else {
                     costTable.put(curr.end, curr.cost + currCost);
-                    path.put(curr.end, this);
+                    path.put(curr.end, this); 
                 }
 
             }
