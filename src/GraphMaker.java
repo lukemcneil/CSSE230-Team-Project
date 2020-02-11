@@ -4,7 +4,6 @@ import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.util.ArrayList;
 import java.util.Hashtable;
 
 
@@ -19,10 +18,10 @@ public class GraphMaker {
         Node n3 = new Node("n3");
         Node n4 = new Node("n4");
 
-        addEdge(n1,n2,15);
-        addEdge(n1,n3,5);
-        addEdge(n2,n3,10);
-        addEdge(n3,n4,20);
+        addEdge(n1, n2, 15);
+        addEdge(n1, n3, 5);
+        addEdge(n2, n3, 10);
+        addEdge(n3, n4, 20);
 
         g.nodes.put("n1", n1);
         g.nodes.put("n2", n2);
@@ -30,17 +29,17 @@ public class GraphMaker {
         g.nodes.put("n4", n4);
         System.out.println(g + "\n\n");
 
-       // write(g.nodes, "XML-data/test.xml");
+        write(g.nodes, "XML-data/test.xml");
 
         Hashtable<String, Node> readNodes = read("XML-data/test.xml");
         Graph newGraph = new Graph();
         newGraph.nodes = readNodes;
         System.out.println(newGraph);
     }
-    
+
     private static void addEdge(Node node1, Node node2, int cost) {
-    	node1.addEdge(node2, cost);
-    	node2.addEdge(node1, cost);
+        node1.addEdge(node2, cost);
+        node2.addEdge(node1, cost);
     }
 
     private static void write(Hashtable<String, Node> nodes, String filename) throws Exception {
