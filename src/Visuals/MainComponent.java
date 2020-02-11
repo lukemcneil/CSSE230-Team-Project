@@ -1,6 +1,8 @@
 package Visuals;
 import java.awt.Graphics;
 import java.util.ArrayList;
+import java.util.Timer;
+import java.util.TimerTask;
 
 import javax.swing.JComponent;
 
@@ -11,9 +13,13 @@ import Graph.Node;
 public class MainComponent extends JComponent {
 
     private Graph graph;
-
+    
+    private Timer timer;
+    
     public MainComponent(Graph g) {
         this.graph = g;
+		this.timer = new Timer();
+		timer.schedule(new ComponentTimerLogic(), 10, 10);
         repaint();
     }
 
@@ -37,5 +43,13 @@ public class MainComponent extends JComponent {
         for(Node n : nodes) {
         	n.drawOn(g);
         }
+    }
+    
+    public class ComponentTimerLogic extends TimerTask {
+
+		@Override
+		public void run() {
+			repaint();
+		}
     }
 }

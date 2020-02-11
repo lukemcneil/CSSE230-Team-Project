@@ -1,6 +1,7 @@
 package Listeners;
 
 
+import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -9,15 +10,16 @@ import Graph.Graph;
 public class FindRoomListener implements ActionListener {
 
 	private Graph g;
-	private String room;
+	private TextField field;
 	
-	public FindRoomListener(Graph g, String room) {
+	public FindRoomListener(Graph g, TextField field) {
 		this.g = g;
-		this.room = room;
+		this.field = field;
 	}
 	
 	@Override
 	public void actionPerformed(ActionEvent e) {
+		String room = field.getText();
 		System.out.println(room);
 		if(g.getNodes().get(room) == null) {
 			return;
