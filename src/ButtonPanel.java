@@ -5,6 +5,7 @@ import javax.swing.JTextField;
 
 import buttonListeners.FindPathListener;
 import buttonListeners.FindRoomListener;
+import buttonListeners.GetInfoListener;
 
 public class ButtonPanel extends JPanel {
 	
