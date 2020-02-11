@@ -141,4 +141,15 @@ public class GraphMaker {
         decoder.close();
         return n;
     }
+    
+    private static Graph drawOlin2() {
+    	Graph Olin2 = new Graph();
+    	String[] names = {"TopStairsO69","O269","O267","TopStairsOCommons","O259","O257","O225Corner","O222","O227","O229","O226","O231","O233","O201","O203","O202","O204","O203-1","O205","O206","O207Corner","TopStairsO214"};
+    	for(String n : names) {
+    		Olin2.addNode(n);
+    	}
+    	
+    	
+    	return Olin2;
+    }
 }

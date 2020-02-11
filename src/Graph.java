@@ -14,4 +14,8 @@ public class Graph {
     public Hashtable<String, Node> getNodes() {
         return nodes;
     }
+    
+    public void addNode(String name) {
+    	nodes.put(name, new Node(name));
+    }
 }
