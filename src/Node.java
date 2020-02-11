@@ -2,9 +2,12 @@ import java.util.ArrayList;
 import java.util.Hashtable;
 
 public class Node {
+	
 	public String name;
 	public ArrayList<Edge> edges;
 	public Hashtable<Node,Node> pathFinder;
+	
+	private int visualX, visualY;
 
 	public Node() {
 		this.edges= new ArrayList<Edge>();
