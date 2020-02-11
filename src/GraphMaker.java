@@ -14,35 +14,33 @@ public class GraphMaker {
 
         Graph g = new Graph();
 
-        Node n1 = new Node("node1");
-        Node n2 = new Node("node2");
-        Node n3 = new Node("node3");
+        Node n1 = new Node("n1");
+        Node n2 = new Node("n2");
+        Node n3 = new Node("n3");
+        Node n4 = new Node("n4");
 
-        ArrayList<Edge> n1edges = new ArrayList<Edge>();
-        n1edges.add(new Edge(n2, 15));
-        n1edges.add(new Edge(n3, 10));
-        n1.setEdges(n1edges);
-
-        ArrayList<Edge> n2edges = new ArrayList<Edge>();
-        n2edges.add(new Edge(n1, 25));
-        n2.setEdges(n2edges);
-
-        ArrayList<Edge> n3edges = new ArrayList<Edge>();
-        n3edges.add(new Edge(n1, 5));
-        n3edges.add(new Edge(n2, 7));
-        n3.setEdges(n3edges);
+        addEdge(n1,n2,15);
+        addEdge(n1,n3,5);
+        addEdge(n2,n3,10);
+        addEdge(n3,n4,20);
 
         g.nodes.put("n1", n1);
         g.nodes.put("n2", n2);
         g.nodes.put("n3", n3);
+        g.nodes.put("n4", n4);
         System.out.println(g + "\n\n");
 
-    //    write(g.nodes, "XML-data/test.xml");
+       // write(g.nodes, "XML-data/test.xml");
 
         Hashtable<String, Node> readNodes = read("XML-data/test.xml");
         Graph newGraph = new Graph();
         newGraph.nodes = readNodes;
         System.out.println(newGraph);
+    }
+    
+    private static void addEdge(Node node1, Node node2, int cost) {
+    	node1.addEdge(node2, cost);
+    	node2.addEdge(node1, cost);
     }
 
     private static void write(Hashtable<String, Node> nodes, String filename) throws Exception {

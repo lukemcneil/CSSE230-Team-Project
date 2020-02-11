@@ -1,6 +1,7 @@
 import java.beans.XMLDecoder;
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
+import java.util.ArrayList;
 import java.util.Hashtable;
 
 public class AppMain {
@@ -11,8 +12,11 @@ public class AppMain {
 		}catch(Exception e) {
 			
 		}
-		System.out.println(test);
-		System.out.println(test.nodes.get("n3").dijkstra().values());
+		System.out.println();
+		ArrayList<Node> temp = test.nodes.get("n1").pathTo(test.nodes.get("n4"));
+		for(Node c : temp) {
+			System.out.println(c);
+		}
 	}
 	
 	
