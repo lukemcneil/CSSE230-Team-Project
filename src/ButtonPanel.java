@@ -13,7 +13,10 @@ public class ButtonPanel extends JPanel {
 	private JTextField startingRoom, destination, roomNumber;
 	private JLabel information;
 	
-	public ButtonPanel() {
+	private Graph g;
+	
+	public ButtonPanel(Graph g) {
+		this.g = g;
 		findPath = new JButton("Find Path");
 		findRoom = new JButton("Find Room");
 		getInfo = new JButton("Get Info");
