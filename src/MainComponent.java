@@ -14,5 +14,5 @@ public class MainComponent extends JComponent {
         for (String i : graph.getNodes().keySet()) {
 //			g.drawOval(graph.getNodes().get(i).getVisualX(), graph.getNodes().get(i).getVisualY(), 30, 30);
         }
-    }
+    } 
 }
