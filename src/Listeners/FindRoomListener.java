@@ -24,6 +24,9 @@ public class FindRoomListener implements ActionListener {
 		if(g.getNodes().get(room) == null) {
 			return;
 		}
+		for(String i : g.getNodes().keySet()) {
+			g.getNodes().get(i).setHighlighted(false);
+		}
 		g.getNodes().get(room).setHighlighted(true);
 		System.out.println("Found");
 	}
