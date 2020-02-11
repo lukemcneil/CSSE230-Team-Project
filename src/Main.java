@@ -11,7 +11,6 @@ public class Main {
         frame.add(mainComponent);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.repaint();
-		
     }
 
     public static void main(String[] args) {
