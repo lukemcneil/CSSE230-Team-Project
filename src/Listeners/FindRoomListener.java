@@ -18,7 +18,12 @@ public class FindRoomListener implements ActionListener {
 	
 	@Override
 	public void actionPerformed(ActionEvent e) {
+		System.out.println(room);
+		if(g.getNodes().get(room) == null) {
+			return;
+		}
 		g.getNodes().get(room).setHighlighted(true);
+		System.out.println("Found");
 	}
 
 }

@@ -24,7 +24,6 @@ public class MainComponent extends JComponent {
         	nodes.add(graph.getNodes().get(i));
         }
         for (Node n : nodes) {
-        	n.highlighted=true;
             n.drawOn(g);
             for (Edge e : n.getEdges()) {
                 Node n1 = e.end;
