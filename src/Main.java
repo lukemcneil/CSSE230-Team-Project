@@ -1,7 +1,7 @@
 import javax.swing.*;
 
 public class Main {
-    public Main() {
+    public static void main(String[] args) {
         GraphMaker gm = new GraphMaker();
         JFrame frame = new JFrame();
         frame.setSize(800, 600);
@@ -11,9 +11,5 @@ public class Main {
         frame.add(mainComponent);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.repaint();
-    }
-
-    public static void main(String[] args) {
-        new Main();
     }
 }
