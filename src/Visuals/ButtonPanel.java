@@ -1,11 +1,13 @@
+package Visuals;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import buttonListeners.FindPathListener;
-import buttonListeners.FindRoomListener;
-import buttonListeners.GetInfoListener;
+import Graph.Graph;
+import Listeners.FindPathListener;
+import Listeners.FindRoomListener;
+import Listeners.GetInfoListener;
 
 public class ButtonPanel extends JPanel {
 	
@@ -31,7 +33,7 @@ public class ButtonPanel extends JPanel {
 		this.add(findRoom);
 		this.add(getInfo);
 		
-		findPath.addActionListener(new FindPathListener(startingRoom.getText(), destination.getText()));
+		findPath.addActionListener(new FindPathListener(g, startingRoom.getText(), destination.getText()));
 		findRoom.addActionListener(new FindRoomListener(roomNumber.getText()));
 		getInfo.addActionListener(new GetInfoListener(roomNumber.getText()));
 	}

@@ -1,10 +1,13 @@
-package buttonListeners;
+package Listeners;
+
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class FindPathListener implements ActionListener {
 
-	public FindPathListener(String room1, String room2) {
+	private Graph g;
+	
+	public FindPathListener(Graph g, String room1, String room2) {
 		
 	}
 	

@@ -1,6 +1,12 @@
-import javax.swing.*;
-import java.awt.*;
+package Visuals;
+import java.awt.Graphics;
 import java.util.ArrayList;
+
+import javax.swing.JComponent;
+
+import Graph.Edge;
+import Graph.Graph;
+import Graph.Node;
 
 public class MainComponent extends JComponent {
 

@@ -1,9 +1,17 @@
-import javax.swing.*;
-import java.awt.*;
+package Visuals;
+import java.awt.BorderLayout;
 import java.beans.XMLDecoder;
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.util.Hashtable;
+
+import javax.swing.BoxLayout;
+import javax.swing.JComponent;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+import Graph.Graph;
+import Graph.Node;
 
 public class Main {
     public static void main(String[] args) {

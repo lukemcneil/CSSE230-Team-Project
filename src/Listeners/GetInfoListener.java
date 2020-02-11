@@ -1,11 +1,12 @@
-package buttonListeners;
+package Listeners;
+
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class FindRoomListener implements ActionListener {
+public class GetInfoListener implements ActionListener {
 
-	public FindRoomListener(String room) {
+	public GetInfoListener(String room) {
 		
 	}
 	
