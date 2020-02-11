@@ -12,21 +12,25 @@ public class MainComponent extends JComponent {
     }
 
     public void paintComponent(Graphics g) {
-        ArrayList<NodeComponent> nodes = new ArrayList<NodeComponent>();
+        ArrayList<Node> nodes = new ArrayList<Node>();
         ArrayList<EdgeComponent> owTheEdge = new ArrayList<EdgeComponent>();
         for (String i : graph.getNodes().keySet()) {
-        	graph.getNodes().get(i).drawOn(g);
+        	nodes.add(graph.getNodes().get(i));
         }
-//        for (NodeComponent n : nodes) {
-//            n.drawOn(g);
-//            for (Edge e : n.target.getEdges()) {
-//                Node n1 = e.end;
-//                Node n2 = n.target;
-//                owTheEdge.add(new EdgeComponent(e.cost, n1.x, n2.x, n1.y, n2.y));
-//            }
-//        }
+        for (Node n : nodes) {
+        	n.highlighted=true;
+            n.drawOn(g);
+            for (Edge e : n.getEdges()) {
+                Node n1 = e.end;
+                Node n2 = n;
+                owTheEdge.add(new EdgeComponent(e.cost, n1.x, n2.x, n1.y, n2.y));
+            }
+        }
         for (EdgeComponent e : owTheEdge) {
             e.drawOn(g);
+        }
+        for(Node n : nodes) {
+        	n.drawOn(g);
         }
     }
 }
