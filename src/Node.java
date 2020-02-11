@@ -1,3 +1,6 @@
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.util.ArrayList;
 import java.util.Hashtable;
 
@@ -47,6 +50,13 @@ public class Node {
         this.name = name;
     }
 
+    public void drawOn(Graphics g) {
+        Graphics2D g2 = (Graphics2D) g;
+        g.setColor(Color.black);
+        g2.drawOval(x, y, 10, 10);
+        g2.drawString(name, x, y + 25);
+    }
+    
     public ArrayList<Node> pathTo(Node destination) {
         if (pathFinder.isEmpty()) {
             this.dijkstra();
