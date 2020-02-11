@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<java version="11.0.6" class="java.beans.XMLDecoder">
+<java version="1.8.0_241" class="java.beans.XMLDecoder">
  <object class="java.util.Hashtable">
   <void method="put">
    <string>n3</string>
@@ -67,7 +67,7 @@
                           <string>cost</string>
                           <void method="set">
                            <object idref="Edge2"/>
-                           <int>25</int>
+                           <int>25000</int>
                           </void>
                          </void>
                         </object>

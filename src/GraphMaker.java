@@ -37,7 +37,7 @@ public class GraphMaker {
         g.nodes.put("n3", n3);
         System.out.println(g + "\n\n");
 
-        write(g.nodes, "XML-data/test.xml");
+    //    write(g.nodes, "XML-data/test.xml");
 
         Hashtable<String, Node> readNodes = read("XML-data/test.xml");
         Graph newGraph = new Graph();
