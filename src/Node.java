@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.Hashtable;
 
 public class Node {
-<<<<<<< HEAD
     public String name;
     public ArrayList<Edge> edges;
     public Hashtable<Node, Node> pathFinder;
@@ -108,5 +107,4 @@ public class Node {
         result += "\n";
         return result;
     }
-
 }
