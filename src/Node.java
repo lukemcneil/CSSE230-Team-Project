@@ -4,22 +4,25 @@ import java.awt.Graphics2D;
 import java.util.ArrayList;
 import java.util.Hashtable;
 
-public class Node {
+public class Node{
     public String name;
     public ArrayList<Edge> edges;
     public Hashtable<Node, Node> pathFinder;
     public int x;
     public int y;
+    public boolean highlighted;
 
     public Node() {
         this.edges = new ArrayList<Edge>();
         pathFinder = new Hashtable<Node, Node>();
+        highlighted=false;
     }
 
     public Node(String name) {
         this.name = name;
         this.edges = new ArrayList<Edge>();
         pathFinder = new Hashtable<Node, Node>();
+        highlighted=false;
     }
     
     public Node(String name, int x, int y) {
@@ -28,6 +31,7 @@ public class Node {
     	pathFinder=new Hashtable<Node, Node>();
     	this.x=x;
     	this.y=y;
+    	highlighted=false;
     }
 
     public ArrayList<Edge> getEdges() {
@@ -52,8 +56,12 @@ public class Node {
 
     public void drawOn(Graphics g) {
         Graphics2D g2 = (Graphics2D) g;
-        g.setColor(Color.black);
-        g2.drawOval(x, y, 10, 10);
+        if(highlighted) {
+        	g2.setColor(Color.red);
+        }else {
+        	g2.setColor(Color.black);
+        }
+        g2.fillOval(x, y, 10, 10);
         g2.drawString(name, x, y + 25);
     }
     
