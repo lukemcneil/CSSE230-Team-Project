@@ -18,4 +18,9 @@ public class Graph {
     public void addNode(String name) {
     	nodes.put(name, new Node(name));
     }
+    
+    public void addEdge(String node1, String node2, int cost) {
+        nodes.get(node1).addEdge(nodes.get(node2), cost);
+        nodes.get(node2).addEdge(nodes.get(node1), cost);
+    }
 }
