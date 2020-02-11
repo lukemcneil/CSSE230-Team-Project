@@ -8,15 +8,44 @@ import java.util.Hashtable;
 
 
 public class GraphMaker {
+	
+	private Graph g;
+	
+	public GraphMaker() {
+		g = new Graph();
 
+        Node n1 = new Node("n1", 10, 10);
+        Node n2 = new Node("n2", 90, 10);
+        Node n3 = new Node("n3", 170, 10);
+        Node n4 = new Node("n4", 250, 10);
+
+        addEdge(n1, n2, 15);
+        addEdge(n1, n3, 5);
+        addEdge(n2, n3, 10);
+        addEdge(n3, n4, 20);
+
+        g.nodes.put("n1", n1);
+        g.nodes.put("n2", n2);
+        g.nodes.put("n3", n3);
+        g.nodes.put("n4", n4);
+//        System.out.println(g + "\n\n");
+
+//        write(g.nodes, "XML-data/test.xml");
+
+//        Hashtable<String, Node> readNodes = read("XML-data/test.xml");
+//        Graph newGraph = new Graph();
+//        newGraph.nodes = readNodes;
+//        System.out.println(newGraph);
+	}
+	
     public static void main(String[] args) throws Exception {
-
+    	
         Graph g = new Graph();
 
-        Node n1 = new Node("n1");
-        Node n2 = new Node("n2");
-        Node n3 = new Node("n3");
-        Node n4 = new Node("n4");
+        Node n1 = new Node("n1", 10, 10);
+        Node n2 = new Node("n2", 90, 10);
+        Node n3 = new Node("n3", 170, 10);
+        Node n4 = new Node("n4", 250, 10);
 
         addEdge(n1, n2, 15);
         addEdge(n1, n3, 5);
@@ -59,5 +88,9 @@ public class GraphMaker {
         Hashtable<String, Node> n = (Hashtable<String, Node>) decoder.readObject();
         decoder.close();
         return n;
+    }
+    
+    public Graph getGraph() {
+    	return g;
     }
 }

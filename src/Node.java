@@ -9,15 +9,35 @@ public class Node {
 	
 	private int visualX, visualY;
 
-	public Node() {
+	public Node(int visualX, int visualY) {
 		this.edges= new ArrayList<Edge>();
 		pathFinder = new Hashtable<Node,Node>();
+		this.visualX = visualX;
+		this.visualY = visualY;
 	}
 
-	public Node(String name) {
+	public Node(String name, int visualX, int visualY) {
 		this.name = name;
 		this.edges = new ArrayList<Edge>();
 		pathFinder = new Hashtable<Node,Node>();
+		this.visualX = visualX;
+		this.visualY = visualY;
+	}
+
+	public int getVisualX() {
+		return visualX;
+	}
+
+	public void setVisualX(int visualX) {
+		this.visualX = visualX;
+	}
+
+	public int getVisualY() {
+		return visualY;
+	}
+
+	public void setVisualY(int visualY) {
+		this.visualY = visualY;
 	}
 
 	public ArrayList<Edge> getEdges() {
