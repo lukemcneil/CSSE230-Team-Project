@@ -14,9 +14,11 @@ public class Main {
         frame.setFocusable(true);
         JComponent mainComponent = new MainComponent(gm.getGraph());
         JPanel buttonPanel = new ButtonPanel();
+        JPanel stupidPanel = new JPanel();
+        stupidPanel.add(buttonPanel, BorderLayout.NORTH);
         buttonPanel.setLayout(new BoxLayout(buttonPanel, BoxLayout.Y_AXIS));
         frame.add(mainComponent);
-        frame.add(buttonPanel, BorderLayout.EAST);
+        frame.add(stupidPanel, BorderLayout.EAST);
         frame.setSize(800, 600);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.repaint();
