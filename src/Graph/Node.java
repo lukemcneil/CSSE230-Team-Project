@@ -13,7 +13,7 @@ public class Node{
     public int y;
     public boolean highlighted;
 
-    public Node() {
+	public Node() {
         this.edges = new ArrayList<Edge>();
         pathFinder = new Hashtable<Node, Node>();
         highlighted=false;
@@ -136,4 +136,12 @@ public class Node{
         result += "\n";
         return result;
     }
+
+    public boolean isHighlighted() {
+		return highlighted;
+	}
+
+	public void setHighlighted(boolean highlighted) {
+		this.highlighted = highlighted;
+	}
 }

@@ -34,7 +34,7 @@ public class ButtonPanel extends JPanel {
 		this.add(getInfo);
 		
 		findPath.addActionListener(new FindPathListener(g, startingRoom.getText(), destination.getText()));
-		findRoom.addActionListener(new FindRoomListener(roomNumber.getText()));
-		getInfo.addActionListener(new GetInfoListener(roomNumber.getText()));
+		findRoom.addActionListener(new FindRoomListener(g, roomNumber.getText()));
+		getInfo.addActionListener(new GetInfoListener(g, roomNumber.getText()));
 	}
 }

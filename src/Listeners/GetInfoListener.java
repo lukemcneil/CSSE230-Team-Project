@@ -4,9 +4,11 @@ package Listeners;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import Graph.Graph;
+
 public class GetInfoListener implements ActionListener {
 
-	public GetInfoListener(String room) {
+	public GetInfoListener(Graph g, String room) {
 		
 	}
 	

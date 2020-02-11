@@ -10,8 +10,7 @@ import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-import Graph.Graph;
-import Graph.Node;
+import Graph.*;
 
 public class Main {
     public static void main(String[] args) {

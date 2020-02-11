@@ -4,15 +4,21 @@ package Listeners;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import Graph.Graph;
+
 public class FindRoomListener implements ActionListener {
 
-	public FindRoomListener(String room) {
-		
+	private Graph g;
+	private String room;
+	
+	public FindRoomListener(Graph g, String room) {
+		this.g = g;
+		this.room = room;
 	}
 	
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		
+		g.getNodes().get(room).setHighlighted(true);
 	}
 
 }
