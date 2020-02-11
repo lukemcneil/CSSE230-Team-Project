@@ -16,12 +16,12 @@ public class ButtonPanel extends JPanel {
 		
 		startingRoom = new JTextField("Starting Room");
 		destination = new JTextField("Destination");
-		roomNumber = new JTextField("Room #");
-		this.add(findPath);
-		this.add(findRoom);
-		this.add(getInfo);
 		this.add(startingRoom);
 		this.add(destination);
+		roomNumber = new JTextField("Room #");
+		this.add(findPath);
 		this.add(roomNumber);
+		this.add(findRoom);
+		this.add(getInfo);
 	}
 }
