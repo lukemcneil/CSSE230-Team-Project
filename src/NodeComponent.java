@@ -8,10 +8,10 @@ public class NodeComponent extends Component{
 	public int x;
 	public int y;
 	
-	public NodeComponent(Node node, int x, int y) {
+	public NodeComponent(Node node) {
 		this.target=node;
-		this.x=x;
-		this.y=y;
+		this.x=target.x;
+		this.y=target.y;
 	}
 	
 	public void setX(int val) {

@@ -5,6 +5,8 @@ public class Node {
     public String name;
     public ArrayList<Edge> edges;
     public Hashtable<Node, Node> pathFinder;
+    public int x;
+    public int y;
 
     public Node() {
         this.edges = new ArrayList<Edge>();
@@ -15,6 +17,14 @@ public class Node {
         this.name = name;
         this.edges = new ArrayList<Edge>();
         pathFinder = new Hashtable<Node, Node>();
+    }
+    
+    public Node(String name, int x, int y) {
+    	this.name=name;
+    	this.edges=new ArrayList<Edge>();
+    	pathFinder=new Hashtable<Node, Node>();
+    	this.x=x;
+    	this.y=y;
     }
 
     public ArrayList<Edge> getEdges() {
