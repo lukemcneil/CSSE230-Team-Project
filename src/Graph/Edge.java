@@ -2,6 +2,7 @@ package Graph;
 public class Edge {
     public Node end;
     public int cost;
+    public boolean highlighted=false;
 
     public Edge() {
     }

@@ -34,11 +34,16 @@ public class MainComponent extends JComponent {
             for (Edge e : n.getEdges()) {
                 Node n1 = e.end;
                 Node n2 = n;
-                owTheEdge.add(new EdgeComponent(e.cost, n1.x, n2.x, n1.y, n2.y));
+                owTheEdge.add(new EdgeComponent(e.cost, n1.x, n2.x, n1.y, n2.y, e.highlighted));
             }
         }
         for (EdgeComponent e : owTheEdge) {
-            e.drawOn(g);
+        	if(!e.highlighted)
+        		e.drawOn(g);
+        }
+        for(EdgeComponent e : owTheEdge) {
+        	if(e.highlighted)
+        		e.drawOn(g);
         }
         for(Node n : nodes) {
         	n.drawOn(g);

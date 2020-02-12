@@ -5,6 +5,7 @@ import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import Graph.Edge;
 import Graph.Graph;
 
 public class FindRoomListener implements ActionListener {
@@ -26,6 +27,9 @@ public class FindRoomListener implements ActionListener {
 		}
 		for(String i : g.getNodes().keySet()) {
 			g.getNodes().get(i).setHighlighted(false);
+			for(Edge c : g.nodes.get(i).edges) {
+				c.highlighted=false;
+			}
 		}
 		g.getNodes().get(room).setHighlighted(true);
 		System.out.println("Found");

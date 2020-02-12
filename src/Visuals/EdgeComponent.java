@@ -11,13 +11,13 @@ public class EdgeComponent {
 	public int y2;
 	public boolean highlighted;
 	
-	public EdgeComponent(int cost, int x1, int x2, int y1, int y2) {
+	public EdgeComponent(int cost, int x1, int x2, int y1, int y2, boolean highlighted) {
 		this.cost=cost;
 		this.x1=x1;
 		this.x2=x2;
 		this.y1=y1;
 		this.y2=y2;
-		this.highlighted=false;
+		this.highlighted=highlighted;
 	}
 	
 	public void drawOn(Graphics g) {
