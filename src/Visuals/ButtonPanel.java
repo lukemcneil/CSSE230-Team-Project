@@ -21,13 +21,13 @@ public class ButtonPanel extends JPanel {
 		findRoom = new JButton("Find Room");
 		getInfo = new JButton("Get Info");
 
-		startingRoom = new TextField("Starting Room");
-		destination = new TextField("Destination");
+		startingRoom = new TextField("");
+		destination = new TextField("");
 		this.add(new JLabel("start"));
 		this.add(startingRoom);
 		this.add(new JLabel("destination"));
 		this.add(destination);
-		roomNumber = new TextField("Room #");
+		roomNumber = new TextField("");
 		this.add(findPath);
 		this.add(roomNumber);
 		this.add(findRoom);
