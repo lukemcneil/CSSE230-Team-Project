@@ -32,7 +32,10 @@ public class EdgeComponent {
 			g2.setColor(Color.black);
 		}
 		g2.drawLine(x1+5, y1+5, x2+5, y2+5);
-		//g2.drawString(String.valueOf(cost), (x1+x2)/2, (y1+y2)/2+10);
 		g2.setStroke(normal);
+		g2.setColor(Color.BLACK);
+		if(highlighted) {
+			g2.drawString(String.valueOf(cost), (x1+x2)/2, (y1+y2)/2+10);
+		}
 	}
 }
