@@ -35,6 +35,7 @@ public class MainComponent extends JComponent {
                 Node n1 = e.end;
                 Node n2 = n;
                 owTheEdge.add(new EdgeComponent(e.cost, n1.x, n2.x, n1.y, n2.y, e.highlighted));
+                n.drawOn(g);
             }
         }
         for (EdgeComponent e : owTheEdge) {
@@ -44,9 +45,6 @@ public class MainComponent extends JComponent {
         for(EdgeComponent e : owTheEdge) {
         	if(e.highlighted)
         		e.drawOn(g);
-        }
-        for(Node n : nodes) {
-        	n.drawOn(g);
         }
     }
     

@@ -1,7 +1,9 @@
 package Visuals;
+import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Stroke;
 
 public class EdgeComponent {
 	public int cost;
@@ -22,12 +24,15 @@ public class EdgeComponent {
 	
 	public void drawOn(Graphics g) {
 		Graphics2D g2=(Graphics2D) g;
+		Stroke normal=g2.getStroke();
 		if(highlighted) {
+			g2.setStroke(new BasicStroke(3));
 			g2.setColor(Color.red);
 		}else {
 			g2.setColor(Color.black);
 		}
 		g2.drawLine(x1+5, y1+5, x2+5, y2+5);
 		//g2.drawString(String.valueOf(cost), (x1+x2)/2, (y1+y2)/2+10);
+		g2.setStroke(normal);
 	}
 }
