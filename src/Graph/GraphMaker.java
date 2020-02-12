@@ -36,6 +36,7 @@ public class GraphMaker {
         for (int i =0;i<names.length;i++) {
             Olin2.addNode(names[i],points[i]);
         }
+        
         Olin2.nodes.get("O269").setImage("RoomInfo/O269Image.png");
         Olin2.addEdge("TopStairsO269", "O269", 10);
         Olin2.addEdge("O269", "O267", 10);
