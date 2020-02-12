@@ -1,22 +1,18 @@
 package Graph;
 
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Point;
+import javax.imageio.ImageIO;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Hashtable;
 
-import javax.imageio.ImageIO;
-
 public class Node {
 	public String name;
 	public ArrayList<Edge> edges;
 	public Hashtable<Node, Node> pathFinder;
-	public int x,y,cost;
-	public boolean highlighted,showName;
+	public int x, y, cost;
+	public boolean highlighted, showName;
 	private BufferedImage schedulePicture;
 
 	public Node() {
@@ -78,18 +74,18 @@ public class Node {
 		this.name = name;
 	}
 
-	public void drawOn(Graphics g) {
+	public void drawOn(Graphics g, int xShift, int yShift, int m) {
 		Graphics2D g2 = (Graphics2D) g;
 		if (highlighted) {
 			g2.setColor(Color.red);
 		} else {
 			g2.setColor(Color.black);
 		}
-		g2.fillOval(x, y, 10, 10);
+		g2.fillOval(x * m - xShift, y * m - yShift, 10, 10);
 		if (showName) {
-			g2.drawString(name, x, y + 25);
+			g2.drawString(name, x * m - xShift, y * m - yShift + 25);
 		}
-		if(cost != 0) {
+		if (cost != 0) {
 			g2.drawString("Cost: " + cost, 3, 12);
 		}
 	}
@@ -129,7 +125,7 @@ public class Node {
 			for (Edge e : temp.edges) {
 				if (e.end == end) {
 					edgedPath.add(e);
-					cost+=e.cost;
+					cost += e.cost;
 				}
 			}
 			end = temp;
@@ -148,7 +144,7 @@ public class Node {
 	}
 
 	private void dijkstraHelper(Hashtable<Node, Integer> costTable, ArrayList<Node> completed,
-			Hashtable<Node, Node> path) {
+	                            Hashtable<Node, Node> path) {
 		completed.add(this);
 		for (Edge curr : this.edges) {
 			if (!completed.contains(curr.end)) {
