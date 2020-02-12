@@ -30,14 +30,17 @@ public class GraphMaker {
 
     private static Graph drawOlin2() {
         Graph Olin2 = new Graph();
-        int m = 1;
+        int m =  4;
+        int x = 240;
+        int y = 370;
         String[] names = {"TopStairsO269", "O269", "O267", "TopStairsOCommons", "O259", "O257", "O225Corner", "O222", "O227", "O229", "O226", "O231", "O233", "OTopHadCommons", "TopStairsO238", "O201", "O203", "O202", "O204", "O203-1", "O205", "O206", "O207Corner", "TopStairsO214"};
-        Point[] points = {new Point(130*m,300*m),new Point(130*m,270*m),new Point(130*m,240*m),new Point(140*m,220*m),new Point(170*m,210*m),new Point(210*m, 210*m),new Point(290,210*m),new Point(310,210),new Point(330,210),new Point(350,210),new Point(370,210),new Point(390,210),new Point(410,210),new Point(410,280),new Point(420,250),new Point(410,320),new Point(390,320),new Point(370,320),new Point(350,320),new Point(330,320),new Point(320,320),new Point(310,320),new Point(290,320),new Point(290,280) };
+        Point[] points = {new Point(65*m-x,150*m-y),new Point(65*m-x,135*m-y),new Point(65*m-x,120*m-y),new Point(70*m-x,110*m-y),new Point(85*m-x,105*m-y),new Point(105*m-x, 105*m-y),new Point(145*m-x,105*m-y),new Point(155*m-x,105*m-y),new Point(115*m-x,105*m-y),new Point(175*m-x,105*m-y),new Point(185*m-x,105*m-y),new Point(195*m-x,105*m-y),new Point(205*m-x,105*m-y),new Point(205*m-x,140*m-y),new Point(210*m-x,125*m-y),new Point(205*m-x,160*m-y),new Point(195*m-x,160*m-y),new Point(185*m-x,160*m-y),new Point(175*m-x,160*m-y),new Point(165*m-x,160*m-y),new Point(157*m-x,160*m-y),new Point(150*m-x,160*m-y),new Point(145*m-x,160*m-y),new Point(145*m-x,140*m-y) };
         for (int i =0;i<names.length;i++) {
             Olin2.addNode(names[i],points[i]);
         }
-        
         Olin2.nodes.get("O269").setImage("RoomInfo/O269Image.png");
+        Olin2.nodes.get("O225Corner").showName = false;
+        Olin2.nodes.get("O207Corner").showName = false;
         Olin2.addEdge("TopStairsO269", "O269", 10);
         Olin2.addEdge("O269", "O267", 10);
         Olin2.addEdge("O267", "TopStairsOCommons", 30);
