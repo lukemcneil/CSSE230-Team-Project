@@ -15,10 +15,8 @@ public class Node {
 	public String name;
 	public ArrayList<Edge> edges;
 	public Hashtable<Node, Node> pathFinder;
-	public int x;
-	public int y;
-	public boolean highlighted;
-	public boolean showName;
+	public int x,y,cost;
+	public boolean highlighted,showName;
 	private BufferedImage schedulePicture;
 
 	public Node() {
@@ -91,6 +89,9 @@ public class Node {
 		if (showName) {
 			g2.drawString(name, x, y + 25);
 		}
+		if(cost != 0) {
+			g2.drawString("Cost: " + cost, 3, 12);
+		}
 	}
 
 	public ArrayList<Node> pathTo(Node destination) {
@@ -128,6 +129,7 @@ public class Node {
 			for (Edge e : temp.edges) {
 				if (e.end == end) {
 					edgedPath.add(e);
+					cost+=e.cost;
 				}
 			}
 			end = temp;
