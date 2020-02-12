@@ -24,6 +24,7 @@ public class Node {
 		this.edges = new ArrayList<Edge>();
 		pathFinder = new Hashtable<Node, Node>();
 		highlighted = false;
+		schedulePicture = new BufferedImage(1000,240, BufferedImage.TYPE_INT_ARGB);
 	}
 
 	public Node(String name) {
@@ -31,7 +32,7 @@ public class Node {
 		pathFinder = new Hashtable<Node, Node>();
 		highlighted = false;
 		this.name = name;
-
+		schedulePicture = new BufferedImage(1000, 240, BufferedImage.TYPE_INT_ARGB);
 	}
 
 	public Node(String name, int x, int y) {
@@ -41,7 +42,7 @@ public class Node {
 		this.name = name;
 		this.x = x;
 		this.y = y;
-
+		schedulePicture = new BufferedImage(1000, 240, BufferedImage.TYPE_INT_ARGB);
 	}
 
 	public Node(String name, Point p) {
@@ -51,7 +52,7 @@ public class Node {
 		this.name = name;
 		this.x = p.x;
 		this.y = p.y;
-
+		schedulePicture = new BufferedImage(1000, 240, BufferedImage.TYPE_INT_ARGB);
 	}
 
 	public ArrayList<Edge> getEdges() {
@@ -202,6 +203,7 @@ public class Node {
 	}
 
 	public BufferedImage getImage() {
+		System.out.println("Picture:  "+ this.schedulePicture);
 		return this.schedulePicture;
 	}
 }
