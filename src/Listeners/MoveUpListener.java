@@ -16,7 +16,7 @@ public class MoveUpListener implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		g.moveUp();
+		g.moveUp(10);
 	}
 
 }

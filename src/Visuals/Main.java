@@ -2,6 +2,8 @@ package Visuals;
 
 import Graph.Graph;
 import Graph.Node;
+import Listeners.PanListener;
+import Listeners.ScrollListener;
 
 import javax.swing.*;
 import java.awt.*;
@@ -9,8 +11,6 @@ import java.beans.XMLDecoder;
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.util.Hashtable;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
 
 public class Main {
 	public static void main(String[] args) {
@@ -35,6 +35,9 @@ public class Main {
 		frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.repaint();
+		frame.addMouseWheelListener(new ScrollListener(g));
+		mainComponent.addMouseListener(new PanListener(g));
+		mainComponent.addMouseMotionListener(new PanListener(g));
 	}
 
 	public static Hashtable<String, Node> read(String filename) throws Exception {

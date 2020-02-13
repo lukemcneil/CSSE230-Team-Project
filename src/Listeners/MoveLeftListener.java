@@ -16,7 +16,7 @@ public class MoveLeftListener implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		g.moveLeft();
+		g.moveLeft(10);
 	}
 
 }

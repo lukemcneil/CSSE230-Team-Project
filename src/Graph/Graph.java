@@ -54,41 +54,41 @@ public class Graph {
 	}
 
 	public void zoomIn() {
-		int xtemp = (frame.getWidth() / 2 + x) / m;
-		int ytemp = (frame.getHeight() / 2 + y) / m;
-		int oldY = ytemp * m - y;
-		int oldX = xtemp * m - x;
+		double xtemp = (MouseInfo.getPointerInfo().getLocation().getX() + x) / m;
+		double ytemp = (MouseInfo.getPointerInfo().getLocation().getY() + y) / m;
+		double oldY = ytemp * m - y;
+		double oldX = xtemp * m - x;
 		m++;
-		y = ytemp * m - oldY;
-		x = xtemp * m - oldX;
+		y = (int) (ytemp * m - oldY);
+		x = (int) (xtemp * m - oldX);
 	}
 
 	public void zoomOut() {
 		if (m == 1) {
 			return;
 		}
-		int xtemp = (frame.getWidth() / 2 + x) / m;
-		int ytemp = (frame.getHeight() / 2 + y) / m;
-		int oldY = ytemp * m - y;
-		int oldX = xtemp * m - x;
+		double xtemp = (MouseInfo.getPointerInfo().getLocation().getX() + x) / m;
+		double ytemp = (MouseInfo.getPointerInfo().getLocation().getY() + y) / m;
+		double oldY = ytemp * m - y;
+		double oldX = xtemp * m - x;
 		m--;
-		y = ytemp * m - oldY;
-		x = xtemp * m - oldX;
+		y = (int) (ytemp * m - oldY);
+		x = (int) (xtemp * m - oldX);
 	}
 
-	public void moveLeft() {
-		x += 50;
+	public void moveLeft(int amount) {
+		x += amount;
 	}
 
-	public void moveRight() {
-		x -= 50;
+	public void moveRight(int amount) {
+		x -= amount;
 	}
 
-	public void moveUp() {
-		y += 50;
+	public void moveUp(int amount) {
+		y += amount;
 	}
 
-	public void moveDown() {
-		y -= 50;
+	public void moveDown(int amount) {
+		y -= amount;
 	}
 }
