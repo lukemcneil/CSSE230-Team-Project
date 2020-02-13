@@ -1,5 +1,6 @@
 package Graph;
 
+import javax.swing.*;
 import java.awt.*;
 import java.util.Hashtable;
 
@@ -7,10 +8,16 @@ public class Graph {
 	public Hashtable<String, Node> nodes;
 	private int m = 6;
 	private int x = 370;
-	private int y = 370;
+	private int y = 550;
+	JFrame frame;
 
 	public Graph() {
 		nodes = new Hashtable<String, Node>();
+	}
+
+	public Graph(JFrame frame) {
+		nodes = new Hashtable<String, Node>();
+		this.frame = frame;
 	}
 
 	public String toString() {
@@ -47,26 +54,41 @@ public class Graph {
 	}
 
 	public void zoomIn() {
+		int xtemp = (frame.getWidth() / 2 + x) / m;
+		int ytemp = (frame.getHeight() / 2 + y) / m;
+		int oldY = ytemp * m - y;
+		int oldX = xtemp * m - x;
 		m++;
+		y = ytemp * m - oldY;
+		x = xtemp * m - oldX;
 	}
 
 	public void zoomOut() {
+		if (m == 1) {
+			return;
+		}
+		int xtemp = (frame.getWidth() / 2 + x) / m;
+		int ytemp = (frame.getHeight() / 2 + y) / m;
+		int oldY = ytemp * m - y;
+		int oldX = xtemp * m - x;
 		m--;
+		y = ytemp * m - oldY;
+		x = xtemp * m - oldX;
 	}
 
 	public void moveLeft() {
-		x += 10;
+		x += 50;
 	}
 
 	public void moveRight() {
-		x -= 10;
+		x -= 50;
 	}
 
 	public void moveUp() {
-		y += 10;
+		y += 50;
 	}
 
 	public void moveDown() {
-		y -= 10;
+		y -= 50;
 	}
 }
