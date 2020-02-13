@@ -89,15 +89,6 @@ public class Node {
 		if (showName) {
 			g2.drawString(name, x * m - xShift, y * m - yShift + 25);
 		}
-//		if(highlighted) {
-//			g2.setColor(Color.BLACK);
-//			if(cost == 0) {
-//				g2.drawString("Cost: ", 3, 12);
-//			}
-//			else {
-//				g2.drawString("Cost: " + cost, 3, 12);
-//			}
-//		}
 		g2.drawRect((int)hitbox.getX(), (int)hitbox.getY(), 10, 10);
 	}
 
