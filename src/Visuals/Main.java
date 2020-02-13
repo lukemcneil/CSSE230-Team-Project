@@ -30,6 +30,7 @@ public class Main {
 		frame.add(mainComponent);
 		frame.add(stupidPanel, BorderLayout.EAST);
 		frame.setSize(800, 600);
+		frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.repaint();
 	}
