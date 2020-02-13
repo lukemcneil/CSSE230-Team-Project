@@ -20,6 +20,8 @@ public class MainComponent extends JComponent implements MouseListener {
 	private Timer timer;
 	
 	private ButtonPanel bp;
+	
+	private boolean hasRightClicked = false;
 
 	public MainComponent(Graph g, ButtonPanel bp) {
 		addMouseListener(this);
@@ -82,10 +84,14 @@ public class MainComponent extends JComponent implements MouseListener {
 				if(e.getModifiers() == MouseEvent.BUTTON3_MASK) {
 					bp.setDestination(i);
 					bp.doStuff();
+					hasRightClicked = true;
 				}
 				else {
 					bp.setRoomNumber(i);
 					bp.setStartingRoom(i);
+					if(hasRightClicked) {
+						bp.doStuff();
+					}
 				}
 			}
 		}
