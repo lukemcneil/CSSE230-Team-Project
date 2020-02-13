@@ -89,6 +89,9 @@ public class Node {
 		if (showName) {
 			g2.drawString(name, x * m - xShift, y * m - yShift + 25);
 		}
+		if(cost == 0) {
+			g2.drawString("Cost: ", 3, 12);
+		}
 		if (cost != 0) {
 			g2.drawString("Cost: " + cost, 3, 12);
 		}
