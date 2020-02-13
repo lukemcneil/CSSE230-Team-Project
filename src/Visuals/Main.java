@@ -9,6 +9,8 @@ import java.beans.XMLDecoder;
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.util.Hashtable;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 public class Main {
 	public static void main(String[] args) {
@@ -22,8 +24,8 @@ public class Main {
 		}
 		frame.setVisible(true);
 		frame.setFocusable(true);
-		JComponent mainComponent = new MainComponent(g);
 		JPanel buttonPanel = new ButtonPanel(g);
+		JComponent mainComponent = new MainComponent(g, (ButtonPanel) buttonPanel);
 		JPanel stupidPanel = new JPanel();
 		stupidPanel.add(buttonPanel, BorderLayout.NORTH);
 		buttonPanel.setLayout(new BoxLayout(buttonPanel, BoxLayout.Y_AXIS));

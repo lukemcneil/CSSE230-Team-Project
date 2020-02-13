@@ -13,6 +13,8 @@ public class ButtonPanel extends JPanel {
 
 	private Graph g;
 
+	private FindPathListener fpl;
+	
 	public ButtonPanel(Graph g) {
 		this.g = g;
 		findPath = new JButton("Find Path");
@@ -42,8 +44,10 @@ public class ButtonPanel extends JPanel {
 		this.add(moveRight);
 		this.add(moveUp);
 		this.add(moveDown);
-
-		findPath.addActionListener(new FindPathListener(g, startingRoom, destination));
+		
+		fpl = new FindPathListener(g, startingRoom, destination);
+		
+		findPath.addActionListener(fpl);
 		findRoom.addActionListener(new FindRoomListener(g, roomNumber));
 		getInfo.addActionListener(new GetInfoListener(g, roomNumber));
 		zoomIn.addActionListener(new ZoomInListener(g));
@@ -52,5 +56,21 @@ public class ButtonPanel extends JPanel {
 		moveDown.addActionListener(new MoveDownListener(g));
 		moveRight.addActionListener(new MoveRightListener(g));
 		moveLeft.addActionListener(new MoveLeftListener(g));
+	}
+	
+	public void setStartingRoom(String set) {
+		startingRoom.setText(set);
+	}
+	
+	public void setDestination(String set) {
+		destination.setText(set);
+	}
+	
+	public void setRoomNumber(String set) {
+		roomNumber.setText(set);
+	}
+	
+	public void doStuff() {
+		fpl.doStuff();
 	}
 }

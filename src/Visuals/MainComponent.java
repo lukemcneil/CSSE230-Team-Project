@@ -1,25 +1,32 @@
 package Visuals;
 
-import Graph.Edge;
-import Graph.Graph;
-import Graph.Node;
-
-import javax.swing.*;
-import java.awt.*;
+import java.awt.Graphics;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class MainComponent extends JComponent {
+import javax.swing.JComponent;
+
+import Graph.Edge;
+import Graph.Graph;
+import Graph.Node;
+
+public class MainComponent extends JComponent implements MouseListener {
 
 	private Graph graph;
 
 	private Timer timer;
+	
+	private ButtonPanel bp;
 
-	public MainComponent(Graph g) {
+	public MainComponent(Graph g, ButtonPanel bp) {
+		addMouseListener(this);
 		this.graph = g;
 		this.timer = new Timer();
 		timer.schedule(new ComponentTimerLogic(), 10, 10);
+		this.bp = bp;
 		repaint();
 	}
 
@@ -58,5 +65,47 @@ public class MainComponent extends JComponent {
 		public void run() {
 			repaint();
 		}
+	}
+
+	@Override
+	public void mouseClicked(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mousePressed(MouseEvent e) {
+		for(String i : graph.getNodes().keySet()) {
+			graph.getNodes().get(i).setHighlighted(false);
+			if(graph.getNodes().get(i).getHitbox().contains(e.getX(), e.getY())) {
+				graph.getNodes().get(i).setHighlighted(true);
+				if(e.getModifiers() == MouseEvent.BUTTON3_MASK) {
+					bp.setDestination(i);
+					bp.doStuff();
+				}
+				else {
+					bp.setRoomNumber(i);
+					bp.setStartingRoom(i);
+				}
+			}
+		}
+	}
+
+	@Override
+	public void mouseReleased(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseEntered(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void mouseExited(MouseEvent e) {
+		// TODO Auto-generated method stub
+		
 	}
 }

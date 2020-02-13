@@ -23,6 +23,10 @@ public class FindPathListener implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
+		doStuff();
+	}
+
+	public void doStuff() {
 
 		if (!g.getNodes().containsKey(start.getText())) {
 			if (!g.getNodes().containsKey(end.getText())) {
@@ -49,5 +53,5 @@ public class FindPathListener implements ActionListener {
 			edge.highlighted = true;
 		}
 	}
-
+	
 }

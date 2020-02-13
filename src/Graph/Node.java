@@ -14,6 +14,8 @@ public class Node {
 	public int x, y, cost;
 	public boolean highlighted, showName;
 	private BufferedImage schedulePicture;
+	
+	private Rectangle hitbox;
 
 	public Node() {
 		this.edges = new ArrayList<Edge>();
@@ -75,6 +77,8 @@ public class Node {
 	}
 
 	public void drawOn(Graphics g, int xShift, int yShift, int m) {
+		hitbox = new Rectangle(x * m - xShift, y * m - yShift, 10, 10);
+		
 		Graphics2D g2 = (Graphics2D) g;
 		if (highlighted) {
 			g2.setColor(Color.red);
@@ -88,6 +92,7 @@ public class Node {
 		if (cost != 0) {
 			g2.drawString("Cost: " + cost, 3, 12);
 		}
+		g2.drawRect((int)hitbox.getX(), (int)hitbox.getY(), 10, 10);
 	}
 
 	public ArrayList<Node> pathTo(Node destination) {
@@ -115,6 +120,7 @@ public class Node {
 	}
 
 	public ArrayList<Edge> edgePathTo(Node destination) {
+		cost = 0;
 		if (pathFinder.isEmpty()) {
 			this.dijkstra();
 		}
@@ -210,5 +216,9 @@ public class Node {
 	public BufferedImage getImage() {
 		System.out.println("Picture:  " + this.schedulePicture);
 		return this.schedulePicture;
+	}
+	
+	public Rectangle getHitbox() {
+		return hitbox;
 	}
 }
