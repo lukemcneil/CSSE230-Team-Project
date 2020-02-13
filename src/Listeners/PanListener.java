@@ -20,14 +20,11 @@ public class PanListener implements MouseMotionListener, MouseListener {
 
 	@Override
 	public void mousePressed(MouseEvent mouseEvent) {
-//		System.out.println(previous);
 		previous = mouseEvent.getPoint();
-		System.out.println(previous);
 	}
 
 	@Override
 	public void mouseDragged(MouseEvent mouseEvent) {
-		System.out.println(previous);
 		if (mouseEvent.getY() < previous.y) {
 			g.moveUp(previous.y - mouseEvent.getY());
 		} else if (mouseEvent.getY() > previous.y) {

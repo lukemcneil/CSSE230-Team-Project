@@ -36,8 +36,9 @@ public class Main {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.repaint();
 		frame.addMouseWheelListener(new ScrollListener(g));
-		mainComponent.addMouseListener(new PanListener(g));
-		mainComponent.addMouseMotionListener(new PanListener(g));
+		PanListener pl = new PanListener(g);
+		mainComponent.addMouseListener(pl);
+		mainComponent.addMouseMotionListener(pl);
 	}
 
 	public static Hashtable<String, Node> read(String filename) throws Exception {
