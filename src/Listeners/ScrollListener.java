@@ -3,6 +3,7 @@ package Listeners;
 
 import Graph.Graph;
 
+import java.awt.*;
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
 
@@ -18,9 +19,9 @@ public class ScrollListener implements MouseWheelListener {
 	@Override
 	public void mouseWheelMoved(MouseWheelEvent mouseWheelEvent) {
 		if (mouseWheelEvent.getPreciseWheelRotation() < 0) {
-			g.zoomIn();
+			g.zoomIn(new Point(MouseInfo.getPointerInfo().getLocation().x, MouseInfo.getPointerInfo().getLocation().y));
 		} else {
-			g.zoomOut();
+			g.zoomOut(new Point(MouseInfo.getPointerInfo().getLocation().x, MouseInfo.getPointerInfo().getLocation().y));
 		}
 	}
 }

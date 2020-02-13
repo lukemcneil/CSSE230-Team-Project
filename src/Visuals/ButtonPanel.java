@@ -8,24 +8,20 @@ import java.awt.*;
 
 public class ButtonPanel extends JPanel {
 
-	private JButton findPath, findRoom, getInfo, zoomIn, zoomOut, moveLeft, moveRight, moveUp, moveDown;
+	private JButton findPath, findRoom, getInfo, zoomIn, zoomOut;
 	private TextField startingRoom, destination, roomNumber;
 
 	private Graph g;
 
 	private FindPathListener fpl;
-	
-	public ButtonPanel(Graph g) {
+
+	public ButtonPanel(Graph g, JFrame frame) {
 		this.g = g;
 		findPath = new JButton("Find Path");
 		findRoom = new JButton("Find Room");
 		getInfo = new JButton("Get Info");
 		zoomIn = new JButton("+");
 		zoomOut = new JButton("-");
-		moveRight = new JButton("right");
-		moveLeft = new JButton("left");
-		moveUp = new JButton("up");
-		moveDown = new JButton("down");
 
 		startingRoom = new TextField("");
 		destination = new TextField("");
@@ -40,36 +36,28 @@ public class ButtonPanel extends JPanel {
 		this.add(getInfo);
 		this.add(zoomIn);
 		this.add(zoomOut);
-		this.add(moveLeft);
-		this.add(moveRight);
-		this.add(moveUp);
-		this.add(moveDown);
-		
+
 		fpl = new FindPathListener(g, startingRoom, destination);
-		
+
 		findPath.addActionListener(fpl);
 		findRoom.addActionListener(new FindRoomListener(g, roomNumber));
 		getInfo.addActionListener(new GetInfoListener(g, roomNumber));
 		zoomIn.addActionListener(new ZoomInListener(g));
 		zoomOut.addActionListener(new ZoomOutListener(g));
-		moveUp.addActionListener(new MoveUpListener(g));
-		moveDown.addActionListener(new MoveDownListener(g));
-		moveRight.addActionListener(new MoveRightListener(g));
-		moveLeft.addActionListener(new MoveLeftListener(g));
 	}
-	
+
 	public void setStartingRoom(String set) {
 		startingRoom.setText(set);
 	}
-	
+
 	public void setDestination(String set) {
 		destination.setText(set);
 	}
-	
+
 	public void setRoomNumber(String set) {
 		roomNumber.setText(set);
 	}
-	
+
 	public void doStuff() {
 		fpl.doStuff();
 	}

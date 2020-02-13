@@ -53,9 +53,12 @@ public class Graph {
 		return this.y;
 	}
 
-	public void zoomIn() {
-		double xtemp = (MouseInfo.getPointerInfo().getLocation().getX() + x) / m;
-		double ytemp = (MouseInfo.getPointerInfo().getLocation().getY() + y) / m;
+	public void zoomIn(Point center) {
+		if (center == null) {
+			center = new Point(frame.getWidth() / 2, frame.getHeight() / 2);
+		}
+		double xtemp = (center.x + x) / m;
+		double ytemp = (center.y + y) / m;
 		double oldY = ytemp * m - y;
 		double oldX = xtemp * m - x;
 		m++;
@@ -63,12 +66,15 @@ public class Graph {
 		x = (int) (xtemp * m - oldX);
 	}
 
-	public void zoomOut() {
+	public void zoomOut(Point center) {
 		if (m == 1) {
 			return;
 		}
-		double xtemp = (MouseInfo.getPointerInfo().getLocation().getX() + x) / m;
-		double ytemp = (MouseInfo.getPointerInfo().getLocation().getY() + y) / m;
+		if (center == null) {
+			center = new Point(frame.getWidth() / 2, frame.getHeight() / 2);
+		}
+		double xtemp = (center.x + x) / m;
+		double ytemp = (center.y + y) / m;
 		double oldY = ytemp * m - y;
 		double oldX = xtemp * m - x;
 		m--;

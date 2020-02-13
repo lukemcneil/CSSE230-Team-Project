@@ -24,7 +24,7 @@ public class Main {
 		}
 		frame.setVisible(true);
 		frame.setFocusable(true);
-		JPanel buttonPanel = new ButtonPanel(g);
+		JPanel buttonPanel = new ButtonPanel(g, frame);
 		JComponent mainComponent = new MainComponent(g, (ButtonPanel) buttonPanel);
 		JPanel stupidPanel = new JPanel();
 		stupidPanel.add(buttonPanel, BorderLayout.NORTH);

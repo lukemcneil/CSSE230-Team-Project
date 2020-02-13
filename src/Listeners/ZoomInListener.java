@@ -16,7 +16,7 @@ public class ZoomInListener implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		g.zoomIn();
+		g.zoomIn(null);
 	}
 
 }
