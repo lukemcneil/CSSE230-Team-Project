@@ -59,6 +59,7 @@ public class MainComponent extends JComponent implements MouseListener {
 				e.drawOn(g);
 			}
 		}
+		
 	}
 
 	public class ComponentTimerLogic extends TimerTask {
