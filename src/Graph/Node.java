@@ -14,7 +14,7 @@ public class Node {
 	public int x, y, cost;
 	public boolean highlighted, showName;
 	private BufferedImage schedulePicture;
-	
+
 	private Rectangle hitbox;
 
 	public Node() {
@@ -78,7 +78,7 @@ public class Node {
 
 	public void drawOn(Graphics g, int xShift, int yShift, int m) {
 		hitbox = new Rectangle(x * m - xShift, y * m - yShift, 10, 10);
-		
+
 		Graphics2D g2 = (Graphics2D) g;
 		if (highlighted) {
 			g2.setColor(Color.red);
@@ -89,16 +89,13 @@ public class Node {
 		if (showName) {
 			g2.drawString(name, x * m - xShift, y * m - yShift + 25);
 		}
-		if(highlighted) {
-			g2.setColor(Color.BLACK);
-			if(cost == 0) {
-				g2.drawString("Cost: ", 3, 12);
-			}
-			else {
-				g2.drawString("Cost: " + cost, 3, 12);
-			}
+		g2.setColor(Color.BLACK);
+		if (cost == 0) {
+			g2.drawString("Cost: ", 3, 12);
+		} else {
+			g2.drawString("Cost: " + cost, 3, 12);
 		}
-		g2.drawRect((int)hitbox.getX(), (int)hitbox.getY(), 10, 10);
+		g2.drawRect((int) hitbox.getX(), (int) hitbox.getY(), 10, 10);
 	}
 
 	public ArrayList<Node> pathTo(Node destination) {
@@ -156,7 +153,7 @@ public class Node {
 	}
 
 	private void dijkstraHelper(Hashtable<Node, Integer> costTable, ArrayList<Node> completed,
-	                            Hashtable<Node, Node> path) {
+			Hashtable<Node, Node> path) {
 		completed.add(this);
 		for (Edge curr : this.edges) {
 			if (!completed.contains(curr.end)) {
@@ -223,7 +220,7 @@ public class Node {
 		System.out.println("Picture:  " + this.schedulePicture);
 		return this.schedulePicture;
 	}
-	
+
 	public Rectangle getHitbox() {
 		return hitbox;
 	}
