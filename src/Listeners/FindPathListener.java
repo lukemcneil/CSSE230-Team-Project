@@ -14,6 +14,8 @@ public class FindPathListener implements ActionListener {
 	private Graph g;
 	private TextField start;
 	private TextField end;
+	
+	private int cost = 0;
 
 	public FindPathListener(Graph g, TextField room1, TextField room2) {
 		this.g = g;
@@ -28,6 +30,8 @@ public class FindPathListener implements ActionListener {
 
 	public void doStuff() {
 
+		cost = 0;
+		
 		if (!g.getNodes().containsKey(start.getText())) {
 			if (!g.getNodes().containsKey(end.getText())) {
 				JOptionPane.showMessageDialog(null, "start and end are invalid");
@@ -52,6 +56,10 @@ public class FindPathListener implements ActionListener {
 		for (Edge edge : edgePath) {
 			edge.highlighted = true;
 		}
+		cost = g.nodes.get(start.getText()).getCost();
 	}
 	
+	public int getCost() {
+		return cost;
+	}
 }

@@ -58,7 +58,13 @@ public class ButtonPanel extends JPanel {
 		roomNumber.setText(set);
 	}
 
-	public void doStuff() {
+	public int doStuff() {
 		fpl.doStuff();
+		return fpl.getCost();
+	}
+	
+	public void clearPanels() {
+		startingRoom.setText("");
+		destination.setText("");
 	}
 }

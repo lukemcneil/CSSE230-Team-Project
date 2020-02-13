@@ -1,5 +1,6 @@
 package Visuals;
 
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -18,10 +19,12 @@ public class MainComponent extends JComponent implements MouseListener {
 	private Graph graph;
 
 	private Timer timer;
-	
+
 	private ButtonPanel bp;
-	
+
 	private boolean hasRightClicked = false;
+	
+	private int cost = 0;
 
 	public MainComponent(Graph g, ButtonPanel bp) {
 		addMouseListener(this);
@@ -33,6 +36,9 @@ public class MainComponent extends JComponent implements MouseListener {
 	}
 
 	public void paintComponent(Graphics g) {
+		g.setColor(Color.WHITE);
+		g.fillRect(0, 0, this.getWidth(), this.getHeight());
+		g.setColor(Color.BLACK);
 		ArrayList<Node> nodes = new ArrayList<Node>();
 		ArrayList<EdgeComponent> owTheEdge = new ArrayList<EdgeComponent>();
 		for (String i : graph.getNodes().keySet()) {
@@ -45,7 +51,9 @@ public class MainComponent extends JComponent implements MouseListener {
 			for (Edge e : n.getEdges()) {
 				Node n1 = e.end;
 				Node n2 = n;
-				owTheEdge.add(new EdgeComponent(e.cost, n1.x * graph.getM() - graph.getX(), n2.x * graph.getM() - graph.getX(), n1.y * graph.getM() - graph.getY(), n2.y * graph.getM() - graph.getY(), e.highlighted));
+				owTheEdge.add(new EdgeComponent(e.cost, n1.x * graph.getM() - graph.getX(),
+						n2.x * graph.getM() - graph.getX(), n1.y * graph.getM() - graph.getY(),
+						n2.y * graph.getM() - graph.getY(), e.highlighted));
 				n.drawOn(g, graph.getX(), graph.getY(), graph.getM());
 			}
 		}
@@ -59,7 +67,12 @@ public class MainComponent extends JComponent implements MouseListener {
 				e.drawOn(g);
 			}
 		}
-		
+		if(cost == 0) {
+			g.drawString("Cost: ", 3, 12);
+		}
+		else {
+			g.drawString("Cost: " + cost, 3, 12);
+		}
 	}
 
 	public class ComponentTimerLogic extends TimerTask {
@@ -73,25 +86,28 @@ public class MainComponent extends JComponent implements MouseListener {
 	@Override
 	public void mouseClicked(MouseEvent e) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void mousePressed(MouseEvent e) {
-		for(String i : graph.getNodes().keySet()) {
-			graph.getNodes().get(i).setHighlighted(false);
-			if(graph.getNodes().get(i).getHitbox().contains(e.getX(), e.getY())) {
+		boolean highlightedInForLoop = false;
+		for (String i : graph.getNodes().keySet()) {
+			if (!(e.getModifiers() == MouseEvent.BUTTON3_MASK)) {
+				graph.getNodes().get(i).setHighlighted(false);
+			}
+			if (graph.getNodes().get(i).getHitbox().contains(e.getX(), e.getY())) {
 				graph.getNodes().get(i).setHighlighted(true);
-				if(e.getModifiers() == MouseEvent.BUTTON3_MASK) {
+				System.out.println("Hi");
+				if (e.getModifiers() == MouseEvent.BUTTON3_MASK) {
 					bp.setDestination(i);
-					bp.doStuff();
+					cost = bp.doStuff();
 					hasRightClicked = true;
-				}
-				else {
+				} else {
 					bp.setRoomNumber(i);
 					bp.setStartingRoom(i);
-					if(hasRightClicked) {
-						bp.doStuff();
+					if (hasRightClicked) {
+						cost = bp.doStuff();
 					}
 				}
 			}
@@ -101,18 +117,18 @@ public class MainComponent extends JComponent implements MouseListener {
 	@Override
 	public void mouseReleased(MouseEvent e) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void mouseEntered(MouseEvent e) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void mouseExited(MouseEvent e) {
 		// TODO Auto-generated method stub
-		
+
 	}
 }
