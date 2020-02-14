@@ -97,9 +97,8 @@ public class MainComponent extends JComponent implements MouseListener {
 			if (!(e.getModifiers() == MouseEvent.BUTTON3_MASK)) {
 				graph.getNodes().get(i).setHighlighted(false);
 			}
-			if (graph.getNodes().get(i).getHitbox().contains(e.getX(), e.getY())) {
+			if (graph.getNodes().get(i).getHitbox() != null && graph.getNodes().get(i).getHitbox().contains(e.getX(), e.getY())) {
 				graph.getNodes().get(i).setHighlighted(true);
-				System.out.println("Hi");
 				if (e.getModifiers() == MouseEvent.BUTTON3_MASK) {
 					bp.setDestination(i);
 					cost = bp.doStuff();

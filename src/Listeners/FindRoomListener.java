@@ -26,7 +26,6 @@ public class FindRoomListener implements ActionListener {
 			return;
 		}
 		String room = field.getText();
-		System.out.println(room);
 		if (g.getNodes().get(room) == null) {
 			return;
 		}

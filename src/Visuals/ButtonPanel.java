@@ -8,8 +8,8 @@ import java.awt.*;
 
 public class ButtonPanel extends JPanel {
 
-	private JButton findPath, findRoom, getInfo, zoomIn, zoomOut,floorUp,floorDown;
-	private TextField startingRoom, destination, roomNumber;
+	private JButton findPath, findRoom, getInfo, zoomIn, zoomOut, floorUp, floorDown, tripPlanner;
+	private TextField startingRoom, destination, roomNumber, distance;
 	private JLabel floorLabel;
 
 	private Graph g;
@@ -23,18 +23,21 @@ public class ButtonPanel extends JPanel {
 		getInfo = new JButton("Get Info");
 		zoomIn = new JButton("+");
 		zoomOut = new JButton("-");
-		floorUp= new JButton("+ Floor");
+		floorUp = new JButton("+ Floor");
 		floorDown = new JButton("- Floor");
-		
-		
-		floorLabel = new JLabel(""+g.getFloor());
+
+
+		floorLabel = new JLabel("" + g.getFloor());
+		tripPlanner = new JButton("trip planner");
+
 		startingRoom = new TextField("");
 		destination = new TextField("");
+		roomNumber = new TextField("");
+		distance = new TextField("");
 		this.add(new JLabel("start"));
 		this.add(startingRoom);
 		this.add(new JLabel("destination"));
 		this.add(destination);
-		roomNumber = new TextField("");
 		this.add(findPath);
 		this.add(roomNumber);
 		this.add(findRoom);
@@ -44,7 +47,10 @@ public class ButtonPanel extends JPanel {
 		this.add(floorLabel);
 		this.add(floorUp);
 		this.add(floorDown);
-		
+		this.add(tripPlanner);
+		this.add(new JLabel("distance"));
+		this.add(distance);
+
 		fpl = new FindPathListener(g, startingRoom, destination);
 
 		findPath.addActionListener(fpl);
@@ -52,8 +58,9 @@ public class ButtonPanel extends JPanel {
 		getInfo.addActionListener(new GetInfoListener(g, roomNumber));
 		zoomIn.addActionListener(new ZoomInListener(g));
 		zoomOut.addActionListener(new ZoomOutListener(g));
-		floorUp.addActionListener(new FloorUpListener(g,floorLabel));
-		floorDown.addActionListener(new FloorDownListener(g,floorLabel));
+		tripPlanner.addActionListener(new TripPlannerListener(g, roomNumber, distance));
+		floorUp.addActionListener(new FloorUpListener(g, floorLabel));
+		floorDown.addActionListener(new FloorDownListener(g, floorLabel));
 	}
 
 	public void setStartingRoom(String set) {
@@ -72,7 +79,7 @@ public class ButtonPanel extends JPanel {
 		fpl.doStuff();
 		return fpl.getCost();
 	}
-	
+
 	public void clearPanels() {
 		startingRoom.setText("");
 		destination.setText("");

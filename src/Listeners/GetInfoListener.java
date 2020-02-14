@@ -23,23 +23,22 @@ public class GetInfoListener implements ActionListener {
 	}
 
 	@Override
-	public void actionPerformed(ActionEvent e) throws NullPointerException{
+	public void actionPerformed(ActionEvent e) throws NullPointerException {
 		if (!g.getNodes().containsKey(room.getText())) {
 			JOptionPane.showMessageDialog(null, "could not find the specified room");
 			return;
 		}
-		BufferedImage image=null;
-		JLabel picLabel=null;
+		BufferedImage image = null;
+		JLabel picLabel = null;
 		try {
-			File pic=new File(g.nodes.get(room.getText()).getImage());
+			File pic = new File(g.nodes.get(room.getText()).getImage());
 			image = ImageIO.read(pic);
 			picLabel = new JLabel(new ImageIcon(image));
 		} catch (NullPointerException | IOException e1) {
 			// TODO Auto-generated catch block
 			System.out.println("could not find named file");
-			picLabel=new JLabel("Schedule could not be found.");
-			e1.printStackTrace();
-		} 
+			picLabel = new JLabel("Schedule could not be found.");
+		}
 		JOptionPane.showMessageDialog(null, picLabel, g.nodes.get(room.getText()).name, JOptionPane.PLAIN_MESSAGE, null);
 	}
 
