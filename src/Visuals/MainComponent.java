@@ -1,18 +1,16 @@
 package Visuals;
 
-import java.awt.Color;
-import java.awt.Graphics;
+import Graph.Edge;
+import Graph.Graph;
+import Graph.Node;
+
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
-
-import javax.swing.JComponent;
-
-import Graph.Edge;
-import Graph.Graph;
-import Graph.Node;
 
 public class MainComponent extends JComponent implements MouseListener {
 
@@ -23,7 +21,7 @@ public class MainComponent extends JComponent implements MouseListener {
 	private ButtonPanel bp;
 
 	private boolean hasRightClicked = false;
-	
+
 	private int cost = 0;
 
 	public MainComponent(Graph g, ButtonPanel bp) {
@@ -51,9 +49,9 @@ public class MainComponent extends JComponent implements MouseListener {
 			for (Edge e : n.getEdges()) {
 				Node n1 = e.end;
 				Node n2 = n;
-				owTheEdge.add(new EdgeComponent(e.cost, n1.x * graph.getM() - graph.getX(),
-						n2.x * graph.getM() - graph.getX(), n1.y * graph.getM() - graph.getY(),
-						n2.y * graph.getM() - graph.getY(), e.highlighted));
+				owTheEdge.add(new EdgeComponent(e.cost, (int) (n1.x * graph.getM() - graph.getX()),
+						(int) (n2.x * graph.getM() - graph.getX()), (int) (n1.y * graph.getM() - graph.getY()),
+						(int) (n2.y * graph.getM() - graph.getY()), e.highlighted));
 				n.drawOn(g, graph.getX(), graph.getY(), graph.getM());
 			}
 		}
@@ -67,10 +65,9 @@ public class MainComponent extends JComponent implements MouseListener {
 				e.drawOn(g);
 			}
 		}
-		if(cost == 0) {
+		if (cost == 0) {
 			g.drawString("Cost: ", 3, 12);
-		}
-		else {
+		} else {
 			g.drawString("Cost: " + cost, 3, 12);
 		}
 	}

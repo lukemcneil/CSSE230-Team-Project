@@ -15,6 +15,8 @@ public class GraphMaker {
 		write(drawTestGraph().nodes, "XML-data/test.xml");
 		write(drawOlin1().nodes, "XML-data/olin1.xml");
 		write(drawOlin12().nodes, "XML-data/olin12.xml");
+		write(drawMoenchLower1().nodes, "XML-data/MoenchLower1.xml");
+		write(drawOlinMoench().nodes, "XML-data/OlinMoench.xml");
 	}
 
 	private static void addEdge(Node node1, Node node2, int cost) {
@@ -185,6 +187,71 @@ public class GraphMaker {
 		Olin1.addEdge("TopStairsO269", "BotStairsO269", 10);
 		
 		return Olin1;
+	}
+	
+	private static Graph drawMoenchLower1() {
+		Graph MoenchLower1 = new Graph();
+		String[] names = {"CommonsEntrance","ELCorner","FL101Corner","FL104Ent","FL104","FL106Ent","FL106","FLFromCom","FL1062nd","DLCorner","DL115","DL117","DL119","DLCorner2","DL101","CL117Ent","CL117","CL119","BL110","BL112","BL108","BL113","BL114","BLCorner"};
+		int x =300;
+		int y =-20;
+		int m =2;
+		Point[] points = {new Point(10*m+x,30*m+y),new Point(40*m+x,30*m+y),new Point(40*m+x,10*m+y),new Point(35*m+x,10*m+y),new Point(35*m+x,5*m+y), new Point(15*m+x,10*m+y),new Point(15*m+x,5*m+y), new Point(10*m+x,10*m+y), new Point(10*m+x,5*m+y), new Point(40*m+x,50*m+y),new Point(30*m+x,50*m+y), new Point(30*m+x,52*m+y), new Point(35*m+x,52*m+y),new Point(40*m+x,52*m+y),new Point(45*m+x,52*m+y), new Point(40*m+x,72*m+y),new Point(38*m+x,72*m+y),new Point(40*m+x,82*m+y),new Point(40*m+x,87*m+y),new Point(40*m+x,92*m+y),new Point(40*m+x,94*m+y),new Point(35*m+x,94*m+y),new Point(35*m+x,96*m+y),new Point(40*m+x,96*m+y)};
+		for(int i =0;i<names.length;i++) {
+			MoenchLower1.addNode(names[i],points[i]);
+		}
+		MoenchLower1.nodes.get("ELCorner").showName=false;
+		MoenchLower1.nodes.get("FL101Corner").showName=false;
+		MoenchLower1.nodes.get("FL104Ent").showName=false;
+		MoenchLower1.nodes.get("FL106Ent").showName=false;
+		MoenchLower1.nodes.get("FLFromCom").showName=false;
+		MoenchLower1.nodes.get("DLCorner").showName=false;
+		MoenchLower1.nodes.get("DLCorner2").showName=false;
+		MoenchLower1.nodes.get("CL117Ent").showName=false;
+		MoenchLower1.nodes.get("BLCorner").showName=false;
+		MoenchLower1.addEdge("CommonsEntrance", "ELCorner", 20);
+		MoenchLower1.addEdge("ELCorner", "FL101Corner", 20);
+		MoenchLower1.addEdge("FL101Corner", "FL104Ent", 10);
+		MoenchLower1.addEdge("FL104", "FL104Ent", 5);
+		MoenchLower1.addEdge("FL104Ent", "FL106Ent", 15);
+		MoenchLower1.addEdge("FL106Ent", "FL106", 10);
+		MoenchLower1.addEdge("FL106Ent", "FLFromCom", 10);
+		MoenchLower1.addEdge("FLFromCom", "FL1062nd", 10);
+		MoenchLower1.addEdge("CommonsEntrance", "FLFromCom", 20);
+		MoenchLower1.addEdge("ELCorner", "DLCorner", 20);
+		MoenchLower1.addEdge("DLCorner", "DL115", 15);
+		MoenchLower1.addEdge("DLCorner", "DLCorner2", 5);
+		MoenchLower1.addEdge("DL115", "DL117", 5);
+		MoenchLower1.addEdge("DL117", "DL119", 10);
+		MoenchLower1.addEdge("DL119", "DLCorner2", 5);
+		MoenchLower1.addEdge("DLCorner2", "DL101", 5);
+		MoenchLower1.addEdge("DLCorner2", "CL117Ent", 20);
+		MoenchLower1.addEdge("CL117Ent", "CL117", 5);
+		MoenchLower1.addEdge("CL117Ent", "CL119", 10);
+		MoenchLower1.addEdge("CL119", "BL110", 10);
+		MoenchLower1.addEdge("BL110", "BL112", 5);
+		MoenchLower1.addEdge("BL112", "BL108", 2);
+		MoenchLower1.addEdge("BL108", "BL113", 10);
+		MoenchLower1.addEdge("BL113", "BL114", 5);
+		MoenchLower1.addEdge("BL114", "BLCorner", 10);
+		MoenchLower1.addEdge("BLCorner", "BL108", 5);
+		
+		return MoenchLower1;
+	}
+	
+	private static Graph drawOlinMoench() {
+		Graph sol = drawOlin12();
+		Graph temp = drawMoenchLower1();
+		for(String c : temp.nodes.keySet()) {
+			sol.nodes.put(c, temp.nodes.get(c));
+		}
+		return sol;
+	}
+	
+	private static Graph drawMoench1() {
+		Graph Moench1 = new Graph();
+		
+		
+		return Moench1;
 	}
 
 	private static Graph drawTestGraph() {
