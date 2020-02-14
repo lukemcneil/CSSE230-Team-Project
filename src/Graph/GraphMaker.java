@@ -197,7 +197,7 @@ public class GraphMaker {
 		int m =2;
 		Point[] points = {new Point(10*m+x,30*m+y),new Point(40*m+x,30*m+y),new Point(40*m+x,10*m+y),new Point(35*m+x,10*m+y),new Point(35*m+x,5*m+y), new Point(15*m+x,10*m+y),new Point(15*m+x,5*m+y), new Point(10*m+x,10*m+y), new Point(10*m+x,5*m+y), new Point(40*m+x,50*m+y),new Point(30*m+x,50*m+y), new Point(30*m+x,52*m+y), new Point(35*m+x,52*m+y),new Point(40*m+x,52*m+y),new Point(45*m+x,52*m+y), new Point(40*m+x,72*m+y),new Point(38*m+x,72*m+y),new Point(40*m+x,82*m+y),new Point(40*m+x,87*m+y),new Point(40*m+x,92*m+y),new Point(40*m+x,94*m+y),new Point(35*m+x,94*m+y),new Point(35*m+x,96*m+y),new Point(40*m+x,96*m+y)};
 		for(int i =0;i<names.length;i++) {
-			MoenchLower1.addNode(names[i],points[i],-1);
+			MoenchLower1.addNode(names[i],points[i],0);
 		}
 		MoenchLower1.nodes.get("ELCorner").showName=false;
 		MoenchLower1.nodes.get("FL101Corner").showName=false;

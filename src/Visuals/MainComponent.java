@@ -44,24 +44,28 @@ public class MainComponent extends JComponent implements MouseListener {
 		}
 
 		for (Node n : nodes) {
-
-			n.drawOn(g, graph.getX(), graph.getY(), graph.getM());
+			if (n.floor == graph.getFloor()) {
+				n.drawOn(g, graph.getX(), graph.getY(), graph.getM());
+			}
 			for (Edge e : n.getEdges()) {
 				Node n1 = e.end;
 				Node n2 = n;
-				owTheEdge.add(new EdgeComponent(e.cost, (int) (n1.x * graph.getM() - graph.getX()),
-						(int) (n2.x * graph.getM() - graph.getX()), (int) (n1.y * graph.getM() - graph.getY()),
-						(int) (n2.y * graph.getM() - graph.getY()), e.highlighted));
-				n.drawOn(g, graph.getX(), graph.getY(), graph.getM());
+				if (n1.floor == n2.floor) {
+					owTheEdge.add(new EdgeComponent(e.cost, (int) (n1.x * graph.getM() - graph.getX()),
+							(int) (n2.x * graph.getM() - graph.getX()), (int) (n1.y * graph.getM() - graph.getY()),
+							(int) (n2.y * graph.getM() - graph.getY()), e.highlighted, e.end.floor));
+					// n.drawOn(g, graph.getX(), graph.getY(), graph.getM());
+				}
 			}
 		}
 		for (EdgeComponent e : owTheEdge) {
-			if (!e.highlighted) {
+			if (!e.highlighted && e.getFloor() == graph.getFloor()) {
 				e.drawOn(g);
+
 			}
 		}
 		for (EdgeComponent e : owTheEdge) {
-			if (e.highlighted) {
+			if (e.highlighted && e.getFloor() == graph.getFloor()) {
 				e.drawOn(g);
 			}
 		}

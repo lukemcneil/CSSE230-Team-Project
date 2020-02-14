@@ -9,6 +9,7 @@ public class Graph {
 	private final double zoomSensitivity = 0.2;
 	private final double minimumZoom = 1;
 
+	private int floor;
 	private double m = 6;
 	private int x = -200;
 	private int y = 200;
@@ -25,11 +26,13 @@ public class Graph {
 	
 	public Graph() {
 		nodes = new Hashtable<String, Node>();
+		this.floor=0;
 	}
 
 	public Graph(JFrame frame) {
 		nodes = new Hashtable<String, Node>();
 		this.frame = frame;
+		this.floor=0;
 	}
 
 	public String toString() {
@@ -51,6 +54,14 @@ public class Graph {
 	public void addEdge(String node1, String node2, int cost) {
 		nodes.get(node1).addEdge(nodes.get(node2), cost);
 		nodes.get(node2).addEdge(nodes.get(node1), cost);
+	}
+	
+	public int getFloor() {
+		return this.floor;
+	}
+	
+	public void setFloor(int i) {
+		this.floor = i;
 	}
 
 	public double getM() {
