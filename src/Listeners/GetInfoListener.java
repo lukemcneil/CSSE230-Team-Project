@@ -39,7 +39,7 @@ public class GetInfoListener implements ActionListener {
 			System.out.println("could not find named file");
 			picLabel=new JLabel("Schedule could not be found.");
 			e1.printStackTrace();
-		}
+		} 
 		JOptionPane.showMessageDialog(null, picLabel, g.nodes.get(room.getText()).name, JOptionPane.PLAIN_MESSAGE, null);
 	}
 
