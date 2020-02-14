@@ -53,7 +53,7 @@ public class MainComponent extends JComponent implements MouseListener {
 				if (n1.floor == n2.floor) {
 					owTheEdge.add(new EdgeComponent(e.cost, (int) (n1.x * graph.getM() - graph.getX()),
 							(int) (n2.x * graph.getM() - graph.getX()), (int) (n1.y * graph.getM() - graph.getY()),
-							(int) (n2.y * graph.getM() - graph.getY()), e.highlighted, e.end.floor));
+							(int) (n2.y * graph.getM() - graph.getY()), e.highlighted, n.floor));
 					// n.drawOn(g, graph.getX(), graph.getY(), graph.getM());
 				}
 			}
