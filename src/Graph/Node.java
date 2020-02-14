@@ -13,8 +13,7 @@ public class Node {
 	public Hashtable<Node, Node> pathFinder;
 	public int x, y, cost;
 	public boolean highlighted, showName;
-	private BufferedImage schedulePicture;
-
+	private String schedulePicture;
 	private Rectangle hitbox;
 
 	public Node() {
@@ -22,7 +21,6 @@ public class Node {
 		pathFinder = new Hashtable<Node, Node>();
 		highlighted = false;
 		showName = true;
-		schedulePicture = new BufferedImage(1000, 240, BufferedImage.TYPE_INT_ARGB);
 	}
 
 	public Node(String name) {
@@ -31,7 +29,7 @@ public class Node {
 		highlighted = false;
 		this.name = name;
 		showName = true;
-		schedulePicture = new BufferedImage(1000, 240, BufferedImage.TYPE_INT_ARGB);
+		schedulePicture = null;
 	}
 
 	public Node(String name, int x, int y) {
@@ -42,7 +40,7 @@ public class Node {
 		this.x = x;
 		this.y = y;
 		showName = true;
-		schedulePicture = new BufferedImage(1000, 240, BufferedImage.TYPE_INT_ARGB);
+		schedulePicture = null;
 	}
 
 	public Node(String name, Point p) {
@@ -53,7 +51,7 @@ public class Node {
 		this.x = p.x;
 		this.y = p.y;
 		showName = true;
-		schedulePicture = new BufferedImage(1000, 240, BufferedImage.TYPE_INT_ARGB);
+		schedulePicture = null;
 	}
 
 	public ArrayList<Edge> getEdges() {
@@ -204,13 +202,13 @@ public class Node {
 
 	public void setImage(String fileName) {
 		try {
-			this.schedulePicture = ImageIO.read(new File(fileName));
+			this.schedulePicture = fileName;
 		} catch (Exception e) {
 			System.out.println("File: " + fileName + " not find");
 		}
 	}
 
-	public BufferedImage getImage() {
+	public String getImage() {
 		System.out.println("Picture:  " + this.schedulePicture);
 		return this.schedulePicture;
 	}
