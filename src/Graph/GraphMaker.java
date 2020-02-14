@@ -16,6 +16,7 @@ public class GraphMaker {
 		write(drawOlin1().nodes, "XML-data/olin1.xml");
 		write(drawOlin12().nodes, "XML-data/olin12.xml");
 		write(drawMoenchLower1().nodes, "XML-data/MoenchLower1.xml");
+		write(drawOlinMoench().nodes, "XML-data/OlinMoench.xml");
 	}
 
 	private static void addEdge(Node node1, Node node2, int cost) {
@@ -191,8 +192,10 @@ public class GraphMaker {
 	private static Graph drawMoenchLower1() {
 		Graph MoenchLower1 = new Graph();
 		String[] names = {"CommonsEntrance","ELCorner","FL101Corner","FL104Ent","FL104","FL106Ent","FL106","FLFromCom","FL1062nd","DLCorner","DL115","DL117","DL119","DLCorner2","DL101","CL117Ent","CL117","CL119","BL110","BL112","BL108","BL113","BL114","BLCorner"};
-		Point[] points = {new Point(30,120),new Point(30,90),new Point(10,90),new Point(10,95),new Point(5,95), new Point(10,110),new Point(5,110), new Point(10,120), new Point(7,120), new Point(45,90),new Point(45,105), new Point(50,105), new Point(50,95),new Point(50,90),new Point(50,85), new Point(60,90),new Point(60,95),new Point(70,90),new Point(80,90),new Point(85,90),new Point(90,90),new Point(90,100),new Point(95,100),new Point(95,90)};
-		System.out.println("Names length: "+names.length+" Points length: "+points.length);
+		int x =300;
+		int y =-20;
+		int m =2;
+		Point[] points = {new Point(10*m+x,30*m+y),new Point(40*m+x,30*m+y),new Point(40*m+x,10*m+y),new Point(35*m+x,10*m+y),new Point(35*m+x,5*m+y), new Point(15*m+x,10*m+y),new Point(15*m+x,5*m+y), new Point(10*m+x,10*m+y), new Point(10*m+x,5*m+y), new Point(40*m+x,50*m+y),new Point(30*m+x,50*m+y), new Point(30*m+x,52*m+y), new Point(35*m+x,52*m+y),new Point(40*m+x,52*m+y),new Point(45*m+x,52*m+y), new Point(40*m+x,72*m+y),new Point(38*m+x,72*m+y),new Point(40*m+x,82*m+y),new Point(40*m+x,87*m+y),new Point(40*m+x,92*m+y),new Point(40*m+x,94*m+y),new Point(35*m+x,94*m+y),new Point(35*m+x,96*m+y),new Point(40*m+x,96*m+y)};
 		for(int i =0;i<names.length;i++) {
 			MoenchLower1.addNode(names[i],points[i]);
 		}
@@ -233,6 +236,15 @@ public class GraphMaker {
 		MoenchLower1.addEdge("BLCorner", "BL108", 5);
 		
 		return MoenchLower1;
+	}
+	
+	private static Graph drawOlinMoench() {
+		Graph sol = drawOlin12();
+		Graph temp = drawMoenchLower1();
+		for(String c : temp.nodes.keySet()) {
+			sol.nodes.put(c, temp.nodes.get(c));
+		}
+		return sol;
 	}
 	
 	private static Graph drawMoench1() {

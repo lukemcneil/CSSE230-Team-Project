@@ -17,7 +17,7 @@ public class Main {
 		JFrame frame = new JFrame();
 		Graph g = new Graph(frame);
 		try {
-			g.nodes = read("XML-data/MoenchLower1.xml");
+			g.nodes = read("XML-data/OlinMoench.xml");
 		} catch (Exception e) {
 			System.out.println("could not read specified file");
 			return;
