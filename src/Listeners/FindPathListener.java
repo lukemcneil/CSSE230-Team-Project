@@ -50,7 +50,7 @@ public class FindPathListener implements ActionListener {
 				c.highlighted = false;
 			}
 		}
-		ArrayList<Edge> edgePath = g.nodes.get(start.getText()).edgePathTo(g.nodes.get(end.getText()));
+		ArrayList<Edge> edgePath = g.nodes.get(start.getText()).edgePathTo(g.nodes.get(end.getText()), g);
 		g.nodes.get(start.getText()).highlighted = true;
 		g.nodes.get(end.getText()).highlighted = true;
 		for (Edge edge : edgePath) {

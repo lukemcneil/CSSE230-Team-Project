@@ -12,8 +12,17 @@ public class Graph {
 	private double m = 6;
 	private int x = -200;
 	private int y = 200;
+	private String mode="";
 	JFrame frame;
-
+	
+	public String getMode() {
+		return mode;
+	}
+	
+	public void setMode(String s) {
+		mode=s;
+	}
+	
 	public Graph() {
 		nodes = new Hashtable<String, Node>();
 	}

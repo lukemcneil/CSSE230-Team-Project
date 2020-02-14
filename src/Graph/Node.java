@@ -15,7 +15,16 @@ public class Node {
 	public boolean highlighted, showName;
 	private String schedulePicture;
 	private Rectangle hitbox;
+	private String mode;
 
+	public void setMode(String m) {
+		mode=m;
+	}
+	
+	public String getMode() {
+		return mode;
+	}
+	
 	public Node() {
 		this.edges = new ArrayList<Edge>();
 		pathFinder = new Hashtable<Node, Node>();
@@ -90,9 +99,9 @@ public class Node {
 		g2.drawRect((int) hitbox.getX(), (int) hitbox.getY(), 10, 10);
 	}
 
-	public ArrayList<Node> pathTo(Node destination) {
+	public ArrayList<Node> pathTo(Node destination, Graph g) {
 		if (pathFinder.isEmpty()) {
-			this.dijkstra();
+			this.dijkstra(g);
 		}
 		ArrayList<Node> finalPath = new ArrayList<Node>();
 		ArrayList<Edge> edgedPath = new ArrayList<Edge>();
@@ -114,10 +123,10 @@ public class Node {
 
 	}
 
-	public ArrayList<Edge> edgePathTo(Node destination) {
+	public ArrayList<Edge> edgePathTo(Node destination, Graph g) {
 		cost = 0;
 		if (pathFinder.isEmpty()) {
-			this.dijkstra();
+			this.dijkstra(g);
 		}
 		ArrayList<Edge> edgedPath = new ArrayList<Edge>();
 		Node end = destination;
@@ -135,20 +144,20 @@ public class Node {
 		return edgedPath;
 	}
 
-	public Hashtable<Node, Integer> dijkstra() {
+	public Hashtable<Node, Integer> dijkstra(Graph g) {
 		Hashtable<Node, Integer> costTable = new Hashtable<Node, Integer>();
 		ArrayList<Node> completed = new ArrayList<Node>();
 
-		this.dijkstraHelper(costTable, completed, pathFinder);
+		this.dijkstraHelper(costTable, completed, pathFinder, g.getMode());
 		costTable.put(this, 0);
 		return costTable;
 	}
 
 	private void dijkstraHelper(Hashtable<Node, Integer> costTable, ArrayList<Node> completed,
-	                            Hashtable<Node, Node> path) {
+	                            Hashtable<Node, Node> path, String mode) {
 		completed.add(this);
 		for (Edge curr : this.edges) {
-			if (!completed.contains(curr.end)) {
+			if (!completed.contains(curr.end) && !(this.mode=="elevator" && mode=="stairs") || !completed.contains(curr.end)&& !(this.mode=="stairs" && mode=="elevator")) {
 				int currCost = costTable.get(this) == null ? 0 : costTable.get(this);
 				if (costTable.containsKey(curr.end)) {
 					int temp = curr.cost + costTable.get(this);
@@ -166,7 +175,7 @@ public class Node {
 		}
 		Node temp = minNodeInMap(costTable, completed);
 		if (temp != null) {
-			temp.dijkstraHelper(costTable, completed, path);
+			temp.dijkstraHelper(costTable, completed, path, mode);
 		}
 	}
 
