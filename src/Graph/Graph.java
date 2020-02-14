@@ -44,8 +44,8 @@ public class Graph {
 		nodes.put(name, new Node(name));
 	}
 
-	public void addNode(String name, Point p) {
-		nodes.put(name, new Node(name, p));
+	public void addNode(String name, Point p,int floor) {
+		nodes.put(name, new Node(name, p,floor));
 	}
 
 	public void addEdge(String node1, String node2, int cost) {

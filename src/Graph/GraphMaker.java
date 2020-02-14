@@ -38,7 +38,7 @@ public class GraphMaker {
 		String[] names = {"TopStairsO269", "O269", "O267", "TopStairsOCommons", "O259", "O257", "O225Corner", "O222", "O227", "O229", "O226", "O231", "O233", "OTopHadCommons", "TopStairsO238", "O201", "O203", "O202", "O204", "O203-1", "O205", "O206", "O207Corner", "TopStairsO214"};
 		Point[] points = {new Point(65, 150), new Point(65, 135), new Point(65, 120), new Point(70, 110), new Point(85, 105), new Point(105, 105), new Point(145, 105), new Point(155, 105), new Point(165, 105), new Point(175, 105), new Point(185, 105), new Point(195, 105), new Point(205, 105), new Point(205, 140), new Point(210, 125), new Point(205, 160), new Point(195, 160), new Point(185, 160), new Point(175, 160), new Point(165, 160), new Point(157, 160), new Point(150, 160), new Point(145, 160), new Point(145, 130)};
 		for (int i = 0; i < names.length; i++) {
-			Olin2.addNode(names[i], points[i]);
+			Olin2.addNode(names[i], points[i],2);
 		}
 		Olin2.nodes.get("O269").setImage("RoomInfo/O269Image.png");
 		Olin2.nodes.get("O225Corner").showName = false;
@@ -79,7 +79,7 @@ public class GraphMaker {
 		String[] names = {"BotStairsO269", "O169", "O167", "BotStairsOCommons", "Bot2ndStair", "O159", "O157", "O111", "O106", "O108", "O113", "O110", "O115", "O115Corner", "OBotHadCommons", "BotStairs238", "O101", "O103", "O105", "O107", "O102", "O102-1", "O109Corner", "O104", "BotStairsO104"};
 		Point[] points = {new Point(65, 150+h), new Point(65, 135+h), new Point(65, 120+h),new Point(65, 105+h), new Point(70, 110+h), new Point(85, 105+h), new Point(105, 105+h), new Point(145, 105+h), new Point(155, 105+h), new Point(165, 105+h), new Point(175, 105+h), new Point(185, 105+h), new Point(195, 105+h), new Point(205, 105+h), new Point(205, 140+h), new Point(210, 125+h), new Point(205, 160+h), new Point(195, 160+h), new Point(185, 160+h), new Point(175, 160+h), new Point(165, 160+h), new Point(157, 160+h), new Point(145, 160+h), new Point(145, 140+h), new Point(145, 130+h)};
 		for (int i =0;i<names.length;i++) {
-			Olin1.addNode(names[i],points[i]);
+			Olin1.addNode(names[i],points[i],1);
 		}
 
 		Olin1.addEdge("BotStairsO269", "O169", 10);
@@ -118,7 +118,7 @@ public class GraphMaker {
 		String[] names = {"BotStairsO269", "O169", "O167", "BotStairsOCommons", "Bot2ndStair", "O159", "O157", "O111", "O106", "O108", "O113", "O110", "O115", "O115Corner", "OBotHadCommons", "BotStairs238", "O101", "O103", "O105", "O107", "O102", "O102-1", "O109Corner", "O104", "BotStairsO104"};
 		Point[] points = {new Point(65+m, 150+h), new Point(65+m, 135+h), new Point(65+m, 120+h),new Point(65+m, 105+h), new Point(70+m, 110+h), new Point(85+m, 105+h), new Point(105+m, 105+h), new Point(145+m, 105+h), new Point(155+m, 105+h), new Point(165+m, 105+h), new Point(175+m, 105+h), new Point(185+m, 105+h), new Point(195+m, 105+h), new Point(205+m, 105+h), new Point(205+m, 140+h), new Point(210+m, 125+h), new Point(205+m, 160+h), new Point(195+m, 160+h), new Point(185+m, 160+h), new Point(175+m, 160+h), new Point(165+m, 160+h), new Point(157+m, 160+h), new Point(145+m, 160+h), new Point(145+m, 140+h), new Point(145+m, 130+h)};
 		for (int i =0;i<names.length;i++) {
-			Olin1.addNode(names[i],points[i]);
+			Olin1.addNode(names[i],points[i],1);
 		}
 
 		Olin1.addEdge("BotStairsO269", "O169", 10);
@@ -151,7 +151,7 @@ public class GraphMaker {
 		String[] names1 = {"TopStairsO269", "O269", "O267", "TopStairsOCommons", "O259", "O257", "O225Corner", "O222", "O227", "O229", "O226", "O231", "O233", "OTopHadCommons", "TopStairsO238", "O201", "O203", "O202", "O204", "O203-1", "O205", "O206", "O207Corner", "TopStairsO214"};
 		Point[] points1 = {new Point(65, 150), new Point(65, 135), new Point(65, 120), new Point(70, 110), new Point(85, 105), new Point(105, 105), new Point(145, 105), new Point(155, 105), new Point(165, 105), new Point(175, 105), new Point(185, 105), new Point(195, 105), new Point(205, 105), new Point(205, 140), new Point(210, 125), new Point(205, 160), new Point(195, 160), new Point(185, 160), new Point(175, 160), new Point(165, 160), new Point(157, 160), new Point(150, 160), new Point(145, 160), new Point(145, 130)};
 		for (int i = 0; i < names1.length; i++) {
-			Olin1.addNode(names1[i], points1[i]);
+			Olin1.addNode(names1[i], points1[i],2);
 		}
 		Olin1.nodes.get("O269").setImage("RoomInfo/O269Image.png");
 		Olin1.nodes.get("O225Corner").showName = false;
@@ -197,7 +197,7 @@ public class GraphMaker {
 		int m =2;
 		Point[] points = {new Point(10*m+x,30*m+y),new Point(40*m+x,30*m+y),new Point(40*m+x,10*m+y),new Point(35*m+x,10*m+y),new Point(35*m+x,5*m+y), new Point(15*m+x,10*m+y),new Point(15*m+x,5*m+y), new Point(10*m+x,10*m+y), new Point(10*m+x,5*m+y), new Point(40*m+x,50*m+y),new Point(30*m+x,50*m+y), new Point(30*m+x,52*m+y), new Point(35*m+x,52*m+y),new Point(40*m+x,52*m+y),new Point(45*m+x,52*m+y), new Point(40*m+x,72*m+y),new Point(38*m+x,72*m+y),new Point(40*m+x,82*m+y),new Point(40*m+x,87*m+y),new Point(40*m+x,92*m+y),new Point(40*m+x,94*m+y),new Point(35*m+x,94*m+y),new Point(35*m+x,96*m+y),new Point(40*m+x,96*m+y)};
 		for(int i =0;i<names.length;i++) {
-			MoenchLower1.addNode(names[i],points[i]);
+			MoenchLower1.addNode(names[i],points[i],-1);
 		}
 		MoenchLower1.nodes.get("ELCorner").showName=false;
 		MoenchLower1.nodes.get("FL101Corner").showName=false;

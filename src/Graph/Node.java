@@ -11,7 +11,7 @@ public class Node {
 	public String name;
 	public ArrayList<Edge> edges;
 	public Hashtable<Node, Node> pathFinder;
-	public int x, y, cost;
+	public int x, y, cost, floor;
 	public boolean highlighted, showName;
 	private String schedulePicture;
 	private Rectangle hitbox;
@@ -52,7 +52,7 @@ public class Node {
 		schedulePicture = null;
 	}
 
-	public Node(String name, Point p) {
+	public Node(String name, Point p, int floor) {
 		this.edges = new ArrayList<Edge>();
 		pathFinder = new Hashtable<Node, Node>();
 		highlighted = false;
@@ -61,6 +61,7 @@ public class Node {
 		this.y = p.y;
 		showName = true;
 		schedulePicture = null;
+		this.floor = floor;
 	}
 
 	public ArrayList<Edge> getEdges() {
