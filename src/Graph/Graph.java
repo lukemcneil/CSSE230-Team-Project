@@ -6,9 +6,12 @@ import java.util.Hashtable;
 
 public class Graph {
 	public Hashtable<String, Node> nodes;
-	private int m = 6;
-	private int x = 370;
-	private int y = 550;
+	private final double zoomSensitivity = 0.2;
+	private final double minimumZoom = 1;
+
+	private double m = 6;
+	private int x = -200;
+	private int y = 200;
 	JFrame frame;
 
 	public Graph() {
@@ -41,7 +44,7 @@ public class Graph {
 		nodes.get(node2).addEdge(nodes.get(node1), cost);
 	}
 
-	public int getM() {
+	public double getM() {
 		return this.m;
 	}
 
@@ -61,13 +64,13 @@ public class Graph {
 		double ytemp = (center.y + y) / m;
 		double oldY = ytemp * m - y;
 		double oldX = xtemp * m - x;
-		m++;
+		m += zoomSensitivity;
 		y = (int) (ytemp * m - oldY);
 		x = (int) (xtemp * m - oldX);
 	}
 
 	public void zoomOut(Point center) {
-		if (m == 1) {
+		if (m <= minimumZoom) {
 			return;
 		}
 		if (center == null) {
@@ -77,7 +80,7 @@ public class Graph {
 		double ytemp = (center.y + y) / m;
 		double oldY = ytemp * m - y;
 		double oldX = xtemp * m - x;
-		m--;
+		m -= zoomSensitivity;
 		y = (int) (ytemp * m - oldY);
 		x = (int) (xtemp * m - oldX);
 	}

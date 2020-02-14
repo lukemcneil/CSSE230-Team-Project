@@ -14,7 +14,7 @@ public class Node {
 	public int x, y, cost;
 	public boolean highlighted, showName;
 	private BufferedImage schedulePicture;
-	
+
 	private Rectangle hitbox;
 
 	public Node() {
@@ -76,20 +76,20 @@ public class Node {
 		this.name = name;
 	}
 
-	public void drawOn(Graphics g, int xShift, int yShift, int m) {
-		hitbox = new Rectangle(x * m - xShift, y * m - yShift, 10, 10);
-		
+	public void drawOn(Graphics g, int xShift, int yShift, double m) {
+		hitbox = new Rectangle((int) (x * m - xShift), (int) (y * m - yShift), 10, 10);
+
 		Graphics2D g2 = (Graphics2D) g;
 		if (highlighted) {
 			g2.setColor(Color.red);
 		} else {
 			g2.setColor(Color.black);
 		}
-		g2.fillOval(x * m - xShift, y * m - yShift, 10, 10);
+		g2.fillOval((int) (x * m - xShift), (int) (y * m - yShift), 10, 10);
 		if (showName) {
-			g2.drawString(name, x * m - xShift, y * m - yShift + 25);
+			g2.drawString(name, (int) (x * m - xShift), (int) (y * m - yShift + 25));
 		}
-		g2.drawRect((int)hitbox.getX(), (int)hitbox.getY(), 10, 10);
+		g2.drawRect((int) hitbox.getX(), (int) hitbox.getY(), 10, 10);
 	}
 
 	public ArrayList<Node> pathTo(Node destination) {
@@ -214,11 +214,11 @@ public class Node {
 		System.out.println("Picture:  " + this.schedulePicture);
 		return this.schedulePicture;
 	}
-	
+
 	public Rectangle getHitbox() {
 		return hitbox;
 	}
-	
+
 	public int getCost() {
 		return cost;
 	}
