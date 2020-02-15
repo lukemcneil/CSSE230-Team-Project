@@ -115,7 +115,7 @@ public class GraphMaker {
 	private static Graph drawMoench1() {
 		Graph Moench1 = new Graph();
 		int x =300;
-		int y =-20;
+		int y =60;
 		int m =1;
 		String[] names = {"ToCrapo2","F108","F102Corner","F101Corner","E104","E100Corner","E101Corner","Moench1Stairs","DCorner","D112","D114","D115","DCorner2","D101","D105Corner","C107Corner","C111","CCorner","C116","C115","C114","C112Corner","B106","B105Ent","B105","A102","A124Corner","A120Corner"};
 		Point[] points = {new Point(1*m+x,10*m+y),new Point(10*m+x,10*m+y),new Point(40*m+x,10*m+y), new Point(50*m+x,10*m+y),new Point(50*m+x,20*m+y),new Point(40*m+x,20*m+y),new Point(40*m+x,40*m+y),new Point(20*m+x,40*m+y),new Point(40*m+x,60*m+y),new Point(35*m+x,60*m+y),new Point(33*m+x,60*m+y),new Point(33*m+x,65*m+y),new Point(40*m+x,65*m+y),new Point(55*m+x,60*m+y),new Point(60*m+x,60*m+y),new Point(60*m+x,90*m+y),new Point(55*m+x,90*m+y),new Point(40*m+x,90*m+y),new Point(30*m+x,90*m+y),new Point(30*m+x,85*m+y),new Point(30*m+x,80*m+y),new Point(40*m+x,80*m+y),new Point(40*m+x,120*m+y),new Point(40*m+x,125*m+y),new Point(45*m+x,125*m+y),new Point(40*m+x,145*m+y),new Point(10*m+x,145*m+y),new Point(1*m+x,155*m+y)};
@@ -172,8 +172,8 @@ public class GraphMaker {
 	private static Graph drawMoenchLower1() {
 		Graph MoenchLower1 = new Graph();
 		String[] names = {"CommonsEntrance","ELCorner","FL101Corner","FL104Ent","FL104","FL106Ent","FL106","FLFromCom","FL1062nd","DLCorner","DL115","DL117","DL119","DLCorner2","DL101","CL117Ent","CL117","CL119","BL110","BL112","BL108","BL113","BL114","BLCorner"};
-		int x =300;
-		int y =-20;
+		int x =250;
+		int y =50;
 		int m =2;
 		Point[] points = {new Point(10*m+x,30*m+y),new Point(40*m+x,30*m+y),new Point(40*m+x,10*m+y),new Point(35*m+x,10*m+y),new Point(35*m+x,5*m+y), new Point(15*m+x,10*m+y),new Point(15*m+x,5*m+y), new Point(10*m+x,10*m+y), new Point(10*m+x,5*m+y), new Point(40*m+x,50*m+y),new Point(30*m+x,50*m+y), new Point(30*m+x,52*m+y), new Point(35*m+x,52*m+y),new Point(40*m+x,52*m+y),new Point(45*m+x,52*m+y), new Point(40*m+x,72*m+y),new Point(38*m+x,72*m+y),new Point(40*m+x,82*m+y),new Point(40*m+x,87*m+y),new Point(40*m+x,92*m+y),new Point(40*m+x,94*m+y),new Point(35*m+x,94*m+y),new Point(35*m+x,96*m+y),new Point(40*m+x,96*m+y)};
 		for(int i =0;i<names.length;i++) {
