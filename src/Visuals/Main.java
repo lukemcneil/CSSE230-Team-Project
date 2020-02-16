@@ -5,11 +5,15 @@ import Graph.Node;
 import Listeners.PanListener;
 import Listeners.ScrollListener;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.beans.XMLDecoder;
 import java.io.BufferedInputStream;
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Hashtable;
 
 public class Main {
@@ -23,6 +27,12 @@ public class Main {
 			return;
 		}
 		frame.setVisible(true);
+		BufferedImage image = null;
+		try {
+			image = ImageIO.read(new File("RoomInfo/icon.png"));
+		} catch (IOException e) {
+		}
+		frame.setIconImage(image);
 		frame.setFocusable(true);
 		JPanel buttonPanel = new ButtonPanel(g, frame);
 		JComponent mainComponent = new MainComponent(g, (ButtonPanel) buttonPanel);
