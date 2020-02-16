@@ -40,18 +40,14 @@ public class TripPlannerListener implements ActionListener {
 			Hashtable<Node, Integer> dijkstraResult = n.dijkstra(g);
 			ArrayList<String> results = new ArrayList<String>();
 			for (Node node : dijkstraResult.keySet()) {
-				if (dijkstraResult.get(node) == distance) {
+				if (dijkstraResult.get(node).equals(distance)) {
 					results.add(node.name);
 				}
 			}
 			if (results.size() > 0) {
 				String string = "Here are some rooms to check out";
-				int i = 0;
 				for (String s : results) {
-					if (i < 5) {
-						string += "\n- " + s;
-					}
-					i++;
+					string += "\n- " + s;
 				}
 				JOptionPane.showMessageDialog(null, string, "Recommended Paths", JOptionPane.PLAIN_MESSAGE);
 			} else {

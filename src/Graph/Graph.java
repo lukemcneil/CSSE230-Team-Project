@@ -15,15 +15,15 @@ public class Graph {
 	private int y = 200;
 	private String mode="";
 	JFrame frame;
-	
+
 	public String getMode() {
 		return mode;
 	}
-	
+
 	public void setMode(String s) {
 		mode=s;
 	}
-	
+
 	public Graph() {
 		nodes = new Hashtable<String, Node>();
 		this.floor=0;
@@ -55,11 +55,11 @@ public class Graph {
 		nodes.get(node1).addEdge(nodes.get(node2), cost);
 		nodes.get(node2).addEdge(nodes.get(node1), cost);
 	}
-	
+
 	public int getFloor() {
 		return this.floor;
 	}
-	
+
 	public void setFloor(int i) {
 		this.floor = i;
 	}
