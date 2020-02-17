@@ -1,14 +1,15 @@
 package Listeners;
 
-import Graph.Graph;
-import Graph.Node;
-
-import javax.swing.*;
-import java.awt.*;
+import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.Hashtable;
+
+import javax.swing.JOptionPane;
+
+import Graph.Graph;
+import Graph.Node;
 
 public class TripPlannerListener implements ActionListener {
 
@@ -39,9 +40,14 @@ public class TripPlannerListener implements ActionListener {
 			}
 			Hashtable<Node, Integer> dijkstraResult = n.dijkstra(g);
 			ArrayList<String> results = new ArrayList<String>();
+			Node closestNode = null;
 			for (Node node : dijkstraResult.keySet()) {
 				if (dijkstraResult.get(node).equals(distance)) {
 					results.add(node.name);
+				}
+				if (closestNode == null || Math.abs(dijkstraResult.get(closestNode) - distance) > Math
+						.abs(dijkstraResult.get(node) - distance)) {
+					closestNode = node;
 				}
 			}
 			if (results.size() > 0) {
@@ -51,7 +57,10 @@ public class TripPlannerListener implements ActionListener {
 				}
 				JOptionPane.showMessageDialog(null, string, "Recommended Paths", JOptionPane.PLAIN_MESSAGE);
 			} else {
-				JOptionPane.showMessageDialog(null, "could not find any rooms that distance away", "Recommended Paths", JOptionPane.PLAIN_MESSAGE);
+				JOptionPane.showMessageDialog(null,
+						"could not find any rooms that distance away, but here is one "
+								+ dijkstraResult.get(closestNode) + " away\n- " + closestNode.name,
+						"Recommended Paths", JOptionPane.PLAIN_MESSAGE);
 			}
 		}
 	}
