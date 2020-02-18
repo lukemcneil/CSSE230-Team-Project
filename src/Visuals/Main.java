@@ -25,7 +25,8 @@ public class Main {
 //		frame.pack();
 		Graph g = new Graph(frame);
 		try {
-			g.nodes = read("XML-data/OlinMoench.xml"); 
+			g.nodes = read("XML-data/OlinMoench.xml");
+//			g.nodes = read("XML-data/Moench2.xml");
 		} catch (Exception e) {
 			System.out.println("could not read specified file");
 			return;

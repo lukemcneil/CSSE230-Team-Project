@@ -18,6 +18,7 @@ public class GraphMaker {
 //		write(drawMoenchLower1().nodes, "XML-data/MoenchLower1.xml");
 		write(drawOlinMoench().nodes, "XML-data/OlinMoench.xml");
 //		write(drawMoench1().nodes, "XML-data/Moench1.xml");
+//		write(drawMoench2().nodes, "XML-data/Moench2.xml");
 	}
 
 	private static void addEdge(Node node1, Node node2, int cost) {
@@ -170,7 +171,27 @@ public class GraphMaker {
 
 	private static Graph drawMoench2() {
 		Graph Moench2 = new Graph();
-
+		int x = 300;
+		int y = 60;
+		int m = 1;
+		String[] names = {"F235", "F230", "F222", "F218", "F210", "E200", "E104", "B200", "A223", "A209", "A202", "A220", "A219", "A217"};
+		Point[] points = {new Point(10 * m + x, 10 * m + y), new Point(10 * m + x, 1 * m + y), new Point(40 * m + x, 1 * m + y), new Point(50 * m + x, 1 * m + y), new Point(70 * m + x, 1 * m + y), new Point(40 * m + x, 40 * m + y), new Point(50 * m + x, 40 * m + y), new Point(40 * m + x, 125 * m + y), new Point(40 * m + x, 135 * m + y), new Point(40 * m + x, 145 * m + y), new Point(60 * m + x, 145 * m + y), new Point(30 * m + x, 145 * m + y), new Point(26 * m + x, 145 * m + y), new Point(8 * m + x, 145 * m + y)};
+		for (int i = 0; i < names.length; i++) {
+			Moench2.addNode(names[i], points[i], 2);
+		}
+		Moench2.addEdge("F235", "F230", 10);
+		Moench2.addEdge("F222", "F230", 20);
+		Moench2.addEdge("F222", "F218", 10);
+		Moench2.addEdge("F210", "F218", 20);
+		Moench2.addEdge("F222", "E200", 25);
+		Moench2.addEdge("E104", "E200", 10);
+		Moench2.addEdge("B200", "E200", 50);
+		Moench2.addEdge("A223", "B200", 10);
+		Moench2.addEdge("A223", "A209", 10);
+		Moench2.addEdge("A202", "A209", 20);
+		Moench2.addEdge("A220", "A209", 20);
+		Moench2.addEdge("A220", "A219", 5);
+		Moench2.addEdge("A219", "A217", 15);
 		return Moench2;
 	}
 
@@ -241,15 +262,28 @@ public class GraphMaker {
 		return MoenchLower1;
 	}
 
-	private static Graph drawOlinMoench() {
-		Graph olin12 = drawOlin12();
-		Graph moenchLower1 = drawMoenchLower1();
+	private static Graph drawMoench() {
+		Graph result = new Graph();
+		Graph moenchL = drawMoenchLower1();
 		Graph moench1 = drawMoench1();
-		for (String c : moenchLower1.nodes.keySet()) {
-			olin12.nodes.put(c, moenchLower1.nodes.get(c));
+		Graph moench2 = drawMoench2();
+		for (String c : moenchL.nodes.keySet()) {
+			result.nodes.put(c, moenchL.nodes.get(c));
 		}
 		for (String c : moench1.nodes.keySet()) {
-			olin12.nodes.put(c, moench1.nodes.get(c));
+			result.nodes.put(c, moench1.nodes.get(c));
+		}
+		for (String c : moench2.nodes.keySet()) {
+			result.nodes.put(c, moench2.nodes.get(c));
+		}
+		return result;
+	}
+
+	private static Graph drawOlinMoench() {
+		Graph olin12 = drawOlin12();
+		Graph moench = drawMoench();
+		for (String c : moench.nodes.keySet()) {
+			olin12.nodes.put(c, moench.nodes.get(c));
 		}
 		olin12.addEdge("A120Corner", "OBotHadCommons", 30);
 		olin12.addEdge("CommonsEntrance", "Moench1Stairs", 10, "stairs");

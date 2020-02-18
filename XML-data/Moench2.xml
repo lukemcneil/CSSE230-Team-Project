@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="11.0.6" class="java.beans.XMLDecoder">
+ <object class="java.util.Hashtable">
+  <void method="put">
+   <string>A202</string>
+   <object class="Graph.Node" id="Node0">
+    <void class="Graph.Node" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="Node0"/>
+      <string>A202</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node0"/>
+      <int>360</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node0"/>
+      <int>190</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>floor</string>
+     <void method="set">
+      <object idref="Node0"/>
+      <int>2</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>F222</string>
+   <object class="Graph.Node" id="Node1">
+    <void class="Graph.Node" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="Node1"/>
+      <string>F222</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node1"/>
+      <int>340</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node1"/>
+      <int>61</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>floor</string>
+     <void method="set">
+      <object idref="Node1"/>
+      <int>2</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>E200</string>
+   <object class="Graph.Node" id="Node2">
+    <void class="Graph.Node" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="Node2"/>
+      <string>E200</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node2"/>
+      <int>340</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node2"/>
+      <int>90</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>floor</string>
+     <void method="set">
+      <object idref="Node2"/>
+      <int>2</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>F218</string>
+   <object class="Graph.Node" id="Node3">
+    <void class="Graph.Node" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="Node3"/>
+      <string>F218</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node3"/>
+      <int>350</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node3"/>
+      <int>61</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>floor</string>
+     <void method="set">
+      <object idref="Node3"/>
+      <int>2</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>A223</string>
+   <object class="Graph.Node" id="Node4">
+    <void class="Graph.Node" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="Node4"/>
+      <string>A223</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node4"/>
+      <int>340</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node4"/>
+      <int>180</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>floor</string>
+     <void method="set">
+      <object idref="Node4"/>
+      <int>2</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>A219</string>
+   <object class="Graph.Node" id="Node5">
+    <void class="Graph.Node" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="Node5"/>
+      <string>A219</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node5"/>
+      <int>326</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node5"/>
+      <int>190</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>floor</string>
+     <void method="set">
+      <object idref="Node5"/>
+      <int>2</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>A220</string>
+   <object class="Graph.Node" id="Node6">
+    <void class="Graph.Node" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="Node6"/>
+      <string>A220</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node6"/>
+      <int>330</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node6"/>
+      <int>190</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>floor</string>
+     <void method="set">
+      <object idref="Node6"/>
+      <int>2</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>A217</string>
+   <object class="Graph.Node" id="Node7">
+    <void class="Graph.Node" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="Node7"/>
+      <string>A217</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node7"/>
+      <int>308</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node7"/>
+      <int>190</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>floor</string>
+     <void method="set">
+      <object idref="Node7"/>
+      <int>2</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>F210</string>
+   <object class="Graph.Node" id="Node8">
+    <void class="Graph.Node" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="Node8"/>
+      <string>F210</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node8"/>
+      <int>370</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node8"/>
+      <int>61</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>floor</string>
+     <void method="set">
+      <object idref="Node8"/>
+      <int>2</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>F235</string>
+   <object class="Graph.Node" id="Node9">
+    <void class="Graph.Node" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="Node9"/>
+      <string>F235</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node9"/>
+      <int>310</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node9"/>
+      <int>70</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>floor</string>
+     <void method="set">
+      <object idref="Node9"/>
+      <int>2</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>E104</string>
+   <object class="Graph.Node" id="Node10">
+    <void class="Graph.Node" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="Node10"/>
+      <string>E104</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node10"/>
+      <int>350</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node10"/>
+      <int>90</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>floor</string>
+     <void method="set">
+      <object idref="Node10"/>
+      <int>2</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>A209</string>
+   <object class="Graph.Node" id="Node11">
+    <void class="Graph.Node" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="Node11"/>
+      <string>A209</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node11"/>
+      <int>340</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node11"/>
+      <int>190</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>floor</string>
+     <void method="set">
+      <object idref="Node11"/>
+      <int>2</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>F230</string>
+   <object class="Graph.Node" id="Node12">
+    <void class="Graph.Node" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="Node12"/>
+      <string>F230</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node12"/>
+      <int>310</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node12"/>
+      <int>61</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>floor</string>
+     <void method="set">
+      <object idref="Node12"/>
+      <int>2</int>
+     </void>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>B200</string>
+   <object class="Graph.Node" id="Node13">
+    <void class="Graph.Node" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="Node13"/>
+      <string>B200</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node13"/>
+      <int>340</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node13"/>
+      <int>170</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>floor</string>
+     <void method="set">
+      <object idref="Node13"/>
+      <int>2</int>
+     </void>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
