@@ -130,9 +130,9 @@ public class Node {
 
 	public ArrayList<Edge> edgePathTo(Node destination, Graph g) {
 		cost = 0;
-		if (pathFinder.isEmpty()) {
+		//if (pathFinder.isEmpty()) {
 			this.dijkstra(g);
-		}
+		//}
 		ArrayList<Edge> edgedPath = new ArrayList<Edge>();
 		Node end = destination;
 		Node temp = pathFinder.get(destination);
@@ -162,8 +162,10 @@ public class Node {
 	                            Hashtable<Node, Node> path, String mode) {
 		completed.add(this);
 		for (Edge curr : this.edges) {
-			System.out.println("Edge Mode: "+ curr.getMode() +" vs graph: "+ mode);
-			if (!completed.contains(curr.end) && !(curr.getMode()=="elevator" && mode=="stairs") || !completed.contains(curr.end)&& !(curr.getMode()=="stairs" && mode=="elevator")) {
+			//System.out.println("Edge Mode: "+ curr.getMode() +" vs graph: "+ mode);
+			
+			if (curr.getMode()==null||(!completed.contains(curr.end) && !(curr.getMode().equals("elevator") && mode.equals("stairs")) || !completed.contains(curr.end)&& !(curr.getMode().equals("stairs") && mode.equals("elevator")))) {
+				//System.out.println("Running anyways");
 				int currCost = costTable.get(this) == null ? 0 : costTable.get(this);
 				if (costTable.containsKey(curr.end)) {
 					int temp = curr.cost + costTable.get(this);

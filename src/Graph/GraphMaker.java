@@ -248,8 +248,8 @@ public class GraphMaker {
 		for (String c : temp2.nodes.keySet()) {
 			sol.nodes.put(c, temp2.nodes.get(c));
 		}
-		sol.addEdge("A120Corner", "OBotHadCommons", 30);
-		sol.addEdge("CommonsEntrance", "Moench1Stairs", 10);
+		sol.addEdge("A120Corner", "OBotHadCommons", 30, "stairs");
+		sol.addEdge("CommonsEntrance", "Moench1Stairs", 10, "stairs");
 
 		return sol;
 	}
