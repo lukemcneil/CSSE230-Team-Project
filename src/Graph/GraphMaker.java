@@ -17,7 +17,7 @@ public class GraphMaker {
 //		write(drawOlin12().nodes, "XML-data/olin12.xml");
 //		write(drawMoenchLower1().nodes, "XML-data/MoenchLower1.xml");
 		write(drawOlinMoench().nodes, "XML-data/OlinMoench.xml");
-		write(drawMoench1().nodes, "XML-data/Moench1.xml");
+//		write(drawMoench1().nodes, "XML-data/Moench1.xml");
 	}
 
 	private static void addEdge(Node node1, Node node2, int cost) {
@@ -242,19 +242,19 @@ public class GraphMaker {
 	}
 
 	private static Graph drawOlinMoench() {
-		Graph sol = drawOlin12();
-		Graph temp = drawMoenchLower1();
-		Graph temp2 = drawMoench1();
-		for (String c : temp.nodes.keySet()) {
-			sol.nodes.put(c, temp.nodes.get(c));
+		Graph olin12 = drawOlin12();
+		Graph moenchLower1 = drawMoenchLower1();
+		Graph moench1 = drawMoench1();
+		for (String c : moenchLower1.nodes.keySet()) {
+			olin12.nodes.put(c, moenchLower1.nodes.get(c));
 		}
-		for (String c : temp2.nodes.keySet()) {
-			sol.nodes.put(c, temp2.nodes.get(c));
+		for (String c : moench1.nodes.keySet()) {
+			olin12.nodes.put(c, moench1.nodes.get(c));
 		}
-		sol.addEdge("A120Corner", "OBotHadCommons", 30);
-		sol.addEdge("CommonsEntrance", "Moench1Stairs", 10, "stairs");
+		olin12.addEdge("A120Corner", "OBotHadCommons", 30);
+		olin12.addEdge("CommonsEntrance", "Moench1Stairs", 10, "stairs");
 
-		return sol;
+		return olin12;
 	}
 
 	private static Graph drawTestGraph() {
