@@ -5107,9 +5107,6 @@
      <int>100</int>
     </void>
    </void>
-   <void property="mode">
-    <string>elevator</string>
-   </void>
   </object>
   <object idref="Node112"/>
  </void>
@@ -5460,8 +5457,9 @@
       <int>10</int>
      </void>
     </void>
-   </object>
-  </void>
+   </void>
+  </object>
+  <object idref="Node68"/>
  </void>
 </void>
 <void idref="ArrayList19"/>
