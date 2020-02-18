@@ -2141,27 +2141,27 @@
    </object>
   </void>
   <void method="put">
-   <string>O101</string>
+   <string>O1Elevator</string>
    <object class="Graph.Node" id="Node62">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
       <object idref="Node62"/>
-      <string>O101</string>
+      <string>O1Elevator</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
       <object idref="Node62"/>
-      <int>205</int>
+      <int>73</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
       <object idref="Node62"/>
-      <int>260</int>
+      <int>207</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
@@ -2172,31 +2172,67 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/O101Image.png</string>
+     <string>RoomInfo/Olin 1/O1ElevatorImage.png</string>
     </void>
    </object>
   </void>
   <void method="put">
-   <string>FL104Ent</string>
+   <string>O101</string>
    <object class="Graph.Node" id="Node63">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
       <object idref="Node63"/>
-      <string>FL104Ent</string>
+      <string>O101</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
       <object idref="Node63"/>
-      <int>320</int>
+      <int>205</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
       <object idref="Node63"/>
+      <int>260</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>floor</string>
+     <void method="set">
+      <object idref="Node63"/>
+      <int>1</int>
+     </void>
+    </void>
+    <void property="image">
+     <string>RoomInfo/Olin 1/O101Image.png</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>FL104Ent</string>
+   <object class="Graph.Node" id="Node64">
+    <void class="Graph.Node" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="Node64"/>
+      <string>FL104Ent</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node64"/>
+      <int>320</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node64"/>
       <int>70</int>
      </void>
     </void>
@@ -2214,32 +2250,32 @@
   </void>
   <void method="put">
    <string>A124Corner</string>
-   <object class="Graph.Node" id="Node64">
+   <object class="Graph.Node" id="Node65">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node64"/>
+      <object idref="Node65"/>
       <string>A124Corner</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node64"/>
+      <object idref="Node65"/>
       <int>310</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node64"/>
+      <object idref="Node65"/>
       <int>205</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>floor</string>
      <void method="set">
-      <object idref="Node64"/>
+      <object idref="Node65"/>
       <int>1</int>
      </void>
     </void>
@@ -2247,25 +2283,25 @@
   </void>
   <void method="put">
    <string>FL101Corner</string>
-   <object class="Graph.Node" id="Node65">
+   <object class="Graph.Node" id="Node66">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node65"/>
+      <object idref="Node66"/>
       <string>FL101Corner</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node65"/>
+      <object idref="Node66"/>
       <int>330</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node65"/>
+      <object idref="Node66"/>
       <int>70</int>
      </void>
     </void>
@@ -2283,32 +2319,32 @@
   </void>
   <void method="put">
    <string>DCorner2</string>
-   <object class="Graph.Node" id="Node66">
+   <object class="Graph.Node" id="Node67">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node66"/>
+      <object idref="Node67"/>
       <string>DCorner2</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node66"/>
+      <object idref="Node67"/>
       <int>340</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node66"/>
+      <object idref="Node67"/>
       <int>125</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>floor</string>
      <void method="set">
-      <object idref="Node66"/>
+      <object idref="Node67"/>
       <int>1</int>
      </void>
     </void>
@@ -2316,32 +2352,32 @@
   </void>
   <void method="put">
    <string>OBotHadCommons</string>
-   <object class="Graph.Node" id="Node67">
+   <object class="Graph.Node" id="Node68">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node67"/>
+      <object idref="Node68"/>
       <string>OBotHadCommons</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node67"/>
+      <object idref="Node68"/>
       <int>205</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node67"/>
+      <object idref="Node68"/>
       <int>240</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>floor</string>
      <void method="set">
-      <object idref="Node67"/>
+      <object idref="Node68"/>
       <int>1</int>
      </void>
     </void>
@@ -2352,25 +2388,25 @@
   </void>
   <void method="put">
    <string>FL106Ent</string>
-   <object class="Graph.Node" id="Node68">
+   <object class="Graph.Node" id="Node69">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node68"/>
+      <object idref="Node69"/>
       <string>FL106Ent</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node68"/>
+      <object idref="Node69"/>
       <int>280</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node68"/>
+      <object idref="Node69"/>
       <int>70</int>
      </void>
     </void>
@@ -2388,25 +2424,25 @@
   </void>
   <void method="put">
    <string>CL119</string>
-   <object class="Graph.Node" id="Node69">
+   <object class="Graph.Node" id="Node70">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node69"/>
+      <object idref="Node70"/>
       <string>CL119</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node69"/>
+      <object idref="Node70"/>
       <int>330</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node69"/>
+      <object idref="Node70"/>
       <int>214</int>
      </void>
     </void>
@@ -2417,25 +2453,25 @@
   </void>
   <void method="put">
    <string>CL117</string>
-   <object class="Graph.Node" id="Node70">
+   <object class="Graph.Node" id="Node71">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node70"/>
+      <object idref="Node71"/>
       <string>CL117</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node70"/>
+      <object idref="Node71"/>
       <int>326</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node70"/>
+      <object idref="Node71"/>
       <int>194</int>
      </void>
     </void>
@@ -2446,25 +2482,25 @@
   </void>
   <void method="put">
    <string>DL101</string>
-   <object class="Graph.Node" id="Node71">
+   <object class="Graph.Node" id="Node72">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node71"/>
+      <object idref="Node72"/>
       <string>DL101</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node71"/>
+      <object idref="Node72"/>
       <int>340</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node71"/>
+      <object idref="Node72"/>
       <int>154</int>
      </void>
     </void>
@@ -2475,32 +2511,32 @@
   </void>
   <void method="put">
    <string>O259</string>
-   <object class="Graph.Node" id="Node72">
+   <object class="Graph.Node" id="Node73">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node72"/>
+      <object idref="Node73"/>
       <string>O259</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node72"/>
+      <object idref="Node73"/>
       <int>85</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node72"/>
+      <object idref="Node73"/>
       <int>205</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>floor</string>
      <void method="set">
-      <object idref="Node72"/>
+      <object idref="Node73"/>
       <int>2</int>
      </void>
     </void>
@@ -2511,32 +2547,32 @@
   </void>
   <void method="put">
    <string>F102Corner</string>
-   <object class="Graph.Node" id="Node73">
+   <object class="Graph.Node" id="Node74">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node73"/>
+      <object idref="Node74"/>
       <string>F102Corner</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node73"/>
+      <object idref="Node74"/>
       <int>340</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node73"/>
+      <object idref="Node74"/>
       <int>70</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>floor</string>
      <void method="set">
-      <object idref="Node73"/>
+      <object idref="Node74"/>
       <int>1</int>
      </void>
     </void>
@@ -2544,32 +2580,32 @@
   </void>
   <void method="put">
    <string>O257</string>
-   <object class="Graph.Node" id="Node74">
+   <object class="Graph.Node" id="Node75">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node74"/>
+      <object idref="Node75"/>
       <string>O257</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node74"/>
+      <object idref="Node75"/>
       <int>105</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node74"/>
+      <object idref="Node75"/>
       <int>205</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>floor</string>
      <void method="set">
-      <object idref="Node74"/>
+      <object idref="Node75"/>
       <int>2</int>
      </void>
     </void>
@@ -2580,32 +2616,32 @@
   </void>
   <void method="put">
    <string>O159</string>
-   <object class="Graph.Node" id="Node75">
+   <object class="Graph.Node" id="Node76">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node75"/>
+      <object idref="Node76"/>
       <string>O159</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node75"/>
+      <object idref="Node76"/>
       <int>85</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node75"/>
+      <object idref="Node76"/>
       <int>205</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>floor</string>
      <void method="set">
-      <object idref="Node75"/>
+      <object idref="Node76"/>
       <int>1</int>
      </void>
     </void>
@@ -2616,32 +2652,32 @@
   </void>
   <void method="put">
    <string>O157</string>
-   <object class="Graph.Node" id="Node76">
+   <object class="Graph.Node" id="Node77">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node76"/>
+      <object idref="Node77"/>
       <string>O157</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node76"/>
+      <object idref="Node77"/>
       <int>105</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node76"/>
+      <object idref="Node77"/>
       <int>205</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>floor</string>
      <void method="set">
-      <object idref="Node76"/>
+      <object idref="Node77"/>
       <int>1</int>
      </void>
     </void>
@@ -2652,32 +2688,32 @@
   </void>
   <void method="put">
    <string>B105Ent</string>
-   <object class="Graph.Node" id="Node77">
+   <object class="Graph.Node" id="Node78">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node77"/>
+      <object idref="Node78"/>
       <string>B105Ent</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node77"/>
+      <object idref="Node78"/>
       <int>340</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node77"/>
+      <object idref="Node78"/>
       <int>185</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>floor</string>
      <void method="set">
-      <object idref="Node77"/>
+      <object idref="Node78"/>
       <int>1</int>
      </void>
     </void>
@@ -2685,25 +2721,25 @@
   </void>
   <void method="put">
    <string>ELCorner</string>
-   <object class="Graph.Node" id="Node78">
+   <object class="Graph.Node" id="Node79">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node78"/>
+      <object idref="Node79"/>
       <string>ELCorner</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node78"/>
+      <object idref="Node79"/>
       <int>330</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node78"/>
+      <object idref="Node79"/>
       <int>110</int>
      </void>
     </void>
@@ -2721,32 +2757,32 @@
   </void>
   <void method="put">
    <string>F101Corner</string>
-   <object class="Graph.Node" id="Node79">
+   <object class="Graph.Node" id="Node80">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node79"/>
+      <object idref="Node80"/>
       <string>F101Corner</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node79"/>
+      <object idref="Node80"/>
       <int>350</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node79"/>
+      <object idref="Node80"/>
       <int>70</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>floor</string>
      <void method="set">
-      <object idref="Node79"/>
+      <object idref="Node80"/>
       <int>1</int>
      </void>
     </void>
@@ -2754,32 +2790,32 @@
   </void>
   <void method="put">
    <string>TopStairsO214</string>
-   <object class="Graph.Node" id="Node80">
+   <object class="Graph.Node" id="Node81">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node80"/>
+      <object idref="Node81"/>
       <string>TopStairsO214</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node80"/>
+      <object idref="Node81"/>
       <int>145</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node80"/>
+      <object idref="Node81"/>
       <int>230</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>floor</string>
      <void method="set">
-      <object idref="Node80"/>
+      <object idref="Node81"/>
       <int>2</int>
      </void>
     </void>
@@ -2790,25 +2826,25 @@
   </void>
   <void method="put">
    <string>FLFromCom</string>
-   <object class="Graph.Node" id="Node81">
+   <object class="Graph.Node" id="Node82">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node81"/>
+      <object idref="Node82"/>
       <string>FLFromCom</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node81"/>
+      <object idref="Node82"/>
       <int>270</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node81"/>
+      <object idref="Node82"/>
       <int>70</int>
      </void>
     </void>
@@ -2826,25 +2862,25 @@
   </void>
   <void method="put">
    <string>BL114</string>
-   <object class="Graph.Node" id="Node82">
+   <object class="Graph.Node" id="Node83">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node82"/>
+      <object idref="Node83"/>
       <string>BL114</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node82"/>
+      <object idref="Node83"/>
       <int>320</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node82"/>
+      <object idref="Node83"/>
       <int>242</int>
      </void>
     </void>
@@ -2855,25 +2891,25 @@
   </void>
   <void method="put">
    <string>BL113</string>
-   <object class="Graph.Node" id="Node83">
+   <object class="Graph.Node" id="Node84">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node83"/>
+      <object idref="Node84"/>
       <string>BL113</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node83"/>
+      <object idref="Node84"/>
       <int>320</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node83"/>
+      <object idref="Node84"/>
       <int>238</int>
      </void>
     </void>
@@ -2884,25 +2920,25 @@
   </void>
   <void method="put">
    <string>BL112</string>
-   <object class="Graph.Node" id="Node84">
+   <object class="Graph.Node" id="Node85">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node84"/>
+      <object idref="Node85"/>
       <string>BL112</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node84"/>
+      <object idref="Node85"/>
       <int>330</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node84"/>
+      <object idref="Node85"/>
       <int>234</int>
      </void>
     </void>
@@ -2913,25 +2949,25 @@
   </void>
   <void method="put">
    <string>BL110</string>
-   <object class="Graph.Node" id="Node85">
+   <object class="Graph.Node" id="Node86">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node85"/>
+      <object idref="Node86"/>
       <string>BL110</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node85"/>
+      <object idref="Node86"/>
       <int>330</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node85"/>
+      <object idref="Node86"/>
       <int>224</int>
      </void>
     </void>
@@ -2942,32 +2978,32 @@
   </void>
   <void method="put">
    <string>Moench1Stairs</string>
-   <object class="Graph.Node" id="Node86">
+   <object class="Graph.Node" id="Node87">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node86"/>
+      <object idref="Node87"/>
       <string>Moench1Stairs</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node86"/>
+      <object idref="Node87"/>
       <int>320</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node86"/>
+      <object idref="Node87"/>
       <int>100</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>floor</string>
      <void method="set">
-      <object idref="Node86"/>
+      <object idref="Node87"/>
       <int>1</int>
      </void>
     </void>
@@ -2975,32 +3011,32 @@
   </void>
   <void method="put">
    <string>O207Corner</string>
-   <object class="Graph.Node" id="Node87">
+   <object class="Graph.Node" id="Node88">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node87"/>
+      <object idref="Node88"/>
       <string>O207Corner</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node87"/>
+      <object idref="Node88"/>
       <int>145</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node87"/>
+      <object idref="Node88"/>
       <int>260</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>floor</string>
      <void method="set">
-      <object idref="Node87"/>
+      <object idref="Node88"/>
       <int>2</int>
      </void>
     </void>
@@ -3018,32 +3054,32 @@
   </void>
   <void method="put">
    <string>TopStairsO269</string>
-   <object class="Graph.Node" id="Node88">
+   <object class="Graph.Node" id="Node89">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node88"/>
+      <object idref="Node89"/>
       <string>TopStairsO269</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node88"/>
+      <object idref="Node89"/>
       <int>65</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node88"/>
+      <object idref="Node89"/>
       <int>250</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>floor</string>
      <void method="set">
-      <object idref="Node88"/>
+      <object idref="Node89"/>
       <int>2</int>
      </void>
     </void>
@@ -3054,32 +3090,32 @@
   </void>
   <void method="put">
    <string>DCorner</string>
-   <object class="Graph.Node" id="Node89">
+   <object class="Graph.Node" id="Node90">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node89"/>
+      <object idref="Node90"/>
       <string>DCorner</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node89"/>
+      <object idref="Node90"/>
       <int>340</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node89"/>
+      <object idref="Node90"/>
       <int>120</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>floor</string>
      <void method="set">
-      <object idref="Node89"/>
+      <object idref="Node90"/>
       <int>1</int>
      </void>
     </void>
@@ -3087,25 +3123,25 @@
   </void>
   <void method="put">
    <string>BL108</string>
-   <object class="Graph.Node" id="Node90">
+   <object class="Graph.Node" id="Node91">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node90"/>
+      <object idref="Node91"/>
       <string>BL108</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node90"/>
+      <object idref="Node91"/>
       <int>330</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node90"/>
+      <object idref="Node91"/>
       <int>238</int>
      </void>
     </void>
@@ -3116,32 +3152,32 @@
   </void>
   <void method="put">
    <string>BotStairsO269</string>
-   <object class="Graph.Node" id="Node91">
+   <object class="Graph.Node" id="Node92">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node91"/>
+      <object idref="Node92"/>
       <string>BotStairsO269</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node91"/>
+      <object idref="Node92"/>
       <int>65</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node91"/>
+      <object idref="Node92"/>
       <int>250</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>floor</string>
      <void method="set">
-      <object idref="Node91"/>
+      <object idref="Node92"/>
       <int>1</int>
      </void>
     </void>
@@ -3152,32 +3188,32 @@
   </void>
   <void method="put">
    <string>D105Corner</string>
-   <object class="Graph.Node" id="Node92">
+   <object class="Graph.Node" id="Node93">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node92"/>
+      <object idref="Node93"/>
       <string>D105Corner</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node92"/>
+      <object idref="Node93"/>
       <int>360</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node92"/>
+      <object idref="Node93"/>
       <int>120</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>floor</string>
      <void method="set">
-      <object idref="Node92"/>
+      <object idref="Node93"/>
       <int>1</int>
      </void>
     </void>
@@ -3185,25 +3221,25 @@
   </void>
   <void method="put">
    <string>CL117Ent</string>
-   <object class="Graph.Node" id="Node93">
+   <object class="Graph.Node" id="Node94">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node93"/>
+      <object idref="Node94"/>
       <string>CL117Ent</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node93"/>
+      <object idref="Node94"/>
       <int>330</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node93"/>
+      <object idref="Node94"/>
       <int>194</int>
      </void>
     </void>
@@ -3221,32 +3257,32 @@
   </void>
   <void method="put">
    <string>O233</string>
-   <object class="Graph.Node" id="Node94">
+   <object class="Graph.Node" id="Node95">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node94"/>
+      <object idref="Node95"/>
       <string>O233</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node94"/>
+      <object idref="Node95"/>
       <int>205</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node94"/>
+      <object idref="Node95"/>
       <int>205</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>floor</string>
      <void method="set">
-      <object idref="Node94"/>
+      <object idref="Node95"/>
       <int>2</int>
      </void>
     </void>
@@ -3257,32 +3293,32 @@
   </void>
   <void method="put">
    <string>BotStairsO104</string>
-   <object class="Graph.Node" id="Node95">
+   <object class="Graph.Node" id="Node96">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node95"/>
+      <object idref="Node96"/>
       <string>BotStairsO104</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node95"/>
+      <object idref="Node96"/>
       <int>145</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node95"/>
+      <object idref="Node96"/>
       <int>230</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>floor</string>
      <void method="set">
-      <object idref="Node95"/>
+      <object idref="Node96"/>
       <int>1</int>
      </void>
     </void>
@@ -3293,32 +3329,32 @@
   </void>
   <void method="put">
    <string>O203-1</string>
-   <object class="Graph.Node" id="Node96">
+   <object class="Graph.Node" id="Node97">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node96"/>
+      <object idref="Node97"/>
       <string>O203-1</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node96"/>
+      <object idref="Node97"/>
       <int>165</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node96"/>
+      <object idref="Node97"/>
       <int>260</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>floor</string>
      <void method="set">
-      <object idref="Node96"/>
+      <object idref="Node97"/>
       <int>2</int>
      </void>
     </void>
@@ -3329,32 +3365,32 @@
   </void>
   <void method="put">
    <string>O231</string>
-   <object class="Graph.Node" id="Node97">
+   <object class="Graph.Node" id="Node98">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node97"/>
+      <object idref="Node98"/>
       <string>O231</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node97"/>
+      <object idref="Node98"/>
       <int>195</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node97"/>
+      <object idref="Node98"/>
       <int>205</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>floor</string>
      <void method="set">
-      <object idref="Node97"/>
+      <object idref="Node98"/>
       <int>2</int>
      </void>
     </void>
@@ -3364,33 +3400,69 @@
    </object>
   </void>
   <void method="put">
-   <string>C116</string>
-   <object class="Graph.Node" id="Node98">
+   <string>O2Elevator</string>
+   <object class="Graph.Node" id="Node99">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node98"/>
+      <object idref="Node99"/>
+      <string>O2Elevator</string>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>x</string>
+     <void method="set">
+      <object idref="Node99"/>
+      <int>74</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>y</string>
+     <void method="set">
+      <object idref="Node99"/>
+      <int>207</int>
+     </void>
+    </void>
+    <void class="Graph.Node" method="getField">
+     <string>floor</string>
+     <void method="set">
+      <object idref="Node99"/>
+      <int>2</int>
+     </void>
+    </void>
+    <void property="image">
+     <string>RoomInfo/Olin 2/O2ElevatorImage.png</string>
+    </void>
+   </object>
+  </void>
+  <void method="put">
+   <string>C116</string>
+   <object class="Graph.Node" id="Node100">
+    <void class="Graph.Node" method="getField">
+     <string>name</string>
+     <void method="set">
+      <object idref="Node100"/>
       <string>C116</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node98"/>
+      <object idref="Node100"/>
       <int>330</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node98"/>
+      <object idref="Node100"/>
       <int>150</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>floor</string>
      <void method="set">
-      <object idref="Node98"/>
+      <object idref="Node100"/>
       <int>1</int>
      </void>
     </void>
@@ -3398,32 +3470,32 @@
   </void>
   <void method="put">
    <string>C115</string>
-   <object class="Graph.Node" id="Node99">
+   <object class="Graph.Node" id="Node101">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node99"/>
+      <object idref="Node101"/>
       <string>C115</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node99"/>
+      <object idref="Node101"/>
       <int>330</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node99"/>
+      <object idref="Node101"/>
       <int>145</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>floor</string>
      <void method="set">
-      <object idref="Node99"/>
+      <object idref="Node101"/>
       <int>1</int>
      </void>
     </void>
@@ -3431,32 +3503,32 @@
   </void>
   <void method="put">
    <string>C114</string>
-   <object class="Graph.Node" id="Node100">
+   <object class="Graph.Node" id="Node102">
     <void class="Graph.Node" method="getField">
      <string>name</string>
      <void method="set">
-      <object idref="Node100"/>
+      <object idref="Node102"/>
       <string>C114</string>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>x</string>
      <void method="set">
-      <object idref="Node100"/>
+      <object idref="Node102"/>
       <int>330</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>y</string>
      <void method="set">
-      <object idref="Node100"/>
+      <object idref="Node102"/>
       <int>140</int>
      </void>
     </void>
     <void class="Graph.Node" method="getField">
      <string>floor</string>
      <void method="set">
-      <object idref="Node100"/>
+      <object idref="Node102"/>
       <int>1</int>
      </void>
     </void>
@@ -3552,8 +3624,8 @@
     <void class="Graph.Edge" method="getField">
      <string>cost</string>
      <void method="set">
-      <object idref="Edge4"/>
-      <int>10</int>
+      <object idref="Edge2"/>
+      <int>5</int>
      </void>
     </void>
     <void property="mode">
@@ -3562,7 +3634,7 @@
    </object>
   </void>
   <void method="add">
-   <object class="Graph.Edge" id="Edge5">
+   <object class="Graph.Edge" id="Edge3">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
@@ -3577,6 +3649,9 @@
       <int>20</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
  </void>
@@ -3585,7 +3660,7 @@
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
-  <object class="Graph.Edge" id="Edge6">
+  <object class="Graph.Edge" id="Edge5">
    <void class="Graph.Edge" method="getField">
     <string>cost</string>
     <void method="set">
@@ -3617,6 +3692,9 @@
       <int>30</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
   <void method="add">
@@ -3634,6 +3712,9 @@
       <object idref="Edge8"/>
       <int>10</int>
      </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
     </void>
    </object>
   </void>
@@ -3812,6 +3893,9 @@
      <int>10</int>
     </void>
    </void>
+   <void property="mode">
+    <string>stairs</string>
+   </void>
   </object>
   <object idref="Node41"/>
  </void>
@@ -3851,6 +3935,9 @@
       <int>10</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
   <void method="add">
@@ -3868,6 +3955,9 @@
       <object idref="Edge21"/>
       <int>10</int>
      </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
     </void>
    </object>
   </void>
@@ -4045,6 +4135,30 @@
       <int>10</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Graph.Edge" id="Edge21">
+    <void class="Graph.Edge" method="getField">
+     <string>end</string>
+     <void method="set">
+      <object idref="Edge21"/>
+      <object idref="Node99"/>
+     </void>
+    </void>
+    <void class="Graph.Edge" method="getField">
+     <string>cost</string>
+     <void method="set">
+      <object idref="Edge21"/>
+      <int>20</int>
+     </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
  </void>
@@ -4053,13 +4167,16 @@
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
-  <object class="Graph.Edge" id="Edge32">
+  <object class="Graph.Edge" id="Edge22">
    <void class="Graph.Edge" method="getField">
     <string>cost</string>
     <void method="set">
      <object idref="Edge32"/>
      <int>5</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node66"/>
@@ -4068,13 +4185,16 @@
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
-  <object class="Graph.Edge" id="Edge33">
+  <object class="Graph.Edge" id="Edge23">
    <void class="Graph.Edge" method="getField">
     <string>cost</string>
     <void method="set">
      <object idref="Edge33"/>
      <int>20</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node67"/>
@@ -4115,6 +4235,9 @@
       <int>7</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
   <void method="add">
@@ -4133,10 +4256,38 @@
       <int>15</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
+ </void>
+</void>
+<void idref="ArrayList7"/>
+<void class="Graph.Edge" method="getField">
+ <string>end</string>
+ <void method="set">
+  <object class="Graph.Edge" id="Edge27">
+   <void class="Graph.Edge" method="getField">
+    <string>cost</string>
+    <void method="set">
+     <object idref="Edge27"/>
+     <int>5</int>
+    </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
+   </void>
+  </object>
+  <object idref="Node2"/>
+ </void>
+</void>
+<void class="Graph.Node" id="Field9" method="getField">
+ <string>edges</string>
+ <void id="ArrayList8" method="get">
+  <object idref="Node85"/>
   <void method="add">
-   <object class="Graph.Edge" id="Edge37">
+   <object class="Graph.Edge" id="Edge28">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
@@ -4150,6 +4301,9 @@
       <object idref="Edge37"/>
       <int>2</int>
      </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
     </void>
    </object>
   </void>
@@ -4191,6 +4345,9 @@
       <int>10</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
   <void method="add">
@@ -4208,6 +4365,9 @@
       <object idref="Edge40"/>
       <int>20</int>
      </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
     </void>
    </object>
   </void>
@@ -4234,7 +4394,7 @@
  <void id="ArrayList10" method="get">
   <object idref="Node99"/>
   <void method="add">
-   <object class="Graph.Edge" id="Edge42">
+   <object class="Graph.Edge" id="Edge36">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
@@ -4249,10 +4409,13 @@
       <int>5</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
   <void method="add">
-   <object class="Graph.Edge" id="Edge43">
+   <object class="Graph.Edge" id="Edge37">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
@@ -4267,6 +4430,9 @@
       <int>5</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
  </void>
@@ -4275,13 +4441,16 @@
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
-  <object class="Graph.Edge" id="Edge44">
+  <object class="Graph.Edge" id="Edge38">
    <void class="Graph.Edge" method="getField">
     <string>cost</string>
     <void method="set">
      <object idref="Edge44"/>
      <int>30</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node34"/>
@@ -4290,13 +4459,16 @@
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
-  <object class="Graph.Edge" id="Edge45">
+  <object class="Graph.Edge" id="Edge39">
    <void class="Graph.Edge" method="getField">
     <string>cost</string>
     <void method="set">
      <object idref="Edge45"/>
      <int>30</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node7"/>
@@ -4350,7 +4522,7 @@
  <void id="ArrayList12" method="get">
   <object idref="Node79"/>
   <void method="add">
-   <object class="Graph.Edge" id="Edge48">
+   <object class="Graph.Edge" id="Edge43">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
@@ -4361,14 +4533,17 @@
     <void class="Graph.Edge" method="getField">
      <string>cost</string>
      <void method="set">
-      <object idref="Edge48"/>
-      <int>10</int>
+      <object idref="Edge43"/>
+      <int>40</int>
      </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
     </void>
    </object>
   </void>
   <void method="add">
-   <object class="Graph.Edge" id="Edge49">
+   <object class="Graph.Edge" id="Edge44">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
@@ -4379,9 +4554,12 @@
     <void class="Graph.Edge" method="getField">
      <string>cost</string>
      <void method="set">
-      <object idref="Edge49"/>
+      <object idref="Edge44"/>
       <int>10</int>
      </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
     </void>
    </object>
   </void>
@@ -4391,13 +4569,16 @@
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
-  <object class="Graph.Edge" id="Edge50">
+  <object class="Graph.Edge" id="Edge45">
    <void class="Graph.Edge" method="getField">
     <string>cost</string>
     <void method="set">
      <object idref="Edge50"/>
      <int>15</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node27"/>
@@ -4449,13 +4630,16 @@
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
-  <object class="Graph.Edge" id="Edge53">
+  <object class="Graph.Edge" id="Edge48">
    <void class="Graph.Edge" method="getField">
     <string>cost</string>
     <void method="set">
      <object idref="Edge53"/>
      <int>15</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node26"/>
@@ -4464,7 +4648,7 @@
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
-  <object class="Graph.Edge" id="Edge54">
+  <object class="Graph.Edge" id="Edge49">
    <void class="Graph.Edge" method="getField">
     <string>cost</string>
     <void method="set">
@@ -4472,20 +4656,57 @@
      <int>10</int>
     </void>
    </void>
+   <void property="mode">
+    <string>stairs</string>
+   </void>
   </object>
   <object idref="Node88"/>
  </void>
 </void>
+<void class="Graph.Node" id="Field13" method="getField">
+ <string>edges</string>
+ <void id="ArrayList12" method="get">
+  <object idref="Node53"/>
+  <void method="add">
+   <object class="Graph.Edge" id="Edge50">
+    <void class="Graph.Edge" method="getField">
+     <string>end</string>
+     <void method="set">
+      <object idref="Edge50"/>
+      <object idref="Node60"/>
+     </void>
+    </void>
+    <void class="Graph.Edge" method="getField">
+     <string>cost</string>
+     <void method="set">
+      <object idref="Edge50"/>
+      <int>10</int>
+     </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object idref="Edge32"/>
+  </void>
+ </void>
+</void>
+<void idref="ArrayList12"/>
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
-  <object class="Graph.Edge" id="Edge55">
+  <object class="Graph.Edge" id="Edge51">
    <void class="Graph.Edge" method="getField">
     <string>cost</string>
     <void method="set">
      <object idref="Edge55"/>
      <int>10</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node46"/>
@@ -4511,6 +4732,9 @@
       <int>5</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
   <void method="add">
@@ -4528,6 +4752,9 @@
       <object idref="Edge57"/>
       <int>15</int>
      </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
     </void>
    </object>
   </void>
@@ -4613,16 +4840,19 @@
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
-  <object class="Graph.Edge" id="Edge62">
+  <object class="Graph.Edge" id="Edge58">
    <void class="Graph.Edge" method="getField">
     <string>cost</string>
     <void method="set">
-     <object idref="Edge62"/>
-     <int>10</int>
+     <object idref="Edge58"/>
+     <int>20</int>
     </void>
    </void>
+   <void property="mode">
+    <string>stairs</string>
+   </void>
   </object>
-  <object idref="Node34"/>
+  <object idref="Node81"/>
  </void>
 </void>
 <void class="Graph.Edge" method="getField">
@@ -4701,13 +4931,16 @@
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
-  <object class="Graph.Edge" id="Edge67">
+  <object class="Graph.Edge" id="Edge61">
    <void class="Graph.Edge" method="getField">
     <string>cost</string>
     <void method="set">
      <object idref="Edge67"/>
      <int>5</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node23"/>
@@ -4718,7 +4951,7 @@
  <void id="ArrayList17" method="get">
   <object idref="Node14"/>
   <void method="add">
-   <object class="Graph.Edge" id="Edge68">
+   <object class="Graph.Edge" id="Edge62">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
@@ -4732,6 +4965,9 @@
       <object idref="Edge68"/>
       <int>20</int>
      </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
     </void>
    </object>
   </void>
@@ -4751,10 +4987,13 @@
       <int>20</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
   <void method="add">
-   <object class="Graph.Edge" id="Edge70">
+   <object class="Graph.Edge" id="Edge65">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
@@ -4768,6 +5007,9 @@
       <object idref="Edge70"/>
       <int>40</int>
      </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
     </void>
    </object>
   </void>
@@ -4947,6 +5189,9 @@
       <int>20</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
   <void method="add">
@@ -4965,8 +5210,36 @@
       <int>20</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
+ </void>
+</void>
+<void idref="ArrayList17"/>
+<void class="Graph.Edge" method="getField">
+ <string>end</string>
+ <void method="set">
+  <object class="Graph.Edge" id="Edge68">
+   <void class="Graph.Edge" method="getField">
+    <string>cost</string>
+    <void method="set">
+     <object idref="Edge68"/>
+     <int>10</int>
+    </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
+   </void>
+  </object>
+  <object idref="Node55"/>
+ </void>
+</void>
+<void class="Graph.Node" id="Field19" method="getField">
+ <string>edges</string>
+ <void id="ArrayList18" method="get">
+  <object idref="Node97"/>
   <void method="add">
    <object class="Graph.Edge" id="Edge83">
     <void class="Graph.Edge" method="getField">
@@ -4982,6 +5255,9 @@
       <object idref="Edge83"/>
       <int>20</int>
      </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
     </void>
    </object>
   </void>
@@ -5011,6 +5287,9 @@
       <int>15</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
   <void method="add">
@@ -5037,13 +5316,16 @@
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
-  <object class="Graph.Edge" id="Edge86">
+  <object class="Graph.Edge" id="Edge72">
    <void class="Graph.Edge" method="getField">
     <string>cost</string>
     <void method="set">
      <object idref="Edge86"/>
      <int>10</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node17"/>
@@ -5069,6 +5351,9 @@
       <int>30</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
   <void method="add">
@@ -5087,7 +5372,13 @@
       <int>10</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
+  </void>
+  <void method="add">
+   <object idref="Edge23"/>
   </void>
  </void>
 </void>
@@ -5112,6 +5403,9 @@
       <int>10</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
   <void method="add">
@@ -5129,6 +5423,9 @@
       <object idref="Edge90"/>
       <int>30</int>
      </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
     </void>
    </object>
   </void>
@@ -5160,6 +5457,9 @@
      <object idref="Edge92"/>
      <int>20</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node55"/>
@@ -5200,8 +5500,18 @@
       <int>2</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
+ </void>
+</void>
+<void idref="ArrayList22"/>
+<void class="Graph.Node" id="Field24" method="getField">
+ <string>edges</string>
+ <void id="ArrayList23" method="get">
+  <object idref="Node94"/>
   <void method="add">
    <object class="Graph.Edge" id="Edge95">
     <void class="Graph.Edge" method="getField">
@@ -5218,11 +5528,14 @@
       <int>5</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
  </void>
 </void>
-<void idref="ArrayList22"/>
+<void idref="ArrayList23"/>
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
@@ -5233,6 +5546,9 @@
      <object idref="Edge96"/>
      <int>10</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node25"/>
@@ -5264,6 +5580,9 @@
      <int>5</int>
     </void>
    </void>
+   <void property="mode">
+    <string>stairs</string>
+   </void>
   </object>
   <object idref="Node22"/>
  </void>
@@ -5278,6 +5597,9 @@
      <object idref="Edge99"/>
      <int>5</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node18"/>
@@ -5345,13 +5667,16 @@
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
-  <object class="Graph.Edge" id="Edge102">
+  <object class="Graph.Edge" id="Edge92">
    <void class="Graph.Edge" method="getField">
     <string>cost</string>
     <void method="set">
      <object idref="Edge102"/>
      <int>10</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node87"/>
@@ -5360,13 +5685,16 @@
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
-  <object class="Graph.Edge" id="Edge103">
+  <object class="Graph.Edge" id="Edge93">
    <void class="Graph.Edge" method="getField">
     <string>cost</string>
     <void method="set">
      <object idref="Edge103"/>
      <int>20</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node94"/>
@@ -5377,7 +5705,7 @@
  <void id="ArrayList25" method="get">
   <object idref="Node26"/>
   <void method="add">
-   <object class="Graph.Edge" id="Edge104">
+   <object class="Graph.Edge" id="Edge94">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
@@ -5391,6 +5719,9 @@
       <object idref="Edge104"/>
       <int>15</int>
      </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
     </void>
    </object>
   </void>
@@ -5410,15 +5741,18 @@
       <int>10</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
  </void>
 </void>
-<void idref="ArrayList25"/>
+<void idref="ArrayList24"/>
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
-  <object class="Graph.Edge" id="Edge106">
+  <object class="Graph.Edge" id="Edge96">
    <void class="Graph.Edge" method="getField">
     <string>cost</string>
     <void method="set">
@@ -5436,13 +5770,16 @@
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
-  <object class="Graph.Edge" id="Edge107">
+  <object class="Graph.Edge" id="Edge97">
    <void class="Graph.Edge" method="getField">
     <string>cost</string>
     <void method="set">
-     <object idref="Edge107"/>
-     <int>10</int>
+     <object idref="Edge97"/>
+     <int>20</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node68"/>
@@ -5453,7 +5790,7 @@
  <void id="ArrayList26" method="get">
   <object idref="Node18"/>
   <void method="add">
-   <object class="Graph.Edge" id="Edge108">
+   <object class="Graph.Edge" id="Edge99">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
@@ -5464,14 +5801,17 @@
     <void class="Graph.Edge" method="getField">
      <string>cost</string>
      <void method="set">
-      <object idref="Edge108"/>
+      <object idref="Edge99"/>
       <int>5</int>
      </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
     </void>
    </object>
   </void>
   <void method="add">
-   <object class="Graph.Edge" id="Edge109">
+   <object class="Graph.Edge" id="Edge100">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
@@ -5486,10 +5826,13 @@
       <int>5</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
   <void method="add">
-   <object class="Graph.Edge" id="Edge110">
+   <object class="Graph.Edge" id="Edge103">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
@@ -5504,10 +5847,13 @@
       <int>20</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
   <void method="add">
-   <object class="Graph.Edge" id="Edge111">
+   <object class="Graph.Edge" id="Edge104">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
@@ -5522,6 +5868,9 @@
       <int>5</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
  </void>
@@ -5530,7 +5879,7 @@
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
-  <object class="Graph.Edge" id="Edge112">
+  <object class="Graph.Edge" id="Edge105">
    <void class="Graph.Edge" method="getField">
     <string>cost</string>
     <void method="set">
@@ -5595,6 +5944,9 @@
       <int>15</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
   <void method="add">
@@ -5612,6 +5964,9 @@
       <object idref="Edge116"/>
       <int>5</int>
      </void>
+    </void>
+    <void property="mode">
+     <string>elevator</string>
     </void>
    </object>
   </void>
@@ -5659,7 +6014,13 @@
       <int>20</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
+  </void>
+  <void method="add">
+   <object idref="Edge51"/>
   </void>
  </void>
 </void>
@@ -5674,6 +6035,9 @@
      <object idref="Edge119"/>
      <int>10</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node60"/>
@@ -5705,6 +6069,9 @@
      <int>10</int>
     </void>
    </void>
+   <void property="mode">
+    <string>stairs</string>
+   </void>
   </object>
   <object idref="Node98"/>
  </void>
@@ -5720,10 +6087,62 @@
      <int>10</int>
     </void>
    </void>
+   <void property="mode">
+    <string>stairs</string>
+   </void>
   </object>
-  <object idref="Node12"/>
+  <object idref="Node10"/>
  </void>
 </void>
+<void class="Graph.Node" id="Field30" method="getField">
+ <string>edges</string>
+ <void id="ArrayList29" method="get">
+  <object idref="Node6"/>
+  <void method="add">
+   <object class="Graph.Edge" id="Edge113">
+    <void class="Graph.Edge" method="getField">
+     <string>end</string>
+     <void method="set">
+      <object idref="Edge113"/>
+      <object idref="Node5"/>
+     </void>
+    </void>
+    <void class="Graph.Edge" method="getField">
+     <string>cost</string>
+     <void method="set">
+      <object idref="Edge113"/>
+      <int>10</int>
+     </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Graph.Edge" id="Edge114">
+    <void class="Graph.Edge" method="getField">
+     <string>end</string>
+     <void method="set">
+      <object idref="Edge114"/>
+      <object idref="Node11"/>
+     </void>
+    </void>
+    <void class="Graph.Edge" method="getField">
+     <string>cost</string>
+     <void method="set">
+      <object idref="Edge114"/>
+      <int>10</int>
+     </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
+   </object>
+  </void>
+ </void>
+</void>
+<void idref="ArrayList29"/>
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
@@ -5734,6 +6153,9 @@
      <object idref="Edge123"/>
      <int>10</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node60"/>
@@ -5750,6 +6172,9 @@
      <int>30</int>
     </void>
    </void>
+   <void property="mode">
+    <string>stairs</string>
+   </void>
   </object>
   <object idref="Node61"/>
  </void>
@@ -5764,6 +6189,9 @@
      <object idref="Edge125"/>
      <int>20</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node15"/>
@@ -5792,6 +6220,9 @@
      <object idref="Edge126"/>
      <int>10</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node100"/>
@@ -5829,6 +6260,9 @@
       <object idref="Edge127"/>
       <int>20</int>
      </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
     </void>
    </object>
   </void>
@@ -5898,8 +6332,29 @@
      <int>10</int>
     </void>
    </void>
+   <void property="mode">
+    <string>stairs</string>
+   </void>
   </object>
   <object idref="Node21"/>
+ </void>
+</void>
+<void class="Graph.Edge" method="getField">
+ <string>end</string>
+ <void method="set">
+  <object class="Graph.Edge" id="Edge125">
+   <void class="Graph.Edge" method="getField">
+    <string>cost</string>
+    <void method="set">
+     <object idref="Edge125"/>
+     <int>5</int>
+    </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
+   </void>
+  </object>
+  <object idref="Node101"/>
  </void>
 </void>
 <void class="Graph.Node" id="Field33" method="getField">
@@ -5962,7 +6417,7 @@
     <void class="Graph.Edge" method="getField">
      <string>cost</string>
      <void method="set">
-      <object idref="Edge132"/>
+      <object idref="Edge134"/>
       <int>10</int>
      </void>
     </void>
@@ -5983,23 +6438,26 @@
     <void class="Graph.Edge" method="getField">
      <string>cost</string>
      <void method="set">
-      <object idref="Edge133"/>
-      <int>10</int>
+      <object idref="Edge137"/>
+      <int>20</int>
      </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
     </void>
    </object>
   </void>
  </void>
 </void>
-<void idref="ArrayList35"/>
+<void idref="ArrayList36"/>
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
-  <object class="Graph.Edge" id="Edge134">
+  <object class="Graph.Edge" id="Edge138">
    <void class="Graph.Edge" method="getField">
     <string>cost</string>
     <void method="set">
-     <object idref="Edge134"/>
+     <object idref="Edge138"/>
      <int>10</int>
     </void>
    </void>
@@ -6013,13 +6471,16 @@
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
-  <object class="Graph.Edge" id="Edge135">
+  <object class="Graph.Edge" id="Edge139">
    <void class="Graph.Edge" method="getField">
     <string>cost</string>
     <void method="set">
      <object idref="Edge135"/>
      <int>10</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node75"/>
@@ -6028,13 +6489,16 @@
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
-  <object class="Graph.Edge" id="Edge136">
+  <object class="Graph.Edge" id="Edge140">
    <void class="Graph.Edge" method="getField">
     <string>cost</string>
     <void method="set">
      <object idref="Edge136"/>
      <int>10</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node27"/>
@@ -6053,13 +6517,16 @@
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
-  <object class="Graph.Edge" id="Edge137">
+  <object class="Graph.Edge" id="Edge141">
    <void class="Graph.Edge" method="getField">
     <string>cost</string>
     <void method="set">
-     <object idref="Edge137"/>
+     <object idref="Edge141"/>
      <int>10</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node69"/>
@@ -6112,13 +6579,6 @@
      <void method="set">
       <object idref="Edge140"/>
       <object idref="Node9"/>
-     </void>
-    </void>
-    <void class="Graph.Edge" method="getField">
-     <string>cost</string>
-     <void method="set">
-      <object idref="Edge140"/>
-      <int>20</int>
      </void>
     </void>
    </object>
@@ -6232,7 +6692,6 @@
   </void>
  </void>
 </void>
-<void idref="ArrayList39"/>
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
@@ -6243,6 +6702,9 @@
      <object idref="Edge146"/>
      <int>10</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node15"/>
@@ -6258,6 +6720,9 @@
      <object idref="Edge147"/>
      <int>15</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node27"/>
@@ -6320,6 +6785,9 @@
      <int>10</int>
     </void>
    </void>
+   <void property="mode">
+    <string>stairs</string>
+   </void>
   </object>
   <object idref="Node50"/>
  </void>
@@ -6334,6 +6802,9 @@
      <object idref="Edge151"/>
      <int>10</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node35"/>
@@ -6405,10 +6876,26 @@
       <int>30</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
   <void method="add">
    <object idref="Edge124"/>
+  </void>
+ </void>
+</void>
+<void idref="ArrayList41"/>
+<void class="Graph.Node" id="Field43" method="getField">
+ <string>edges</string>
+ <void id="ArrayList42" method="get">
+  <object idref="Node98"/>
+  <void method="add">
+   <object idref="Edge111"/>
+  </void>
+  <void method="add">
+   <object idref="Edge57"/>
   </void>
  </void>
 </void>
@@ -6444,6 +6931,24 @@
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
+  <object class="Graph.Edge" id="Edge155">
+   <void class="Graph.Edge" method="getField">
+    <string>cost</string>
+    <void method="set">
+     <object idref="Edge155"/>
+     <int>10</int>
+    </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
+   </void>
+  </object>
+  <object idref="Node80"/>
+ </void>
+</void>
+<void class="Graph.Edge" method="getField">
+ <string>end</string>
+ <void method="set">
   <object class="Graph.Edge" id="Edge156">
    <void class="Graph.Edge" method="getField">
     <string>cost</string>
@@ -6451,6 +6956,9 @@
      <object idref="Edge156"/>
      <int>2</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node77"/>
@@ -6466,6 +6974,9 @@
      <object idref="Edge157"/>
      <int>20</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node56"/>
@@ -6491,6 +7002,9 @@
       <int>15</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
   <void method="add">
@@ -6508,6 +7022,9 @@
       <object idref="Edge159"/>
       <int>5</int>
      </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
     </void>
    </object>
   </void>
@@ -6534,6 +7051,9 @@
       <int>5</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
   <void method="add">
@@ -6555,7 +7075,13 @@
       <int>20</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
+  </void>
+  <void method="add">
+   <object idref="Edge89"/>
   </void>
  </void>
 </void>
@@ -6580,7 +7106,7 @@
  <void id="ArrayList46" method="get">
   <object idref="Node41"/>
   <void method="add">
-   <object class="Graph.Edge" id="Edge163">
+   <object class="Graph.Edge" id="Edge169">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
@@ -6595,10 +7121,13 @@
       <int>10</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
   <void method="add">
-   <object class="Graph.Edge" id="Edge164">
+   <object class="Graph.Edge" id="Edge170">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
@@ -6644,10 +7173,39 @@
      <int>5</int>
     </void>
    </void>
+   <void property="mode">
+    <string>stairs</string>
+   </void>
   </object>
   <object idref="Node38"/>
  </void>
 </void>
+<void class="Graph.Node" id="Field48" method="getField">
+ <string>edges</string>
+ <void id="ArrayList47" method="get">
+  <object idref="Node3"/>
+  <void method="add">
+   <object idref="Edge27"/>
+  </void>
+  <void method="add">
+   <object idref="Edge34"/>
+  </void>
+ </void>
+</void>
+<void idref="ArrayList47"/>
+<void class="Graph.Node" id="Field49" method="getField">
+ <string>edges</string>
+ <void id="ArrayList48" method="get">
+  <object idref="Node58"/>
+  <void method="add">
+   <object idref="Edge164"/>
+  </void>
+  <void method="add">
+   <object idref="Edge84"/>
+  </void>
+ </void>
+</void>
+<void idref="ArrayList48"/>
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
@@ -6658,6 +7216,9 @@
      <object idref="Edge167"/>
      <int>15</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node89"/>
@@ -6673,6 +7234,9 @@
      <object idref="Edge168"/>
      <int>10</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node11"/>
@@ -6700,6 +7264,9 @@
       <object idref="Edge169"/>
       <int>10</int>
      </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
     </void>
    </object>
   </void>
@@ -6751,7 +7318,7 @@
  <void id="ArrayList49" method="get">
   <object idref="Node24"/>
   <void method="add">
-   <object class="Graph.Edge" id="Edge172">
+   <object class="Graph.Edge" id="Edge177">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
@@ -6765,6 +7332,9 @@
       <object idref="Edge172"/>
       <int>10</int>
      </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
     </void>
    </object>
   </void>
@@ -6810,7 +7380,10 @@
  <void id="ArrayList51" method="get">
   <object idref="Node48"/>
   <void method="add">
-   <object class="Graph.Edge" id="Edge174">
+   <object idref="Edge147"/>
+  </void>
+  <void method="add">
+   <object class="Graph.Edge" id="Edge179">
     <void class="Graph.Edge" method="getField">
      <string>end</string>
      <void method="set">
@@ -6825,6 +7398,9 @@
       <int>10</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
   <void method="add">
@@ -6836,7 +7412,7 @@
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
-  <object class="Graph.Edge" id="Edge175">
+  <object class="Graph.Edge" id="Edge180">
    <void class="Graph.Edge" method="getField">
     <string>cost</string>
     <void method="set">
@@ -6858,6 +7434,9 @@
      <object idref="Edge176"/>
      <int>10</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node47"/>
@@ -6917,6 +7496,9 @@
      <int>10</int>
     </void>
    </void>
+   <void property="mode">
+    <string>stairs</string>
+   </void>
   </object>
   <object idref="Node48"/>
  </void>
@@ -6966,6 +7548,9 @@
       <int>10</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
   <void method="add">
@@ -6983,6 +7568,9 @@
       <object idref="Edge182"/>
       <int>20</int>
      </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
     </void>
    </object>
   </void>
@@ -7009,6 +7597,9 @@
       <int>10</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
   <void method="add">
@@ -7030,6 +7621,9 @@
      <object idref="Edge184"/>
      <int>20</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node43"/>
@@ -7060,6 +7654,9 @@
       <object idref="Edge185"/>
       <int>10</int>
      </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
     </void>
    </object>
   </void>
@@ -7107,6 +7704,9 @@
       <int>10</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
   <void method="add">
@@ -7124,6 +7724,9 @@
   </void>
   <void method="add">
    <object idref="Edge44"/>
+  </void>
+  <void method="add">
+   <object idref="Edge105"/>
   </void>
  </void>
 </void>
@@ -7151,6 +7754,9 @@
       <int>15</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
  </void>
@@ -7166,6 +7772,9 @@
      <object idref="Edge189"/>
      <int>15</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node40"/>
@@ -7195,6 +7804,9 @@
      <int>10</int>
     </void>
    </void>
+   <void property="mode">
+    <string>stairs</string>
+   </void>
   </object>
   <object idref="Node31"/>
  </void>
@@ -7209,6 +7821,9 @@
      <object idref="Edge191"/>
      <int>10</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node83"/>
@@ -7273,6 +7888,9 @@
       <int>10</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
   <void method="add">
@@ -7313,7 +7931,7 @@
   </void>
  </void>
 </void>
-<void idref="ArrayList64"/>
+<void idref="ArrayList67"/>
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
@@ -7324,6 +7942,9 @@
      <object idref="Edge195"/>
      <int>5</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node99"/>
@@ -7356,7 +7977,6 @@
   </void>
  </void>
 </void>
-<void idref="ArrayList65"/>
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
@@ -7367,6 +7987,9 @@
      <object idref="Edge197"/>
      <int>20</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node67"/>
@@ -7394,6 +8017,9 @@
       <object idref="Edge198"/>
       <int>30</int>
      </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
     </void>
    </object>
   </void>
@@ -7447,11 +8073,14 @@
       <int>20</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
  </void>
 </void>
-<void idref="ArrayList67"/>
+<void idref="ArrayList68"/>
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
@@ -7462,6 +8091,9 @@
      <object idref="Edge201"/>
      <int>20</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node59"/>
@@ -7477,9 +8109,12 @@
   <void method="add">
    <object idref="Edge179"/>
   </void>
+  <void method="add">
+   <object idref="Edge204"/>
+  </void>
  </void>
 </void>
-<void idref="ArrayList68"/>
+<void idref="ArrayList69"/>
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
@@ -7490,6 +8125,9 @@
      <object idref="Edge202"/>
      <int>20</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node32"/>
@@ -7552,7 +8190,13 @@
       <int>25</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
+  </void>
+  <void method="add">
+   <object idref="Edge195"/>
   </void>
  </void>
 </void>
@@ -7720,6 +8364,9 @@
       <int>10</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
   <void method="add">
@@ -7767,6 +8414,9 @@
      <int>10</int>
     </void>
    </void>
+   <void property="mode">
+    <string>stairs</string>
+   </void>
   </object>
   <object idref="Node81"/>
  </void>
@@ -7808,6 +8458,9 @@
       <object idref="Edge214"/>
       <int>10</int>
      </void>
+    </void>
+    <void property="mode">
+     <string>stairs</string>
     </void>
    </object>
   </void>
@@ -7866,6 +8519,13 @@
   <void method="add">
    <object idref="Edge32"/>
   </void>
+ </void>
+</void>
+<void idref="ArrayList81"/>
+<void class="Graph.Node" id="Field83" method="getField">
+ <string>edges</string>
+ <void id="ArrayList82" method="get">
+  <object idref="Node5"/>
   <void method="add">
    <object idref="Edge74"/>
   </void>
@@ -7885,6 +8545,9 @@
      <object idref="Edge215"/>
      <int>5</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node63"/>
@@ -7983,13 +8646,16 @@
 <void class="Graph.Edge" method="getField">
  <string>end</string>
  <void method="set">
-  <object class="Graph.Edge" id="Edge219">
+  <object class="Graph.Edge" id="Edge225">
    <void class="Graph.Edge" method="getField">
     <string>cost</string>
     <void method="set">
      <object idref="Edge219"/>
      <int>5</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node99"/>
@@ -8046,6 +8712,9 @@
       <int>10</int>
      </void>
     </void>
+    <void property="mode">
+     <string>stairs</string>
+    </void>
    </object>
   </void>
  </void>
@@ -8099,8 +8768,21 @@
     </void>
    </object>
   </void>
+ </void>
+</void>
+<void idref="ArrayList92"/>
+<void class="Graph.Node" id="Field94" method="getField">
+ <string>edges</string>
+ <void id="ArrayList93" method="get">
+  <object idref="Node78"/>
   <void method="add">
    <object idref="Edge41"/>
+  </void>
+  <void method="add">
+   <object idref="Edge227"/>
+  </void>
+  <void method="add">
+   <object idref="Edge73"/>
   </void>
  </void>
 </void>
@@ -8128,6 +8810,9 @@
      <object idref="Edge223"/>
      <int>10</int>
     </void>
+   </void>
+   <void property="mode">
+    <string>stairs</string>
    </void>
   </object>
   <object idref="Node90"/>
@@ -8258,9 +8943,6 @@
   <void method="add">
    <object idref="Edge150"/>
   </void>
-  <void method="add">
-   <object idref="Edge202"/>
-  </void>
  </void>
 </void>
 <void idref="ArrayList99"/>
@@ -8273,5 +8955,18 @@
   </void>
  </void>
 </void>
-<void idref="ArrayList100"/>
+<void idref="ArrayList101"/>
+<void class="Graph.Node" id="Field103" method="getField">
+ <string>edges</string>
+ <void id="ArrayList102" method="get">
+  <object idref="Node9"/>
+  <void method="add">
+   <object idref="Edge224"/>
+  </void>
+  <void method="add">
+   <object idref="Edge228"/>
+  </void>
+ </void>
+</void>
+<void idref="ArrayList102"/>
 </java>

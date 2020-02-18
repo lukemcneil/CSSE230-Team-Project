@@ -37,8 +37,8 @@ public class GraphMaker {
 	private static Graph drawOlin2() {
 		Graph Olin2 = new Graph();
 		int y = 100;
-		String[] names = {"TopStairsO269", "O269", "O267", "TopStairsOCommons", "O259", "O257", "O225Corner", "O222", "O227", "O229", "O226", "O231", "O233", "OTopHadCommons", "TopStairsO238", "O201", "O203", "O202", "O204", "O203-1", "O205", "O206", "O207Corner", "TopStairsO214"};
-		Point[] points = {new Point(65, 150 + y), new Point(65, 135 + y), new Point(65, 120 + y), new Point(70, 110 + y), new Point(85, 105 + y), new Point(105, 105 + y), new Point(145, 105 + y), new Point(155, 105 + y), new Point(165, 105 + y), new Point(175, 105 + y), new Point(185, 105 + y), new Point(195, 105 + y), new Point(205, 105 + y), new Point(205, 140 + y), new Point(210, 125 + y), new Point(205, 160 + y), new Point(195, 160 + y), new Point(185, 160 + y), new Point(175, 160 + y), new Point(165, 160 + y), new Point(157, 160 + y), new Point(150, 160 + y), new Point(145, 160 + y), new Point(145, 130 + y)};
+		String[] names = {"TopStairsO269", "O269", "O267", "TopStairsOCommons", "O2Elevator", "O259", "O257", "O225Corner", "O222", "O227", "O229", "O226", "O231", "O233", "OTopHadCommons", "TopStairsO238", "O201", "O203", "O202", "O204", "O203-1", "O205", "O206", "O207Corner", "TopStairsO214"};
+		Point[] points = {new Point(65, 150 + y), new Point(65, 135 + y), new Point(65, 120 + y), new Point(70, 110 + y), new Point(74, 107 + y), new Point(85, 105 + y), new Point(105, 105 + y), new Point(145, 105 + y), new Point(155, 105 + y), new Point(165, 105 + y), new Point(175, 105 + y), new Point(185, 105 + y), new Point(195, 105 + y), new Point(205, 105 + y), new Point(205, 140 + y), new Point(210, 125 + y), new Point(205, 160 + y), new Point(195, 160 + y), new Point(185, 160 + y), new Point(175, 160 + y), new Point(165, 160 + y), new Point(157, 160 + y), new Point(150, 160 + y), new Point(145, 160 + y), new Point(145, 130 + y)};
 		for (int i = 0; i < names.length; i++) {
 			Olin2.addNode(names[i], points[i], 2);
 		}
@@ -50,7 +50,8 @@ public class GraphMaker {
 		Olin2.addEdge("TopStairsO269", "O269", 10);
 		Olin2.addEdge("O269", "O267", 10);
 		Olin2.addEdge("O267", "TopStairsOCommons", 30);
-		Olin2.addEdge("TopStairsOCommons", "O259", 30);
+		Olin2.addEdge("TopStairsOCommons", "O2Elevator", 10);
+		Olin2.addEdge("O259", "O2Elevator", 20);
 		Olin2.addEdge("O259", "O257", 10);
 		Olin2.addEdge("O257", "O225Corner", 40);
 		Olin2.addEdge("O225Corner", "O222", 20);
@@ -80,8 +81,8 @@ public class GraphMaker {
 	private static Graph drawOlin1() {
 		Graph Olin1 = new Graph();
 		int h = 100;
-		String[] names = {"BotStairsO269", "O169", "O167", "BotStairsOCommons", "Bot2ndStair", "O159", "O157", "O111", "O106", "O108", "O113", "O110", "O115", "O115Corner", "OBotHadCommons", "BotStairs238", "O101", "O103", "O105", "O107", "O102", "O102-1", "O109Corner", "O104", "BotStairsO104"};
-		Point[] points = {new Point(65, 150 + h), new Point(65, 135 + h), new Point(65, 120 + h), new Point(65, 105 + h), new Point(70, 110 + h), new Point(85, 105 + h), new Point(105, 105 + h), new Point(145, 105 + h), new Point(155, 105 + h), new Point(165, 105 + h), new Point(175, 105 + h), new Point(185, 105 + h), new Point(195, 105 + h), new Point(205, 105 + h), new Point(205, 140 + h), new Point(210, 125 + h), new Point(205, 160 + h), new Point(195, 160 + h), new Point(185, 160 + h), new Point(175, 160 + h), new Point(165, 160 + h), new Point(157, 160 + h), new Point(145, 160 + h), new Point(145, 140 + h), new Point(145, 130 + h)};
+		String[] names = {"BotStairsO269", "O169", "O167", "BotStairsOCommons", "Bot2ndStair", "O1Elevator", "O159", "O157", "O111", "O106", "O108", "O113", "O110", "O115", "O115Corner", "OBotHadCommons", "BotStairs238", "O101", "O103", "O105", "O107", "O102", "O102-1", "O109Corner", "O104", "BotStairsO104"};
+		Point[] points = {new Point(65, 150 + h), new Point(65, 135 + h), new Point(65, 120 + h), new Point(65, 105 + h), new Point(70, 110 + h), new Point(73, 107 + h), new Point(85, 105 + h), new Point(105, 105 + h), new Point(145, 105 + h), new Point(155, 105 + h), new Point(165, 105 + h), new Point(175, 105 + h), new Point(185, 105 + h), new Point(195, 105 + h), new Point(205, 105 + h), new Point(205, 140 + h), new Point(210, 125 + h), new Point(205, 160 + h), new Point(195, 160 + h), new Point(185, 160 + h), new Point(175, 160 + h), new Point(165, 160 + h), new Point(157, 160 + h), new Point(145, 160 + h), new Point(145, 140 + h), new Point(145, 130 + h)};
 		for (int i = 0; i < names.length; i++) {
 			Olin1.addNode(names[i], points[i], 1);
 		}
@@ -94,7 +95,8 @@ public class GraphMaker {
 		Olin1.addEdge("O169", "O167", 10);
 		Olin1.addEdge("O167", "Bot2ndStair", 30);
 		Olin1.addEdge("BotStairsOCommons", "Bot2ndStair", 10);
-		Olin1.addEdge("Bot2ndStair", "O159", 30);
+		Olin1.addEdge("Bot2ndStair", "O1Elevator", 10);
+		Olin1.addEdge("O159", "O1Elevator", 20);
 		Olin1.addEdge("O159", "O157", 10);
 		Olin1.addEdge("O157", "O111", 40);
 		Olin1.addEdge("O111", "O106", 20);
@@ -182,6 +184,7 @@ public class GraphMaker {
 		ret.addEdge("TopStairsOCommons", "BotStairsOCommons", 10, "stairs");
 		ret.addEdge("TopStairsO238", "BotStairs238", 10, "stairs");
 		ret.addEdge("TopStairsO214", "BotStairsO104", 10, "stairs");
+		ret.addEdge("O1Elevator", "O2Elevator", 100, "elevator");
 		return ret;
 	}
 
