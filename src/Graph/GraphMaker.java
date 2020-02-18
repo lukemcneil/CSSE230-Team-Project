@@ -184,6 +184,7 @@ public class GraphMaker {
 		ret.addEdge("TopStairsOCommons", "BotStairsOCommons", 10, "stairs");
 		ret.addEdge("TopStairsO238", "BotStairs238", 10, "stairs");
 		ret.addEdge("TopStairsO214", "BotStairsO104", 10, "stairs");
+		ret.addEdge("O1Elevator", "O2Elevator", 100, "elevator");
 		return ret;
 	}
 
