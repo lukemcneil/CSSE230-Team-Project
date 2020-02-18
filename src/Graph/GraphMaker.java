@@ -42,7 +42,9 @@ public class GraphMaker {
 		for (int i = 0; i < names.length; i++) {
 			Olin2.addNode(names[i], points[i],2);
 		}
-		Olin2.nodes.get("O269").setImage("RoomInfo/O269Image.png");
+		for(String i : Olin2.nodes.keySet()) {
+			Olin2.nodes.get(i).setImage("RoomInfo/Olin 2/" + i + "Image.png");
+		}
 		Olin2.nodes.get("O225Corner").showName = false;
 		Olin2.nodes.get("O207Corner").showName = false;
 		Olin2.addEdge("TopStairsO269", "O269", 10);
@@ -82,6 +84,10 @@ public class GraphMaker {
 		Point[] points = {new Point(65, 150+h), new Point(65, 135+h), new Point(65, 120+h),new Point(65, 105+h), new Point(70, 110+h), new Point(85, 105+h), new Point(105, 105+h), new Point(145, 105+h), new Point(155, 105+h), new Point(165, 105+h), new Point(175, 105+h), new Point(185, 105+h), new Point(195, 105+h), new Point(205, 105+h), new Point(205, 140+h), new Point(210, 125+h), new Point(205, 160+h), new Point(195, 160+h), new Point(185, 160+h), new Point(175, 160+h), new Point(165, 160+h), new Point(157, 160+h), new Point(145, 160+h), new Point(145, 140+h), new Point(145, 130+h)};
 		for (int i =0;i<names.length;i++) {
 			Olin1.addNode(names[i],points[i],1);
+		}
+
+		for(String i : Olin1.nodes.keySet()) {
+			Olin1.nodes.get(i).setImage("RoomInfo/Olin 1/" + i + "Image.png");
 		}
 
 		Olin1.addEdge("BotStairsO269", "O169", 10);
@@ -190,6 +196,10 @@ public class GraphMaker {
 		for(int i =0;i<names.length;i++) {
 			MoenchLower1.addNode(names[i],points[i],0);
 		}
+		for(String i : MoenchLower1.nodes.keySet()) {
+			MoenchLower1.nodes.get(i).setImage("RoomInfo/Moench Lower Level/" + i + "Image.png");
+		}
+		
 		MoenchLower1.nodes.get("ELCorner").showName=false;
 		MoenchLower1.nodes.get("FL101Corner").showName=false;
 		MoenchLower1.nodes.get("FL104Ent").showName=false;
