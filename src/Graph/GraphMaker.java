@@ -36,8 +36,9 @@ public class GraphMaker {
 
 	private static Graph drawOlin2() {
 		Graph Olin2 = new Graph();
+		int y=100;
 		String[] names = {"TopStairsO269", "O269", "O267", "TopStairsOCommons", "O259", "O257", "O225Corner", "O222", "O227", "O229", "O226", "O231", "O233", "OTopHadCommons", "TopStairsO238", "O201", "O203", "O202", "O204", "O203-1", "O205", "O206", "O207Corner", "TopStairsO214"};
-		Point[] points = {new Point(65, 150), new Point(65, 135), new Point(65, 120), new Point(70, 110), new Point(85, 105), new Point(105, 105), new Point(145, 105), new Point(155, 105), new Point(165, 105), new Point(175, 105), new Point(185, 105), new Point(195, 105), new Point(205, 105), new Point(205, 140), new Point(210, 125), new Point(205, 160), new Point(195, 160), new Point(185, 160), new Point(175, 160), new Point(165, 160), new Point(157, 160), new Point(150, 160), new Point(145, 160), new Point(145, 130)};
+		Point[] points = {new Point(65, 150+y), new Point(65, 135+y), new Point(65, 120+y), new Point(70, 110+y), new Point(85, 105+y), new Point(105, 105+y), new Point(145, 105+y), new Point(155, 105+y), new Point(165, 105+y), new Point(175, 105+y), new Point(185, 105+y), new Point(195, 105+y), new Point(205, 105+y), new Point(205, 140+y), new Point(210, 125+y), new Point(205, 160+y), new Point(195, 160+y), new Point(185, 160+y), new Point(175, 160+y), new Point(165, 160+y), new Point(157, 160+y), new Point(150, 160+y), new Point(145, 160+y), new Point(145, 130+y)};
 		for (int i = 0; i < names.length; i++) {
 			Olin2.addNode(names[i], points[i],2);
 		}
@@ -160,12 +161,22 @@ public class GraphMaker {
 		return Moench1;
 	}
 	
+	private static Graph drawMoench2() {
+		Graph Moench2 = new Graph();
+		
+		return Moench2;
+	}
+	
 	private static Graph drawOlin12() {
 		Graph ret = drawOlin1();
 		Graph temp = drawOlin2();
 		for(String c : temp.nodes.keySet()) {
 			ret.nodes.put(c, temp.nodes.get(c));
 		}
+		ret.addEdge("BotStairsO269", "TopStairsO269", 10);
+		ret.addEdge("TopStairsOCommons","BotStairsOCommons", 10);
+		ret.addEdge("TopStairsO238", "BotStairs238", 10);
+		ret.addEdge("TopStairsO214", "BotStairsO104", 10);
 		return ret;
 	}
 	

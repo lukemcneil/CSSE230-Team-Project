@@ -55,6 +55,11 @@ public class Graph {
 		nodes.get(node1).addEdge(nodes.get(node2), cost);
 		nodes.get(node2).addEdge(nodes.get(node1), cost);
 	}
+	
+	public void addEdge(String node1, String node2, int cost,String mode) {
+		nodes.get(node1).addEdge(nodes.get(node2), cost);
+		nodes.get(node2).addEdge(nodes.get(node1), cost);
+	}
 
 	public int getFloor() {
 		return this.floor;
