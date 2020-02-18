@@ -161,11 +161,8 @@ public class Node {
 	private void dijkstraHelper(Hashtable<Node, Integer> costTable, ArrayList<Node> completed,
 	                            Hashtable<Node, Node> path, String mode) {
 		completed.add(this);
-		for (Edge curr : this.edges) {
-			//System.out.println("Edge Mode: "+ curr.getMode() +" vs graph: "+ mode);
-			
-			if (curr.getMode()==null||(!completed.contains(curr.end) && !(curr.getMode().equals("elevator") && mode.equals("stairs")) || !completed.contains(curr.end)&& !(curr.getMode().equals("stairs") && mode.equals("elevator")))) {
-				//System.out.println("Running anyways");
+		for (Edge curr : this.edges) {			
+			if (((!completed.contains(curr.end))&&curr.getMode()==null)||((!completed.contains(curr.end) && !(curr.getMode().equals("elevator")) && mode.equals("stairs")) || (!completed.contains(curr.end)&& !(curr.getMode().equals("stairs") && mode.equals("elevator"))))) {
 				int currCost = costTable.get(this) == null ? 0 : costTable.get(this);
 				if (costTable.containsKey(curr.end)) {
 					int temp = curr.cost + costTable.get(this);

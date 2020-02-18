@@ -63,7 +63,7 @@ public class ButtonPanel extends JPanel {
 		tripPlanner.addActionListener(new TripPlannerListener(g, roomNumber, distance));
 		floorUp.addActionListener(new FloorUpListener(g, floorLabel));
 		floorDown.addActionListener(new FloorDownListener(g, floorLabel));
-		elevatorToggle.addActionListener(new ModeListener(g));
+		elevatorToggle.addActionListener(new ModeListener(g,fpl));
 	}
 
 	public void setStartingRoom(String set) {
