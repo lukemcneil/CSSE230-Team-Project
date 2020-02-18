@@ -94,6 +94,9 @@ public class MainComponent extends JComponent implements MouseListener {
 	public void mousePressed(MouseEvent e) {
 		boolean highlightedInForLoop = false;
 		for (String i : graph.getNodes().keySet()) {
+			if(graph.getNodes().get(i).floor != graph.getFloor()) {
+				continue;
+			}
 			if (!(e.getModifiers() == MouseEvent.BUTTON3_MASK)) {
 				graph.getNodes().get(i).setHighlighted(false);
 			}
