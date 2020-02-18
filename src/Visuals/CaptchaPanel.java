@@ -1,6 +1,7 @@
 package Visuals;
 
 import java.awt.BorderLayout;
+import java.awt.GridLayout;
 import java.awt.TextField;
 import java.awt.image.BufferedImage;
 import java.beans.XMLDecoder;
@@ -36,6 +37,7 @@ public class CaptchaPanel extends JPanel {
 	
 	public CaptchaPanel(JFrame frame) {
 		this.frame = frame;
+		setLayout(new GridLayout(8,3,10,10));
 		clickToContinue = new JButton("Click here");
 		enter = new JButton("Enter");
 		bestTeam = new TextField("");
