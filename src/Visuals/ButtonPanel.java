@@ -11,6 +11,7 @@ public class ButtonPanel extends JPanel {
 	private JButton findPath, findRoom, getInfo, zoomIn, zoomOut, floorUp, floorDown, tripPlanner;
 	private TextField startingRoom, destination, roomNumber, distance;
 	private JLabel floorLabel;
+	private JToggleButton elevatorToggle;
 
 	private Graph g;
 
@@ -25,7 +26,7 @@ public class ButtonPanel extends JPanel {
 		zoomOut = new JButton("-");
 		floorUp = new JButton("+ Floor");
 		floorDown = new JButton("- Floor");
-
+		elevatorToggle = new JToggleButton("Elevators Only");
 
 		floorLabel = new JLabel("" + g.getFloor());
 		tripPlanner = new JButton("trip planner");
@@ -50,6 +51,7 @@ public class ButtonPanel extends JPanel {
 		this.add(tripPlanner);
 		this.add(new JLabel("distance"));
 		this.add(distance);
+		this.add(elevatorToggle);
 
 		fpl = new FindPathListener(g, startingRoom, destination);
 
@@ -61,6 +63,7 @@ public class ButtonPanel extends JPanel {
 		tripPlanner.addActionListener(new TripPlannerListener(g, roomNumber, distance));
 		floorUp.addActionListener(new FloorUpListener(g, floorLabel));
 		floorDown.addActionListener(new FloorDownListener(g, floorLabel));
+		elevatorToggle.addActionListener(new ModeListener(g));
 	}
 
 	public void setStartingRoom(String set) {

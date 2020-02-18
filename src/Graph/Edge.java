@@ -11,6 +11,7 @@ public class Edge {
     public Edge(Node end, int cost) {
         this.end = end;
         this.cost = cost;
+        mode = "stairs";
     }
     
     public Edge(Node end, int cost, String mode) {
