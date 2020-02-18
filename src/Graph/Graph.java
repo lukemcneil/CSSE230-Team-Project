@@ -13,7 +13,7 @@ public class Graph {
 	private double m = 6;
 	private int x = -200;
 	private int y = 200;
-	private String mode="";
+	private String mode="stairs";
 	JFrame frame;
 
 	public String getMode() {
@@ -57,8 +57,8 @@ public class Graph {
 	}
 	
 	public void addEdge(String node1, String node2, int cost,String mode) {
-		nodes.get(node1).addEdge(nodes.get(node2), cost);
-		nodes.get(node2).addEdge(nodes.get(node1), cost);
+		nodes.get(node1).addEdge(nodes.get(node2), cost, mode);
+		nodes.get(node2).addEdge(nodes.get(node1), cost, mode);
 	}
 
 	public int getFloor() {
@@ -124,5 +124,9 @@ public class Graph {
 
 	public void moveDown(int amount) {
 		y -= amount;
+	}
+	
+	public void switchMode() {
+		mode = mode.equals("stairs") ? "elevator" : "stairs";
 	}
 }

@@ -178,10 +178,10 @@ public class GraphMaker {
 		for (String c : temp.nodes.keySet()) {
 			ret.nodes.put(c, temp.nodes.get(c));
 		}
-		ret.addEdge("BotStairsO269", "TopStairsO269", 10);
-		ret.addEdge("TopStairsOCommons", "BotStairsOCommons", 10);
-		ret.addEdge("TopStairsO238", "BotStairs238", 10);
-		ret.addEdge("TopStairsO214", "BotStairsO104", 10);
+		ret.addEdge("BotStairsO269", "TopStairsO269", 10, "stairs");
+		ret.addEdge("TopStairsOCommons", "BotStairsOCommons", 10, "stairs");
+		ret.addEdge("TopStairsO238", "BotStairs238", 10, "stairs");
+		ret.addEdge("TopStairsO214", "BotStairsO104", 10, "stairs");
 		return ret;
 	}
 
