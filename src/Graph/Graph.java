@@ -26,13 +26,13 @@ public class Graph {
 
 	public Graph() {
 		nodes = new Hashtable<String, Node>();
-		this.floor=0;
+		this.floor=1;
 	}
 
 	public Graph(JFrame frame) {
 		nodes = new Hashtable<String, Node>();
 		this.frame = frame;
-		this.floor=0;
+		this.floor=1;
 	}
 
 	public String toString() {
