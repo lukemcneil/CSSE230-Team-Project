@@ -10,10 +10,10 @@ public class Graph {
 	private final double minimumZoom = 1;
 
 	private int floor;
-	private double m = 6;
-	private int x = -200;
+	private double m = 4;
+	private int x = 0;
 	private int y = 200;
-	private String mode="";
+	private String mode = "";
 	JFrame frame;
 
 	public String getMode() {
@@ -21,18 +21,18 @@ public class Graph {
 	}
 
 	public void setMode(String s) {
-		mode=s;
+		mode = s;
 	}
 
 	public Graph() {
 		nodes = new Hashtable<String, Node>();
-		this.floor=1;
+		this.floor = 1;
 	}
 
 	public Graph(JFrame frame) {
 		nodes = new Hashtable<String, Node>();
 		this.frame = frame;
-		this.floor=1;
+		this.floor = 1;
 	}
 
 	public String toString() {
@@ -47,16 +47,16 @@ public class Graph {
 		nodes.put(name, new Node(name));
 	}
 
-	public void addNode(String name, Point p,int floor) {
-		nodes.put(name, new Node(name, p,floor));
+	public void addNode(String name, Point p, int floor) {
+		nodes.put(name, new Node(name, p, floor));
 	}
 
 	public void addEdge(String node1, String node2, int cost) {
 		nodes.get(node1).addEdge(nodes.get(node2), cost);
 		nodes.get(node2).addEdge(nodes.get(node1), cost);
 	}
-	
-	public void addEdge(String node1, String node2, int cost,String mode) {
+
+	public void addEdge(String node1, String node2, int cost, String mode) {
 		nodes.get(node1).addEdge(nodes.get(node2), cost);
 		nodes.get(node2).addEdge(nodes.get(node1), cost);
 	}
