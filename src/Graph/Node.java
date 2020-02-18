@@ -15,15 +15,15 @@ public class Node {
 	public boolean highlighted, showName;
 	private String schedulePicture;
 	private Rectangle hitbox;
-	private String mode;
-
-	public void setMode(String m) {
-		mode=m;
-	}
-	
-	public String getMode() {
-		return mode;
-	}
+//	private String mode;
+//
+//	public void setMode(String m) {
+//		mode=m;
+//	}
+//	
+//	public String getMode() {
+//		return mode;
+//	}
 	
 	public Node() {
 		this.edges = new ArrayList<Edge>();
@@ -158,7 +158,7 @@ public class Node {
 	                            Hashtable<Node, Node> path, String mode) {
 		completed.add(this);
 		for (Edge curr : this.edges) {
-			if (!completed.contains(curr.end) && !(this.mode=="elevator" && mode=="stairs") || !completed.contains(curr.end)&& !(this.mode=="stairs" && mode=="elevator")) {
+			if (!completed.contains(curr.end) && !(curr.getMode()=="elevator" && mode=="stairs") || !completed.contains(curr.end)&& !(curr.getMode()=="stairs" && mode=="elevator")) {
 				int currCost = costTable.get(this) == null ? 0 : costTable.get(this);
 				if (costTable.containsKey(curr.end)) {
 					int temp = curr.cost + costTable.get(this);
