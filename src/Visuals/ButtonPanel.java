@@ -82,7 +82,7 @@ public class ButtonPanel extends JPanel {
 	}
 
 	public int doStuff() {
-		fpl.doStuff();
+		fpl.doStuff(); 
 		cost = fpl.getCost();
 		return fpl.getCost();
 	}
