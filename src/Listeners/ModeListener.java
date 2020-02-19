@@ -3,6 +3,7 @@ package Listeners;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import Graph.Edge;
 import Graph.Graph;
 
 public class ModeListener implements ActionListener {
