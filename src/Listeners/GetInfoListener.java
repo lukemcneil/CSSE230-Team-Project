@@ -1,6 +1,5 @@
 package Listeners;
 
-
 import Graph.Graph;
 
 import javax.imageio.ImageIO;
@@ -28,18 +27,48 @@ public class GetInfoListener implements ActionListener {
 			JOptionPane.showMessageDialog(null, "could not find the specified room");
 			return;
 		}
-		BufferedImage image = null;
-		JLabel picLabel = null;
-		try {
-			File pic = new File(g.nodes.get(room.getText()).getImage());
-			image = ImageIO.read(pic);
-			picLabel = new JLabel(new ImageIcon(image));
-		} catch (NullPointerException | IOException e1) {
-			// TODO Auto-generated catch block
-			System.out.println("could not find named file");
-			picLabel = new JLabel("Schedule could not be found.");
+		if (room.getText().equals("F218")) {
+			BufferedImage image1 = null;
+			BufferedImage image2 = null;
+			JLabel fail = null;
+			JLabel success = null;
+			try {
+				File pic1 = new File("RoomInfo" + File.separator + "Dank2.png");
+				File pic2 = new File("RoomInfo" + File.separator + "Dank.png");
+				image1 = ImageIO.read(pic1);
+				image2 = ImageIO.read(pic2);
+				fail = new JLabel(new ImageIcon(image1));
+				success = new JLabel(new ImageIcon(image2));
+			} catch (NullPointerException | IOException e1) {
+				// TODO Auto-generated catch block
+				System.out.println("could not find named file");
+				fail = new JLabel("erp.");
+			}
+			int reply = JOptionPane.showConfirmDialog(fail, "Are all AVLTrees RedBlackTrees?", "POP QUIZ",
+					JOptionPane.YES_NO_OPTION);
+			if (reply == JOptionPane.YES_OPTION) {
+				JOptionPane.showMessageDialog(null, success, "You did it!", JOptionPane.PLAIN_MESSAGE,
+						null);
+			} else {
+				JOptionPane.showMessageDialog(null, fail, "FAILURE", JOptionPane.PLAIN_MESSAGE,
+						null);
+				System.exit(0);
+			}
+		} else {
+			BufferedImage image = null;
+			JLabel picLabel = null;
+			try {
+				File pic = new File(g.nodes.get(room.getText()).getImage());
+				image = ImageIO.read(pic);
+				picLabel = new JLabel(new ImageIcon(image));
+			} catch (NullPointerException | IOException e1) {
+				// TODO Auto-generated catch block
+				System.out.println("could not find named file");
+				picLabel = new JLabel("Schedule could not be found.");
+			}
+			JOptionPane.showMessageDialog(null, picLabel, g.nodes.get(room.getText()).name, JOptionPane.PLAIN_MESSAGE,
+					null);
 		}
-		JOptionPane.showMessageDialog(null, picLabel, g.nodes.get(room.getText()).name, JOptionPane.PLAIN_MESSAGE, null);
 	}
 
 }
