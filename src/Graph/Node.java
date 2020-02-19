@@ -1,9 +1,6 @@
 package Graph;
 
-import javax.imageio.ImageIO;
 import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.File;
 import java.util.ArrayList;
 import java.util.Hashtable;
 
@@ -24,7 +21,7 @@ public class Node {
 //	public String getMode() {
 //		return mode;
 //	}
-	
+
 	public Node() {
 		this.edges = new ArrayList<Edge>();
 		pathFinder = new Hashtable<Node, Node>();
@@ -71,7 +68,7 @@ public class Node {
 	public void addEdge(Node finish, int cost) {
 		edges.add(new Edge(finish, cost));
 	}
-	
+
 	public void addEdge(Node finish, int cost, String mode) {
 		edges.add(new Edge(finish, cost, mode));
 	}
@@ -131,7 +128,7 @@ public class Node {
 	public ArrayList<Edge> edgePathTo(Node destination, Graph g) {
 		cost = 0;
 		//if (pathFinder.isEmpty()) {
-			this.dijkstra(g);
+		this.dijkstra(g);
 		//}
 		ArrayList<Edge> edgedPath = new ArrayList<Edge>();
 		Node end = destination;
@@ -161,8 +158,8 @@ public class Node {
 	private void dijkstraHelper(Hashtable<Node, Integer> costTable, ArrayList<Node> completed,
 	                            Hashtable<Node, Node> path, String mode) {
 		completed.add(this);
-		for (Edge curr : this.edges) {			
-			if (((!completed.contains(curr.end))&&curr.getMode()==null)||((!completed.contains(curr.end) && !(curr.getMode().equals("elevator")) && mode.equals("stairs")) || (!completed.contains(curr.end)&& !(curr.getMode().equals("stairs") && mode.equals("elevator"))))) {
+		for (Edge curr : this.edges) {
+			if (((!completed.contains(curr.end)) && curr.getMode() == null) || ((!completed.contains(curr.end) && !(curr.getMode().equals("elevator")) && mode.equals("stairs")) || (!completed.contains(curr.end) && !(curr.getMode().equals("stairs") && mode.equals("elevator"))))) {
 				int currCost = costTable.get(this) == null ? 0 : costTable.get(this);
 				if (costTable.containsKey(curr.end)) {
 					int temp = curr.cost + costTable.get(this);
@@ -223,7 +220,6 @@ public class Node {
 	}
 
 	public String getImage() {
-		System.out.println("Picture:  " + this.schedulePicture);
 		return this.schedulePicture;
 	}
 
