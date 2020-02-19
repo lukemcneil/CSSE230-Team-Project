@@ -191,6 +191,10 @@ public class GraphMaker {
 		Moench1.addEdge("A102", "A124Corner", 20);
 		Moench1.addEdge("A124Corner", "A120Corner", 15);
 		Moench1.addEdge("CCorner", "C112Corner", 10);
+		String[] noShows = {"ToCrapo2","F102Corner","F101Corner","E100Corner","E101Corner","DCorner","DCorner2","D105Corner","C107Corner","CCorner","C112Corner","B105Ent","A124Corner","A120Corner"};
+		for(String i : noShows) {
+			Moench1.getNodes().get(i).showName=false;
+		}
 
 		return Moench1;
 	}
