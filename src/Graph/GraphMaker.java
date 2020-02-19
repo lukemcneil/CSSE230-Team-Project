@@ -200,7 +200,7 @@ public class GraphMaker {
 		int x = 300;
 		int y = 60;
 		int m = 1;
-		String[] names = {"F235", "F230", "F222", "F218", "F210", "E200", "Moench2Stairs", "E104", "B200", "A223",
+		String[] names = {"F235", "F230", "F222", "F218", "F210", "E200", "Moench2Stairs", "E104-2", "B200", "A223",
 				"A209", "A202", "A220", "A219", "A217"};
 		Point[] points = {new Point(10 * m + x, 10 * m + y), new Point(10 * m + x, 1 * m + y),
 				new Point(40 * m + x, 1 * m + y), new Point(50 * m + x, 1 * m + y), new Point(70 * m + x, 1 * m + y),
@@ -217,7 +217,7 @@ public class GraphMaker {
 		Moench2.addEdge("F222", "F218", 10);
 		Moench2.addEdge("F210", "F218", 20);
 		Moench2.addEdge("F222", "E200", 25);
-		Moench2.addEdge("E104", "E200", 10);
+		Moench2.addEdge("E104-2", "E200", 10);
 		Moench2.addEdge("Moench2Stairs", "E200", 10);
 		Moench2.addEdge("B200", "E200", 50);
 		Moench2.addEdge("A223", "B200", 10);

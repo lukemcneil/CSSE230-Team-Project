@@ -127,9 +127,7 @@ public class Node {
 
 	public ArrayList<Edge> edgePathTo(Node destination, Graph g) {
 		cost = 0;
-		//if (pathFinder.isEmpty()) {
 		this.dijkstra(g);
-		//}
 		ArrayList<Edge> edgedPath = new ArrayList<Edge>();
 		Node end = destination;
 		Node temp = pathFinder.get(destination);
@@ -149,6 +147,7 @@ public class Node {
 	public Hashtable<Node, Integer> dijkstra(Graph g) {
 		Hashtable<Node, Integer> costTable = new Hashtable<Node, Integer>();
 		ArrayList<Node> completed = new ArrayList<Node>();
+		pathFinder = new Hashtable<Node, Node>();
 
 		this.dijkstraHelper(costTable, completed, pathFinder, g.getMode());
 		costTable.put(this, 0);
