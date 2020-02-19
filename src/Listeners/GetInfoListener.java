@@ -42,7 +42,7 @@ public class GetInfoListener implements ActionListener {
 			} catch (NullPointerException | IOException e1) {
 				// TODO Auto-generated catch block
 				System.out.println("could not find named file");
-				fail = new JLabel("erp.");
+				fail = new JLabel("uh oh");
 			}
 			int reply = JOptionPane.showConfirmDialog(fail, "Are all AVLTrees RedBlackTrees?", "POP QUIZ",
 					JOptionPane.YES_NO_OPTION);
