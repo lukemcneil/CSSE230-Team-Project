@@ -38,14 +38,14 @@ public class GraphMaker {
 		int y = 100;
 		String[] names = {"TopStairsO269", "O269", "O267", "TopStairsOCommons", "O2Elevator", "O259", "O257",
 				"O225Corner", "O222", "O227", "O229", "O226", "O231", "O233", "OTopHadCommons", "TopStairsO238", "O201",
-				"O203", "O202", "O204", "O203-1", "O205", "O206", "O207Corner", "TopStairsO214"};
+				"O203", "O202", "O204", "O203-1", "O205", "O206", "O207Corner", "TopStairsO214", "O2Elevator2"};
 		Point[] points = {new Point(65, 150 + y), new Point(65, 135 + y), new Point(65, 120 + y),
 				new Point(70, 110 + y), new Point(74, 107 + y), new Point(85, 105 + y), new Point(105, 105 + y),
 				new Point(145, 105 + y), new Point(155, 105 + y), new Point(165, 105 + y), new Point(175, 105 + y),
 				new Point(185, 105 + y), new Point(195, 105 + y), new Point(205, 105 + y), new Point(205, 140 + y),
 				new Point(210, 125 + y), new Point(205, 160 + y), new Point(195, 160 + y), new Point(185, 160 + y),
 				new Point(175, 160 + y), new Point(165, 160 + y), new Point(157, 160 + y), new Point(150, 160 + y),
-				new Point(145, 160 + y), new Point(145, 130 + y)};
+				new Point(145, 160 + y), new Point(145, 130 + y), new Point(210, 130 + y)};
 		for (int i = 0; i < names.length; i++) {
 			Olin2.addNode(names[i], points[i], 2);
 		}
@@ -70,6 +70,7 @@ public class GraphMaker {
 		Olin2.addEdge("O231", "O233", 20);
 		Olin2.addEdge("O233", "OTopHadCommons", 20);
 		Olin2.addEdge("OTopHadCommons", "TopStairsO238", 15);
+		Olin2.addEdge("OTopHadCommons", "O2Elevator2", 15);
 		Olin2.addEdge("OTopHadCommons", "O201", 20);
 		Olin2.addEdge("O201", "O203", 10);
 		Olin2.addEdge("O203", "O202", 20);
@@ -88,13 +89,13 @@ public class GraphMaker {
 		Graph Olin1 = new Graph();
 		int h = 100;
 		String[] names = {"BotStairsO269", "O169", "O167", "BotStairsOCommons", "Bot2ndStair", "O1Elevator", "O159",
-				"O157", "O111", "O106", "O108", "O113", "O110", "O115", "O115Corner", "OBotHadCommons", "BotStairs238",
+				"O157", "O111", "O106", "O108", "O113", "O110", "O115", "O115Corner", "OBotHadCommons", "BotStairs238", "O1Elevator2",
 				"O101", "O103", "O105", "O107", "O102", "O102-1", "O109Corner", "O104", "BotStairsO104"};
 		Point[] points = {new Point(65, 150 + h), new Point(65, 135 + h), new Point(65, 120 + h),
 				new Point(65, 105 + h), new Point(70, 110 + h), new Point(73, 107 + h), new Point(85, 105 + h),
 				new Point(105, 105 + h), new Point(145, 105 + h), new Point(155, 105 + h), new Point(165, 105 + h),
 				new Point(175, 105 + h), new Point(185, 105 + h), new Point(195, 105 + h), new Point(205, 105 + h),
-				new Point(205, 140 + h), new Point(210, 125 + h), new Point(205, 160 + h), new Point(195, 160 + h),
+				new Point(205, 140 + h), new Point(210, 125 + h), new Point(210, 130 + h), new Point(205, 160 + h), new Point(195, 160 + h),
 				new Point(185, 160 + h), new Point(175, 160 + h), new Point(165, 160 + h), new Point(157, 160 + h),
 				new Point(145, 160 + h), new Point(145, 140 + h), new Point(145, 130 + h)};
 		for (int i = 0; i < names.length; i++) {
@@ -122,6 +123,7 @@ public class GraphMaker {
 		Olin1.addEdge("O115", "O115Corner", 10);
 		Olin1.addEdge("O115Corner", "OBotHadCommons", 20);
 		Olin1.addEdge("OBotHadCommons", "BotStairs238", 20);
+		Olin1.addEdge("OBotHadCommons", "O1Elevator2", 20);
 		Olin1.addEdge("OBotHadCommons", "O101", 15);
 		Olin1.addEdge("O101", "O103", 20);
 		Olin1.addEdge("O103", "O105", 10);
@@ -143,7 +145,7 @@ public class GraphMaker {
 		String[] names = {"ToCrapo2", "F108", "F102Corner", "F101Corner", "E104", "E100Corner", "E101Corner",
 				"Moench1Stairs", "DCorner", "D112", "D114", "D115", "DCorner2", "D101", "D105Corner", "C107Corner",
 				"C111", "CCorner", "C116", "C115", "C114", "C112Corner", "B106", "B105Ent", "B105", "A102",
-				"A124Corner", "A120Corner"};
+				"A124Corner", "A120Corner", "MElevatorN1", "MElevatorS1"};
 		Point[] points = {new Point(1 * m + x, 10 * m + y), new Point(10 * m + x, 10 * m + y),
 				new Point(40 * m + x, 10 * m + y), new Point(50 * m + x, 10 * m + y), new Point(50 * m + x, 20 * m + y),
 				new Point(40 * m + x, 20 * m + y), new Point(40 * m + x, 40 * m + y), new Point(20 * m + x, 40 * m + y),
@@ -154,7 +156,7 @@ public class GraphMaker {
 				new Point(30 * m + x, 80 * m + y), new Point(40 * m + x, 80 * m + y),
 				new Point(40 * m + x, 120 * m + y), new Point(40 * m + x, 125 * m + y),
 				new Point(45 * m + x, 125 * m + y), new Point(40 * m + x, 145 * m + y),
-				new Point(10 * m + x, 145 * m + y), new Point(1 * m + x, 155 * m + y)};
+				new Point(10 * m + x, 145 * m + y), new Point(1 * m + x, 155 * m + y), new Point(45 * m + x, 35 * m + y), new Point(35 * m + x, 125 * m + y)};
 		for (int i = 0; i < names.length; i++) {
 			Moench1.addNode(names[i], points[i], 1);
 		}
@@ -191,6 +193,8 @@ public class GraphMaker {
 		Moench1.addEdge("A102", "A124Corner", 20);
 		Moench1.addEdge("A124Corner", "A120Corner", 15);
 		Moench1.addEdge("CCorner", "C112Corner", 10);
+		Moench1.addEdge("MElevatorN1", "E101Corner", 10);
+		Moench1.addEdge("B105Ent", "MElevatorS1", 10);
 		String[] noShows = {"ToCrapo2","F102Corner","F101Corner","E100Corner","E101Corner","DCorner","DCorner2","D105Corner","C107Corner","CCorner","C112Corner","B105Ent","A124Corner","A120Corner"};
 		for(String i : noShows) {
 			Moench1.getNodes().get(i).showName=false;
@@ -204,12 +208,12 @@ public class GraphMaker {
 		int x = 300;
 		int y = 60;
 		int m = 1;
-		String[] names = {"F235", "F230", "F222", "F218", "F210", "E200", "Moench2Stairs", "E104-2", "B200", "A223",
+		String[] names = {"F235", "F230", "F222", "F218", "F210", "E200", "Moench2Stairs", "E104-2", "MElevatorN2", "B200", "MElevatorS2", "A223",
 				"A209", "A202", "A220", "A219", "A217"};
 		Point[] points = {new Point(10 * m + x, 10 * m + y), new Point(10 * m + x, 1 * m + y),
 				new Point(40 * m + x, 1 * m + y), new Point(50 * m + x, 1 * m + y), new Point(70 * m + x, 1 * m + y),
-				new Point(40 * m + x, 40 * m + y), new Point(30 * m + x, 40 * m + y), new Point(50 * m + x, 40 * m + y),
-				new Point(40 * m + x, 125 * m + y), new Point(40 * m + x, 135 * m + y),
+				new Point(40 * m + x, 40 * m + y), new Point(30 * m + x, 40 * m + y), new Point(50 * m + x, 40 * m + y), new Point(45 * m + x, 35 * m + y),
+				new Point(40 * m + x, 125 * m + y), new Point(35 * m + x, 125 * m + y), new Point(40 * m + x, 135 * m + y),
 				new Point(40 * m + x, 145 * m + y), new Point(60 * m + x, 145 * m + y),
 				new Point(30 * m + x, 145 * m + y), new Point(26 * m + x, 145 * m + y),
 				new Point(8 * m + x, 145 * m + y)};
@@ -230,6 +234,8 @@ public class GraphMaker {
 		Moench2.addEdge("A220", "A209", 20);
 		Moench2.addEdge("A220", "A219", 5);
 		Moench2.addEdge("A219", "A217", 15);
+		Moench2.addEdge("E200", "MElevatorN2", 10);
+		Moench2.addEdge("B200", "MElevatorS2", 10);
 		return Moench2;
 	}
 
@@ -244,6 +250,7 @@ public class GraphMaker {
 		ret.addEdge("TopStairsO238", "BotStairs238", 10, "stairs");
 		ret.addEdge("TopStairsO214", "BotStairsO104", 10, "stairs");
 		ret.addEdge("O1Elevator", "O2Elevator", 100, "elevator");
+		ret.addEdge("O1Elevator2", "O2Elevator2", 100, "elevator");
 		return ret;
 	}
 
@@ -251,7 +258,7 @@ public class GraphMaker {
 		Graph MoenchLower1 = new Graph();
 		String[] names = {"CommonsEntrance", "ELCorner", "FL101Corner", "FL104Ent", "FL104", "FL106Ent", "FL106",
 				"FLFromCom", "FL1062nd", "DLCorner", "DL115", "DL117", "DL119", "DLCorner2", "DL101", "CL117Ent",
-				"CL117", "CL119", "BL110", "BL112", "BL108", "BL113", "BL114", "BLCorner"};
+				"CL117", "CL119", "BL110", "BL112", "BL108", "BL113", "BL114", "BLCorner", "MElevatorN0", "MElevatorS0"};
 		int x = 250;
 		int y = 50;
 		int m = 2;
@@ -263,7 +270,7 @@ public class GraphMaker {
 				new Point(45 * m + x, 52 * m + y), new Point(40 * m + x, 72 * m + y), new Point(38 * m + x, 72 * m + y),
 				new Point(40 * m + x, 82 * m + y), new Point(40 * m + x, 87 * m + y), new Point(40 * m + x, 92 * m + y),
 				new Point(40 * m + x, 94 * m + y), new Point(35 * m + x, 94 * m + y), new Point(35 * m + x, 96 * m + y),
-				new Point(40 * m + x, 96 * m + y)};
+				new Point(40 * m + x, 96 * m + y), new Point(45 * m + x, 35 * m + y), new Point(38 * m + x, 70 * m + y)};
 		for (int i = 0; i < names.length; i++) {
 			MoenchLower1.addNode(names[i], points[i], 0);
 		}
@@ -307,6 +314,8 @@ public class GraphMaker {
 		MoenchLower1.addEdge("BL113", "BL114", 5);
 		MoenchLower1.addEdge("BL114", "BLCorner", 10);
 		MoenchLower1.addEdge("BLCorner", "BL108", 5);
+		MoenchLower1.addEdge("ELCorner", "MElevatorN0", 10);
+		MoenchLower1.addEdge("MElevatorS0", "CL117Ent", 10);
 
 		return MoenchLower1;
 	}
@@ -327,6 +336,10 @@ public class GraphMaker {
 		}
 		result.addEdge("CommonsEntrance", "Moench1Stairs", 10, "stairs");
 		result.addEdge("Moench1Stairs", "Moench2Stairs", 10, "stairs");
+		result.addEdge("MElevatorN0", "MElevatorN1", 100, "elevator");
+		result.addEdge("MElevatorN1", "MElevatorN2", 100, "elevator");
+		result.addEdge("MElevatorS0", "MElevatorS1", 100, "elevator");
+		result.addEdge("MElevatorS1", "MElevatorS2", 100, "elevator");
 		return result;
 	}
 

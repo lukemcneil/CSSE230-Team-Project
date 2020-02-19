@@ -1,11 +1,10 @@
 package Listeners;
 
+import Graph.Graph;
+
+import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-import javax.swing.JLabel;
-
-import Graph.Graph;
 
 public class FloorDownListener implements ActionListener {
 
@@ -19,7 +18,6 @@ public class FloorDownListener implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
 		if (graph.getFloor() >= 1) {
 			this.graph.setFloor(graph.getFloor() - 1);
 			this.count.setText("" + graph.getFloor());

@@ -120,7 +120,6 @@ public class Node {
 			end = temp;
 			temp = pathFinder.get(temp);
 		}
-		System.out.println(edgedPath);
 		return finalPath;
 
 	}

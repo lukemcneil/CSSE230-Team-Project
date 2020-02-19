@@ -1,8 +1,15 @@
 package Visuals;
 
-import java.awt.BorderLayout;
-import java.awt.GridLayout;
-import java.awt.TextField;
+import Graph.Graph;
+import Graph.Node;
+import Listeners.ClickListener;
+import Listeners.EnterListener;
+import Listeners.PanListener;
+import Listeners.ScrollListener;
+
+import javax.imageio.ImageIO;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.beans.XMLDecoder;
 import java.io.BufferedInputStream;
@@ -11,40 +18,25 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Hashtable;
 
-import javax.imageio.ImageIO;
-import javax.swing.BoxLayout;
-import javax.swing.JButton;
-import javax.swing.JComponent;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-
-import Graph.Graph;
-import Graph.Node;
-import Listeners.ClickListener;
-import Listeners.EnterListener;
-import Listeners.PanListener;
-import Listeners.ScrollListener;
-
 public class CaptchaPanel extends JPanel {
-	
+
 	private JButton clickToContinue, enter;
 	private TextField bestTeam, password;
 	private JLabel whatsBest, whatPassword;
 	private boolean clicked;
-	
+
 	private JFrame frame;
-	
+
 	public CaptchaPanel(JFrame frame) {
 		this.frame = frame;
-		setLayout(new GridLayout(8,3,10,10));
+		setLayout(new GridLayout(8, 3, 10, 10));
 		clickToContinue = new JButton("Click here");
 		enter = new JButton("Enter");
 		bestTeam = new TextField("");
 		password = new TextField("");
 		whatsBest = new JLabel("What team is the best?");
 		whatPassword = new JLabel("10-digit password:");
-		
+
 		this.add(clickToContinue);
 		this.add(whatsBest);
 		this.add(bestTeam);
@@ -54,16 +46,15 @@ public class CaptchaPanel extends JPanel {
 		clickToContinue.addActionListener(new ClickListener(this));
 		enter.addActionListener(new EnterListener(password, bestTeam, this));
 	}
-	
+
 	public void setClickedTrue() {
 		clicked = true;
-		System.out.println(clicked);
 	}
-	
+
 	public boolean getClicked() {
 		return clicked;
 	}
-	
+
 	public void startProgram() {
 		frame.remove(this);
 		Graph g = new Graph(frame);
@@ -97,6 +88,7 @@ public class CaptchaPanel extends JPanel {
 		mainComponent.addMouseListener(pl);
 		mainComponent.addMouseMotionListener(pl);
 	}
+
 	public static Hashtable<String, Node> read(String filename) throws Exception {
 		XMLDecoder decoder =
 				new XMLDecoder(
