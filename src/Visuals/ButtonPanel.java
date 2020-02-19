@@ -32,7 +32,7 @@ public class ButtonPanel extends JPanel {
 		elevatorToggle = new JToggleButton("Elevators Only");
 
 		floorLabel = new JLabel("Floor: " + g.getFloor());
-		tripPlanner = new JButton("Trip Planner");
+		tripPlanner = new JButton("Trip Planner"); 
 
 		startingRoom = new TextField("");
 		destination = new TextField("");
