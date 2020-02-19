@@ -44,24 +44,26 @@ public class GetInfoListener implements ActionListener {
 				fail = new JLabel("uh oh");
 			}
 			double quiz = Math.random();
+			boolean correct = true;
 			if (quiz > .5) {
 				int reply = JOptionPane.showConfirmDialog(fail, "Are all AVLTrees RedBlackTrees?", "POP QUIZ",
 						JOptionPane.YES_NO_OPTION);
-				if (reply == JOptionPane.YES_OPTION) {
-					JOptionPane.showMessageDialog(null, success, "You did it!", JOptionPane.PLAIN_MESSAGE, null);
-				} else {
-					JOptionPane.showMessageDialog(null, fail, "FAILURE", JOptionPane.PLAIN_MESSAGE, null);
-					System.exit(0);
+				if (reply == JOptionPane.NO_OPTION) {
+					correct = false;
 				}
 			} else {
 				int reply = JOptionPane.showConfirmDialog(fail, "Are all RedBlackTrees AVLTrees?", "POP QUIZ",
 						JOptionPane.YES_NO_OPTION);
-				if (reply == JOptionPane.NO_OPTION) {
-					JOptionPane.showMessageDialog(null, success, "You did it!", JOptionPane.PLAIN_MESSAGE, null);
-				} else {
-					JOptionPane.showMessageDialog(null, fail, "FAILURE", JOptionPane.PLAIN_MESSAGE, null);
-					System.exit(0);
+				if (reply == JOptionPane.YES_OPTION) {
+					correct = false;
 				}
+			}
+			if(correct) {
+				JOptionPane.showMessageDialog(null, success, "You did it!", JOptionPane.PLAIN_MESSAGE, null);
+			}
+			else {
+				JOptionPane.showMessageDialog(null, fail, "FAILURE", JOptionPane.PLAIN_MESSAGE, null);
+				System.exit(0);
 			}
 		} else {
 			BufferedImage image = null;
