@@ -69,6 +69,7 @@ public class MainComponent extends JComponent implements MouseListener {
 				e.drawOn(g);
 			}
 		}
+		cost = bp.getCost();
 		if (cost == 0) {
 			g.drawString("Cost: ", 3, 12);
 		} else {

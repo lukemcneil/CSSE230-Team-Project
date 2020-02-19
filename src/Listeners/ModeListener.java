@@ -3,22 +3,22 @@ package Listeners;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import Graph.Edge;
 import Graph.Graph;
+import Visuals.ButtonPanel;
 
 public class ModeListener implements ActionListener {
 	private Graph g;
-	private FindPathListener f;
+	private ButtonPanel bp;
 
-	public ModeListener(Graph g, FindPathListener f) {
+	public ModeListener(Graph g, ButtonPanel bp) {
 		this.g = g;
-		this.f = f;
+		this.bp = bp;
 	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		g.switchMode();
-		f.doStuff();
+		bp.doStuff();
 	}
 
 }

@@ -14,10 +14,13 @@ public class ButtonPanel extends JPanel {
 	private JToggleButton elevatorToggle;
 
 	private Graph g;
+	
+	private int cost;
 
 	private FindPathListener fpl;
 
 	public ButtonPanel(Graph g, JFrame frame) {
+		cost = 0;
 		this.g = g;
 		findPath = new JButton("Find Path");
 		findRoom = new JButton("Find Room");
@@ -63,7 +66,7 @@ public class ButtonPanel extends JPanel {
 		tripPlanner.addActionListener(new TripPlannerListener(g, roomNumber, distance));
 		floorUp.addActionListener(new FloorUpListener(g, floorLabel));
 		floorDown.addActionListener(new FloorDownListener(g, floorLabel));
-		elevatorToggle.addActionListener(new ModeListener(g,fpl));
+		elevatorToggle.addActionListener(new ModeListener(g,this));
 	}
 
 	public void setStartingRoom(String set) {
@@ -80,7 +83,12 @@ public class ButtonPanel extends JPanel {
 
 	public int doStuff() {
 		fpl.doStuff();
+		cost = fpl.getCost();
 		return fpl.getCost();
+	}
+	
+	public int getCost() {
+		return cost;
 	}
 
 	public void clearPanels() {
