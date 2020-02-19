@@ -87,7 +87,6 @@ public class MainComponent extends JComponent implements MouseListener {
 
 	@Override
 	public void mouseClicked(MouseEvent e) {
-		// TODO Auto-generated method stub
 
 	}
 
@@ -95,7 +94,7 @@ public class MainComponent extends JComponent implements MouseListener {
 	public void mousePressed(MouseEvent e) {
 		boolean highlightedInForLoop = false;
 		for (String i : graph.getNodes().keySet()) {
-			if(graph.getNodes().get(i).floor != graph.getFloor()) {
+			if (graph.getNodes().get(i).floor != graph.getFloor()) {
 				continue;
 			}
 			if (!(e.getModifiers() == MouseEvent.BUTTON3_MASK)) {
@@ -120,19 +119,16 @@ public class MainComponent extends JComponent implements MouseListener {
 
 	@Override
 	public void mouseReleased(MouseEvent e) {
-		// TODO Auto-generated method stub
 
 	}
 
 	@Override
 	public void mouseEntered(MouseEvent e) {
-		// TODO Auto-generated method stub
 
 	}
 
 	@Override
 	public void mouseExited(MouseEvent e) {
-		// TODO Auto-generated method stub
 
 	}
 }

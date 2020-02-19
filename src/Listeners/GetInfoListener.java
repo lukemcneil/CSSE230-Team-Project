@@ -40,7 +40,6 @@ public class GetInfoListener implements ActionListener {
 				fail = new JLabel(new ImageIcon(image1));
 				success = new JLabel(new ImageIcon(image2));
 			} catch (NullPointerException | IOException e1) {
-				// TODO Auto-generated catch block
 				System.out.println("could not find named file");
 				fail = new JLabel("uh oh");
 			}
@@ -54,8 +53,7 @@ public class GetInfoListener implements ActionListener {
 					JOptionPane.showMessageDialog(null, fail, "FAILURE", JOptionPane.PLAIN_MESSAGE, null);
 					System.exit(0);
 				}
-			}
-			else {
+			} else {
 				int reply = JOptionPane.showConfirmDialog(fail, "Are all RedBlackTrees AVLTrees?", "POP QUIZ",
 						JOptionPane.YES_NO_OPTION);
 				if (reply == JOptionPane.NO_OPTION) {
@@ -73,7 +71,6 @@ public class GetInfoListener implements ActionListener {
 				image = ImageIO.read(pic);
 				picLabel = new JLabel(new ImageIcon(image));
 			} catch (NullPointerException | IOException e1) {
-				// TODO Auto-generated catch block
 				System.out.println("could not find named file");
 				picLabel = new JLabel("Schedule could not be found.");
 			}
