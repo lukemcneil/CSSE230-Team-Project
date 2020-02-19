@@ -44,15 +44,26 @@ public class GetInfoListener implements ActionListener {
 				System.out.println("could not find named file");
 				fail = new JLabel("uh oh");
 			}
-			int reply = JOptionPane.showConfirmDialog(fail, "Are all AVLTrees RedBlackTrees?", "POP QUIZ",
-					JOptionPane.YES_NO_OPTION);
-			if (reply == JOptionPane.YES_OPTION) {
-				JOptionPane.showMessageDialog(null, success, "You did it!", JOptionPane.PLAIN_MESSAGE,
-						null);
-			} else {
-				JOptionPane.showMessageDialog(null, fail, "FAILURE", JOptionPane.PLAIN_MESSAGE,
-						null);
-				System.exit(0);
+			double quiz = Math.random();
+			if (quiz > .5) {
+				int reply = JOptionPane.showConfirmDialog(fail, "Are all AVLTrees RedBlackTrees?", "POP QUIZ",
+						JOptionPane.YES_NO_OPTION);
+				if (reply == JOptionPane.YES_OPTION) {
+					JOptionPane.showMessageDialog(null, success, "You did it!", JOptionPane.PLAIN_MESSAGE, null);
+				} else {
+					JOptionPane.showMessageDialog(null, fail, "FAILURE", JOptionPane.PLAIN_MESSAGE, null);
+					System.exit(0);
+				}
+			}
+			else {
+				int reply = JOptionPane.showConfirmDialog(fail, "Are all RedBlackTrees AVLTrees?", "POP QUIZ",
+						JOptionPane.YES_NO_OPTION);
+				if (reply == JOptionPane.NO_OPTION) {
+					JOptionPane.showMessageDialog(null, success, "You did it!", JOptionPane.PLAIN_MESSAGE, null);
+				} else {
+					JOptionPane.showMessageDialog(null, fail, "FAILURE", JOptionPane.PLAIN_MESSAGE, null);
+					System.exit(0);
+				}
 			}
 		} else {
 			BufferedImage image = null;
