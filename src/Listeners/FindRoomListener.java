@@ -35,7 +35,9 @@ public class FindRoomListener implements ActionListener {
 				c.highlighted = false;
 			}
 		}
+		int floor = g.getNodes().get(room).floor;
 		g.getNodes().get(room).setHighlighted(true);
+		g.setFloor(floor);
 		System.out.println("Found");
 	}
 
