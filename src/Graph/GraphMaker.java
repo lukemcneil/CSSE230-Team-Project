@@ -3,6 +3,7 @@ package Graph;
 import java.awt.Point;
 import java.beans.XMLEncoder;
 import java.io.BufferedOutputStream;
+import java.io.File;
 import java.io.FileOutputStream;
 import java.util.Hashtable;
 
@@ -49,7 +50,7 @@ public class GraphMaker {
 			Olin2.addNode(names[i], points[i], 2);
 		}
 		for (String i : Olin2.nodes.keySet()) {
-			Olin2.nodes.get(i).setImage("RoomInfo/Olin 2/" + i + "Image.png");
+			Olin2.nodes.get(i).setImage("RoomInfo" + File.separator + "Olin 2" + File.separator + i + "Image.png");
 		}
 		Olin2.nodes.get("O225Corner").showName = false;
 		Olin2.nodes.get("O207Corner").showName = false;
@@ -101,7 +102,7 @@ public class GraphMaker {
 		}
 
 		for (String i : Olin1.nodes.keySet()) {
-			Olin1.nodes.get(i).setImage("RoomInfo/Olin 1/" + i + "Image.png");
+			Olin1.nodes.get(i).setImage("RoomInfo" + File.separator + "Olin 1" + File.separator + i + "Image.png");
 		}
 
 		Olin1.addEdge("BotStairsO269", "O169", 10);
@@ -263,7 +264,8 @@ public class GraphMaker {
 			MoenchLower1.addNode(names[i], points[i], 0);
 		}
 		for (String i : MoenchLower1.nodes.keySet()) {
-			MoenchLower1.nodes.get(i).setImage("RoomInfo/Moench Lower Level/" + i + "Image.png");
+			MoenchLower1.nodes.get(i)
+					.setImage("RoomInfo" + File.separator + "Moench Lower Level" + File.separator + i + "Image.png");
 		}
 
 		MoenchLower1.nodes.get("ELCorner").showName = false;

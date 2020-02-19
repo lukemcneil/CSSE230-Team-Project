@@ -330,7 +330,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 2/O229Image.png</string>
+     <string>RoomInfo\Olin 2\O229Image.png</string>
     </void>
    </object>
   </void>
@@ -366,7 +366,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 2/O227Image.png</string>
+     <string>RoomInfo\Olin 2\O227Image.png</string>
     </void>
    </object>
   </void>
@@ -402,7 +402,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 2/O226Image.png</string>
+     <string>RoomInfo\Olin 2\O226Image.png</string>
     </void>
    </object>
   </void>
@@ -537,7 +537,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 2/O222Image.png</string>
+     <string>RoomInfo\Olin 2\O222Image.png</string>
     </void>
    </object>
   </void>
@@ -573,7 +573,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/O109CornerImage.png</string>
+     <string>RoomInfo\Olin 1\O109CornerImage.png</string>
     </void>
    </object>
   </void>
@@ -642,7 +642,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/Bot2ndStairImage.png</string>
+     <string>RoomInfo\Olin 1\Bot2ndStairImage.png</string>
     </void>
    </object>
   </void>
@@ -735,7 +735,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 2/O225CornerImage.png</string>
+     <string>RoomInfo\Olin 2\O225CornerImage.png</string>
     </void>
    </object>
   </void>
@@ -837,7 +837,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/BotStairsOCommonsImage.png</string>
+     <string>RoomInfo\Olin 1\BotStairsOCommonsImage.png</string>
     </void>
    </object>
   </void>
@@ -873,7 +873,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Moench Lower Level/DLCorner2Image.png</string>
+     <string>RoomInfo\Moench Lower Level\DLCorner2Image.png</string>
     </void>
    </object>
   </void>
@@ -935,7 +935,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Moench Lower Level/FL106Image.png</string>
+     <string>RoomInfo\Moench Lower Level\FL106Image.png</string>
     </void>
    </object>
   </void>
@@ -971,7 +971,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/O102-1Image.png</string>
+     <string>RoomInfo\Olin 1\O102-1Image.png</string>
     </void>
    </object>
   </void>
@@ -1033,7 +1033,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Moench Lower Level/FL104Image.png</string>
+     <string>RoomInfo\Moench Lower Level\FL104Image.png</string>
     </void>
    </object>
   </void>
@@ -1135,7 +1135,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/O115CornerImage.png</string>
+     <string>RoomInfo\Olin 1\O115CornerImage.png</string>
     </void>
    </object>
   </void>
@@ -1201,7 +1201,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Moench Lower Level/FL1062ndImage.png</string>
+     <string>RoomInfo\Moench Lower Level\FL1062ndImage.png</string>
     </void>
    </object>
   </void>
@@ -1237,7 +1237,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Moench Lower Level/DLCornerImage.png</string>
+     <string>RoomInfo\Moench Lower Level\DLCornerImage.png</string>
     </void>
    </object>
   </void>
@@ -1273,7 +1273,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/O115Image.png</string>
+     <string>RoomInfo\Olin 1\O115Image.png</string>
     </void>
    </object>
   </void>
@@ -1309,7 +1309,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/O113Image.png</string>
+     <string>RoomInfo\Olin 1\O113Image.png</string>
     </void>
    </object>
   </void>
@@ -1345,7 +1345,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/O111Image.png</string>
+     <string>RoomInfo\Olin 1\O111Image.png</string>
     </void>
    </object>
   </void>
@@ -1374,7 +1374,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Moench Lower Level/CommonsEntranceImage.png</string>
+     <string>RoomInfo\Moench Lower Level\CommonsEntranceImage.png</string>
     </void>
    </object>
   </void>
@@ -1410,7 +1410,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/O110Image.png</string>
+     <string>RoomInfo\Olin 1\O110Image.png</string>
     </void>
    </object>
   </void>
@@ -1479,7 +1479,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 2/TopStairsOCommonsImage.png</string>
+     <string>RoomInfo\Olin 2\TopStairsOCommonsImage.png</string>
     </void>
    </object>
   </void>
@@ -1548,7 +1548,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Moench Lower Level/BLCornerImage.png</string>
+     <string>RoomInfo\Moench Lower Level\BLCornerImage.png</string>
     </void>
    </object>
   </void>
@@ -1577,7 +1577,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Moench Lower Level/DL119Image.png</string>
+     <string>RoomInfo\Moench Lower Level\DL119Image.png</string>
     </void>
    </object>
   </void>
@@ -1613,7 +1613,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 2/TopStairsO238Image.png</string>
+     <string>RoomInfo\Olin 2\TopStairsO238Image.png</string>
     </void>
    </object>
   </void>
@@ -1642,7 +1642,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Moench Lower Level/DL117Image.png</string>
+     <string>RoomInfo\Moench Lower Level\DL117Image.png</string>
     </void>
    </object>
   </void>
@@ -1671,7 +1671,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Moench Lower Level/DL115Image.png</string>
+     <string>RoomInfo\Moench Lower Level\DL115Image.png</string>
     </void>
    </object>
   </void>
@@ -1707,7 +1707,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 2/OTopHadCommonsImage.png</string>
+     <string>RoomInfo\Olin 2\OTopHadCommonsImage.png</string>
     </void>
    </object>
   </void>
@@ -1743,7 +1743,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/BotStairs238Image.png</string>
+     <string>RoomInfo\Olin 1\BotStairs238Image.png</string>
     </void>
    </object>
   </void>
@@ -1779,7 +1779,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 2/O206Image.png</string>
+     <string>RoomInfo\Olin 2\O206Image.png</string>
     </void>
    </object>
   </void>
@@ -1815,7 +1815,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 2/O205Image.png</string>
+     <string>RoomInfo\Olin 2\O205Image.png</string>
     </void>
    </object>
   </void>
@@ -1851,7 +1851,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 2/O204Image.png</string>
+     <string>RoomInfo\Olin 2\O204Image.png</string>
     </void>
    </object>
   </void>
@@ -1887,7 +1887,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 2/O269Image.png</string>
+     <string>RoomInfo\Olin 2\O269Image.png</string>
     </void>
    </object>
   </void>
@@ -1923,7 +1923,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 2/O203Image.png</string>
+     <string>RoomInfo\Olin 2\O203Image.png</string>
     </void>
    </object>
   </void>
@@ -1959,7 +1959,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/O108Image.png</string>
+     <string>RoomInfo\Olin 1\O108Image.png</string>
     </void>
    </object>
   </void>
@@ -1995,7 +1995,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 2/O202Image.png</string>
+     <string>RoomInfo\Olin 2\O202Image.png</string>
     </void>
    </object>
   </void>
@@ -2031,7 +2031,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 2/O267Image.png</string>
+     <string>RoomInfo\Olin 2\O267Image.png</string>
     </void>
    </object>
   </void>
@@ -2067,7 +2067,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/O107Image.png</string>
+     <string>RoomInfo\Olin 1\O107Image.png</string>
     </void>
    </object>
   </void>
@@ -2103,7 +2103,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 2/O201Image.png</string>
+     <string>RoomInfo\Olin 2\O201Image.png</string>
     </void>
    </object>
   </void>
@@ -2139,7 +2139,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/O106Image.png</string>
+     <string>RoomInfo\Olin 1\O106Image.png</string>
     </void>
    </object>
   </void>
@@ -2175,7 +2175,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/O105Image.png</string>
+     <string>RoomInfo\Olin 1\O105Image.png</string>
     </void>
    </object>
   </void>
@@ -2211,7 +2211,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/O104Image.png</string>
+     <string>RoomInfo\Olin 1\O104Image.png</string>
     </void>
    </object>
   </void>
@@ -2247,7 +2247,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/O169Image.png</string>
+     <string>RoomInfo\Olin 1\O169Image.png</string>
     </void>
    </object>
   </void>
@@ -2283,7 +2283,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/O103Image.png</string>
+     <string>RoomInfo\Olin 1\O103Image.png</string>
     </void>
    </object>
   </void>
@@ -2319,7 +2319,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/O102Image.png</string>
+     <string>RoomInfo\Olin 1\O102Image.png</string>
     </void>
    </object>
   </void>
@@ -2355,7 +2355,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/O167Image.png</string>
+     <string>RoomInfo\Olin 1\O167Image.png</string>
     </void>
    </object>
   </void>
@@ -2391,7 +2391,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/O1ElevatorImage.png</string>
+     <string>RoomInfo\Olin 1\O1ElevatorImage.png</string>
     </void>
    </object>
   </void>
@@ -2427,7 +2427,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/O101Image.png</string>
+     <string>RoomInfo\Olin 1\O101Image.png</string>
     </void>
    </object>
   </void>
@@ -2463,7 +2463,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Moench Lower Level/FL104EntImage.png</string>
+     <string>RoomInfo\Moench Lower Level\FL104EntImage.png</string>
     </void>
    </object>
   </void>
@@ -2532,7 +2532,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Moench Lower Level/FL101CornerImage.png</string>
+     <string>RoomInfo\Moench Lower Level\FL101CornerImage.png</string>
     </void>
    </object>
   </void>
@@ -2601,7 +2601,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/OBotHadCommonsImage.png</string>
+     <string>RoomInfo\Olin 1\OBotHadCommonsImage.png</string>
     </void>
    </object>
   </void>
@@ -2637,7 +2637,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Moench Lower Level/FL106EntImage.png</string>
+     <string>RoomInfo\Moench Lower Level\FL106EntImage.png</string>
     </void>
    </object>
   </void>
@@ -2666,7 +2666,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Moench Lower Level/CL119Image.png</string>
+     <string>RoomInfo\Moench Lower Level\CL119Image.png</string>
     </void>
    </object>
   </void>
@@ -2695,7 +2695,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Moench Lower Level/CL117Image.png</string>
+     <string>RoomInfo\Moench Lower Level\CL117Image.png</string>
     </void>
    </object>
   </void>
@@ -2724,7 +2724,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Moench Lower Level/DL101Image.png</string>
+     <string>RoomInfo\Moench Lower Level\DL101Image.png</string>
     </void>
    </object>
   </void>
@@ -2760,7 +2760,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 2/O259Image.png</string>
+     <string>RoomInfo\Olin 2\O259Image.png</string>
     </void>
    </object>
   </void>
@@ -2829,7 +2829,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 2/O257Image.png</string>
+     <string>RoomInfo\Olin 2\O257Image.png</string>
     </void>
    </object>
   </void>
@@ -2865,7 +2865,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/O159Image.png</string>
+     <string>RoomInfo\Olin 1\O159Image.png</string>
     </void>
    </object>
   </void>
@@ -2901,7 +2901,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/O157Image.png</string>
+     <string>RoomInfo\Olin 1\O157Image.png</string>
     </void>
    </object>
   </void>
@@ -3036,7 +3036,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Moench Lower Level/ELCornerImage.png</string>
+     <string>RoomInfo\Moench Lower Level\ELCornerImage.png</string>
     </void>
    </object>
   </void>
@@ -3138,7 +3138,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 2/TopStairsO214Image.png</string>
+     <string>RoomInfo\Olin 2\TopStairsO214Image.png</string>
     </void>
    </object>
   </void>
@@ -3240,7 +3240,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Moench Lower Level/FLFromComImage.png</string>
+     <string>RoomInfo\Moench Lower Level\FLFromComImage.png</string>
     </void>
    </object>
   </void>
@@ -3269,7 +3269,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Moench Lower Level/BL114Image.png</string>
+     <string>RoomInfo\Moench Lower Level\BL114Image.png</string>
     </void>
    </object>
   </void>
@@ -3298,7 +3298,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Moench Lower Level/BL113Image.png</string>
+     <string>RoomInfo\Moench Lower Level\BL113Image.png</string>
     </void>
    </object>
   </void>
@@ -3327,7 +3327,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Moench Lower Level/BL112Image.png</string>
+     <string>RoomInfo\Moench Lower Level\BL112Image.png</string>
     </void>
    </object>
   </void>
@@ -3356,7 +3356,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Moench Lower Level/BL110Image.png</string>
+     <string>RoomInfo\Moench Lower Level\BL110Image.png</string>
     </void>
    </object>
   </void>
@@ -3432,7 +3432,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 2/O207CornerImage.png</string>
+     <string>RoomInfo\Olin 2\O207CornerImage.png</string>
     </void>
    </object>
   </void>
@@ -3567,7 +3567,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 2/TopStairsO269Image.png</string>
+     <string>RoomInfo\Olin 2\TopStairsO269Image.png</string>
     </void>
    </object>
   </void>
@@ -3629,7 +3629,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Moench Lower Level/BL108Image.png</string>
+     <string>RoomInfo\Moench Lower Level\BL108Image.png</string>
     </void>
    </object>
   </void>
@@ -3665,7 +3665,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/BotStairsO269Image.png</string>
+     <string>RoomInfo\Olin 1\BotStairsO269Image.png</string>
     </void>
    </object>
   </void>
@@ -3734,7 +3734,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Moench Lower Level/CL117EntImage.png</string>
+     <string>RoomInfo\Moench Lower Level\CL117EntImage.png</string>
     </void>
    </object>
   </void>
@@ -3770,7 +3770,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 2/O233Image.png</string>
+     <string>RoomInfo\Olin 2\O233Image.png</string>
     </void>
    </object>
   </void>
@@ -3806,7 +3806,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 1/BotStairsO104Image.png</string>
+     <string>RoomInfo\Olin 1\BotStairsO104Image.png</string>
     </void>
    </object>
   </void>
@@ -3842,7 +3842,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 2/O203-1Image.png</string>
+     <string>RoomInfo\Olin 2\O203-1Image.png</string>
     </void>
    </object>
   </void>
@@ -3878,7 +3878,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 2/O231Image.png</string>
+     <string>RoomInfo\Olin 2\O231Image.png</string>
     </void>
    </object>
   </void>
@@ -3914,7 +3914,7 @@
      </void>
     </void>
     <void property="image">
-     <string>RoomInfo/Olin 2/O2ElevatorImage.png</string>
+     <string>RoomInfo\Olin 2\O2ElevatorImage.png</string>
     </void>
    </object>
   </void>
