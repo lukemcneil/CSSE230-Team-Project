@@ -31,29 +31,36 @@ public class ButtonPanel extends JPanel {
 		floorDown = new JButton("- Floor");
 		elevatorToggle = new JToggleButton("Elevators Only");
 
-		floorLabel = new JLabel("" + g.getFloor());
-		tripPlanner = new JButton("trip planner");
+		floorLabel = new JLabel("Floor: " + g.getFloor());
+		tripPlanner = new JButton("Trip Planner");
 
 		startingRoom = new TextField("");
 		destination = new TextField("");
 		roomNumber = new TextField("");
 		distance = new TextField("");
-		this.add(new JLabel("start"));
+		this.add(new JLabel("Start #"));
 		this.add(startingRoom);
-		this.add(new JLabel("destination"));
+		this.add(new JLabel("Destination #"));
 		this.add(destination);
 		this.add(findPath);
+		this.add(new JLabel("\n"));
+		this.add(new JLabel("Room Number"));
 		this.add(roomNumber);
 		this.add(findRoom);
 		this.add(getInfo);
+		this.add(new JLabel("\n"));
+		this.add(new JLabel("Zoom"));
 		this.add(zoomIn);
 		this.add(zoomOut);
+		this.add(new JLabel("\n"));
 		this.add(floorLabel);
 		this.add(floorUp);
 		this.add(floorDown);
-		this.add(tripPlanner);
-		this.add(new JLabel("distance"));
+		this.add(new JLabel("\n"));
+		this.add(new JLabel("Distance"));
 		this.add(distance);
+		this.add(tripPlanner);
+		this.add(new JLabel("\n"));
 		this.add(elevatorToggle);
 
 		fpl = new FindPathListener(g, startingRoom, destination);
