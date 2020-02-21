@@ -13,10 +13,12 @@ public class FindRoomListener implements ActionListener {
 
 	private Graph g;
 	private TextField field;
+	private JLabel floor;
 
-	public FindRoomListener(Graph g, TextField field) {
+	public FindRoomListener(Graph g, TextField field,JLabel floor) {
 		this.g = g;
 		this.field = field;
+		this.floor = floor;
 	}
 
 	@Override
@@ -38,6 +40,7 @@ public class FindRoomListener implements ActionListener {
 		int floor = g.getNodes().get(room).floor;
 		g.getNodes().get(room).setHighlighted(true);
 		g.setFloor(floor);
+		this.floor.setText("Floor: "+ floor);
 		System.out.println("Found");
 	}
 

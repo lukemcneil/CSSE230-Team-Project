@@ -66,7 +66,7 @@ public class ButtonPanel extends JPanel {
 		fpl = new FindPathListener(g, startingRoom, destination);
 
 		findPath.addActionListener(fpl);
-		findRoom.addActionListener(new FindRoomListener(g, roomNumber));
+		findRoom.addActionListener(new FindRoomListener(g, roomNumber,floorLabel));
 		getInfo.addActionListener(new GetInfoListener(g, roomNumber));
 		zoomIn.addActionListener(new ZoomInListener(g));
 		zoomOut.addActionListener(new ZoomOutListener(g));
